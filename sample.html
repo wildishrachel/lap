@@ -1,0 +1,326 @@
+<html lang="en">
+<head>
+	<title>l'artisan parfumeur</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="animated-elements.css"/>
+	<link rel="stylesheet" href="https://use.typekit.net/abq7bqi.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</head>
+
+<body class="inner">
+
+	<div class="main-container">
+
+		<header>
+			<div class="header-bottom">
+				<div class="logo">
+					<a href="#"><img alt="lArtisan Parfumeur logo" src="assets/l-artisan-parfumeur-logo.jpg"/></a>
+				</div>
+			</div>
+		</header>
+
+		<div class="slideoutbuttons">
+			<div class="slideOutTab" id="discoverTab">
+			    <div>
+			      <p>Discover</p>
+			    </div>
+			</div>
+			<div class="slideOutTab" id="samplesTab">
+			    <div>
+			      <p>Samples</p>
+			    </div>
+			</div>
+		</div>
+
+		<section id="discover">
+			<div id="slideOut" class="slideout">
+			  <div class="modal-header menu-header">
+			  	<h4>Discover La Boutique</h4>
+			  	<a href="#" class="close"><img alt="close" src="assets/close.png"/></a>
+			  </div>
+			  <div class="modal-content">
+			    <div class="modal-body">
+			    	<nav>
+			     		<ul>
+							<li>
+								<a href="index.html#obscuratio-container">
+									<span class="image"><img alt="obscuratio bottle" src="assets/bottles/obscuratio-bottle-mini.png"/></span>
+									<span><p>Obscuratio</p><p>Woody Spicy</p></span>
+								</a>
+							</li>
+							<li>
+								<a href="index.html#crepusculum-mirabile-container">
+									<span class="image"><img alt="crepusculum mirabile bottle" src="assets/bottles/crepusculum-mirabile-bottle-mini.png"/></span>
+									<span><p>Crepusculum Mirabile</p><p>Floral</p></span>
+								</a>
+							</li>
+							<li>
+								<a href="index.html#arcana-rosa-container">
+									<span class="image"><img alt="arcana rosa bottle" src="assets/bottles/arcana-rosa-bottle-mini.png"/></span>
+									<span><p>Arcana Rosa</p><p>Woody Floral</p></span>
+								</a>
+							</li>
+							<li>
+								<a href="index.html#venenum-container">
+									<span class="image"><img alt="venenum bottle" src="assets/bottles/venenum-bottle-mini.png"/></span>
+									<span><p>Venenum</p><p>Woody Spicy</p></span>
+								</a>
+							</li>
+							<li>
+								<a href="index.html#mirabilis-container">
+									<span class="image"><img alt="mirabilis bottle" src="assets/bottles/mirabilis-bottle-mini.png"/></span>
+									<span><p>Mirabilis</p><p>Oriental Woody</p></span>
+								</a>
+							</li>
+							<li>
+								<a href="index.html#tenebrae-container">
+									<span class="image"><img alt="tenebrae bottle" src="assets/bottles/tenebrae-bottle-mini.png"/></span>
+									<span><p>Tenebrae</p><p>Woody Green</p></span>
+								</a>
+							</li>
+							<li>
+								<a href="sample.html">
+									<span class="image"><img alt="samples" src="assets/samples-menu-icon.png"/></span>
+									<span><p>Order A Sample</p><p>Order two complimentary samples</p></span>
+								</a>
+							</li>
+							<li>
+								<a href="katie.html"><span><p>About Katie Scott</p><p>The Illustrator</p></span></a>
+							</li>
+							<li>
+								<a href="daphne.html"><span><p>About Daphne Bugey</p><p>The Perfumer</p></span></a>
+							</li>
+				  		</ul>
+					</nav>
+			    </div>
+			  </div>
+			</div>
+			<div class="after"></div>
+		</section>
+
+		<section id="samples">
+			<div id="samplesSlideOut" class="slideout">
+			  <div class="modal-header">
+			  	<h4>My Samples</h4>
+			  	<a href="#" class="close"><img alt="close" src="assets/close.png"/></a>
+			  </div>
+			  <div class="modal-content">
+			    <div class="modal-body">
+			    	<p>Choose your two samples and add them to your basket.</p>
+			    	<!-- <p class="red">more than 2 samples selected</p> -->
+			      	<ul>
+						<li>
+							<img alt="tenebrae sample" src="assets/tenebrae-sample.jpg"/>
+							<span>
+								<h4>Tenebrae</h4>
+								<p>1.5ml</p>
+								<p><a href="#" class="remove">Remove</a></p>
+							</span>
+						</li>
+						<li>
+							<img alt="sample outline" src="assets/sample-outline-grey.png"/>
+							<span>
+								<h4>Empty</h4>
+							</span>
+						</li>
+						<li>
+							<button class="button">Add to Basket</button>
+						</li>
+				  	</ul>
+				  	<p>Samples are free of charge, you'll only need to pay for postage.</p>
+			    </div>
+			  </div>
+			</div>
+			<div class="after"></div>
+		</section>
+
+		<section id="intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 ol-lg-8 col-xl-5 offset-1 offset-lg-2 offset-xl-3">
+						<h1>Order a <br/>sample</h1>
+					</div>
+				</div>
+				<div class="elements">
+					<img alt="snake" src="assets/home-snake-desktop.png" id="samples-snake"/>
+					<img alt="purple flower" src="assets/white-purple-flower-stem.png" id="sample-white-purple-flower-stem"/>
+				</div>
+			</div>
+		</section>
+
+		<section class="content didot">
+			<div class="container">
+				<div class="row">
+					<div class="col-10 col-lg-8 col-xl-5 offset-1 offset-lg-2 offset-xl-3">
+						<p class="text-center">Order 2 free samples<br/>(just pay for postage)</p>
+						<p class="text-center">La sensation de danger est aussi douce qu’enveloppante. Ce venin-là met l’eau à la bouche.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sample-slider">
+			<div class="slider slider-nav">
+				<div><span><img alt="obscuratio sample" src="assets/obscuratio-sample.jpg"/></span></div>
+				<div><span class="selected"><img alt="crepusculum mirabile sample" src="assets/crepusculum-mirabilis-sample.jpg"/></span></div>
+				<div><span><img alt="arcana rosa sample" src="assets/arcana-rosa-sample.jpg"/></span></div>
+				<div><span><img alt="venenum sample" src="assets/venenum-sample.jpg"/></span></div>
+				<div><span><img alt="tenebrae sample" src="assets/tenebrae-sample.jpg"/></span></div>
+			</div>
+			<div class="slider slider-single">
+				<div>
+					<div class="slider-content">
+						<img alt="obscuratio sample" class="sample-img" src="assets/obscuratio-sample.jpg"/>
+						<a href="#" class="button white order">Order Sample</a>
+			  			<h2>Obscuratio</h2>
+			  			<h3>The lure of Ylang Ylang within the canopy.</h3>
+			  			<p>At the edge of light and darkness, danger comes from an unexpected source. Luminous under the stars, a tropical garden secretly breathes and exhales the heady scent of a star-shaped flower with long yellow petals.</p>
+			  			<div class="fragrance-container flex-container">
+							<div class="fragrance-image">
+								<img alt="obscuratio dome" src="assets/bottles/obscuratio-dome.png"/>
+							</div>
+							<div class="fragrance-text">
+								<h4>Fragrance notes:</h4>
+								<ul>
+									<li>Ylang-Ylang</li>
+									<li>Patchouli</li>
+									<li>Vanilla</li>
+								</ul>
+							</div>
+						</div>
+			  		</div>
+				</div>
+				<div>
+					<div class="slider-content selected">
+						<img alt="tenebrae sample" class="sample-img" src="assets/tenebrae-sample.jpg"/>
+						<a href="#" class="button white order">Sample Selected</a>
+			  			<h2>Tenebrae</h2>
+			  			<h3>A Shamanic forest where incense fumes infuse the purest sap.</h3>
+			  			<p>Darkness makes the cedars with their thousand-year-old roots loom even larger. Wrapped in nocturnal coolness, the cedars are sentries of time, exuding their dry, resinous scent.</p>
+			  			<div class="fragrance-container flex-container">
+							<div class="fragrance-image">
+								<img alt="tenebrae dome" src="assets/bottles/tenebrae-dome.png"/>
+							</div>
+							<div class="fragrance-text">
+								<h4>Fragrance notes:</h4>
+								<ul>
+									<li>Cedarwood</li>
+									<li>Incense</li>
+									<li>Resin</li>
+								</ul>
+							</div>
+						</div>
+			  		</div>
+				</div>
+				<div>
+					<div class="slider-content">
+						<img alt="mirabilis sample" class="sample-img" src="assets/mirabilis-sample.jpg"/>
+						<a href="#" class="button white order">Order Sample</a>
+			  			<h2>Mirabilis</h2>
+			  			<h3>Mirabilis appears rational, yet becomes mystical on the skin.</h3>
+			  			<p>Between heaven and earth, the frankincense tree perfumes the air. It unites with vanilla, making the night a temple to the glory of these addictive scents.</p>
+			  			<div class="fragrance-container flex-container">
+							<div class="fragrance-image">
+								<img alt="mirabilis dome" src="assets/bottles/mirabilis-dome.png"/>
+							</div>
+							<div class="fragrance-text">
+								<h4>Fragrance notes:</h4>
+								<ul>
+									<li>Ambrox</li>
+									<li>Incense</li>
+									<li>Vanilla</li>
+								</ul>
+							</div>
+						</div>
+			  		</div>
+				</div>
+				<div>
+					<div class="slider-content">
+						<img alt="crepusculum mirabilis sample" class="sample-img" src="assets/crepusculum-mirabilis-sample.jpg"/>
+						<a href="#" class="button white">Order Sample</a>
+			  			<h2>CREPUSCULUM MIRABILE</h2>
+			  			<h3>The burning heat of jasmine at twilight.</h3>
+			  			<p>Come the dusk, it’s hard to believe that jasmine’s tiny petals harbour such a powerful nighttime fragrance. The jasmine awaits its mysterious evening visitors: fluttering hummingbirds who get drunk on its pollen.</p>
+			  			<div class="fragrance-container flex-container">
+							<div class="fragrance-image">
+								<img alt="crepusculum mirabilis dome" src="assets/bottles/crepusculum-mirabile-dome.png"/>
+							</div>
+							<div class="fragrance-text">
+								<h4>Fragrance notes:</h4>
+								<ul>
+									<li>Jasmine</li>
+									<li>Sandalwood</li>
+									<li>Tonka Bean</li>
+								</ul>
+							</div>
+						</div>
+			  		</div>
+				</div>
+				<div>
+					<div class="slider-content">
+						<img alt="arcana rosa sample" class="sample-img" src="assets/arcana-rosa-sample.jpg"/>
+						<a href="#" class="button white">Order Sample</a>
+			  			<h2>Arcana Rosa</h2>
+			  			<h3>This rose likes to change attire at nightfall — sometimes feminine, sometimes masculine.</h3>
+			  			<p>Drawn out of its lethargy by the dusk, this strange rose, bristling with thorns, is set ablaze on a fire of vetiver roots and gaïac wood. It exudes a smoky murmur that bewitches anyone who approaches, thus keeping its secret.</p>
+			  			<div class="fragrance-container flex-container">
+							<div class="fragrance-image">
+								<img alt="arcana rosa dome" src="assets/bottles/arcana-dome.png"/>
+							</div>
+							<div class="fragrance-text">
+								<h4>Fragrance notes:</h4>
+								<ul>
+									<li>Clove</li>
+									<li>Bulgarian Rose</li>
+									<li>Guaiac Wood</li>
+								</ul>
+							</div>
+						</div>
+			  		</div>
+				</div>
+				<div>
+					<div class="slider-content">
+						<img alt="venenum sample" class="sample-img" src="assets/venenum-sample.jpg"/>
+						<a href="#" class="button white">Order Sample</a>
+			  			<h2>Venenum</h2>
+			  			<h3>The sensation of danger is as sweet as it is enveloping.</h3>
+			  			<p>The vines that snake around the trunk of the sandalwood tree appear to be perfectly poisonous — but this is only theatre! Their juice is delicate, and their soft, milky aroma is savoured by forest wildlife in the summer evenings of eternal India.</p>
+			  			<div class="fragrance-container flex-container">
+							<div class="fragrance-image">
+								<img alt="venenum dome" src="assets/bottles/venenum-dome.png"/>
+							</div>
+							<div class="fragrance-text">
+								<h4>Fragrance notes:</h4>
+								<ul>
+									<li>Masala Chai Tea</li>
+									<li>Rice</li>
+									<li>Sandalwood</li>
+								</ul>
+							</div>
+						</div>
+			  		</div>
+				</div>
+			</div>
+		</section>
+		
+		<div class="elements">
+			<img alt="leaf" src="assets/mirabilis-leaf.png" id="samples-leaf"/>
+		</div>
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+	<script src="global.js"></script>
+	<script src="sample-scripts.js"></script>
+
+</body>
+</html>
