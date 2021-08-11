@@ -1063,7 +1063,7 @@ header .header-bottom img {
 .perfume > .container {
 	padding-top: 80px;
 }
-.perfume .row:nth-child(2) {
+.perfume .row {
 	position: relative;
 	z-index: 11;
 }
@@ -1501,10 +1501,10 @@ header .header-bottom img {
 
 #mirabilis {
 	padding-top: 100px;
-	padding-bottom: 750px;
+	padding-bottom: 550px;
 }
 #mirabilis .bottle {
-	padding-bottom: 170px;
+	padding-bottom: 120px;
 	margin-top: 60px;
 }
 #mirabilis .top-elements {
@@ -1524,17 +1524,28 @@ header .header-bottom img {
 }
 .mirabilis-open-bud-container {
   position: absolute!important;
-  right: 115px;
-  top: 230px;
+  right: 95px;
+  /*top: 230px;*/
+  top: -10px;
 }
 #mirabilis .outer-container::after {
 	background: linear-gradient(0deg, rgb(58 46 39) 0%, rgb(6 34 24) 70%, rgb(206 105 105 / 0%) 100%);
 }
 
+#mirabilis > .elements {
+	position: relative;
+}
+.mirabilis-closed-buds {
+	position: absolute;
+	left: -35px;
+	height: 500px;
+	top: -40px;
+}
+
 /*TENEBRAE*/
 
 #tenebrae {
-	background: linear-gradient(180deg, rgba(6,34,24,1) 0%, rgba(0,2,21,1) 10%, rgba(0,2,21,1) 100%);
+	background: rgba(0,2,21,1);
 	padding-bottom: 0;
 }
 #tenebrae.overflow-bottom {
@@ -1590,14 +1601,132 @@ header .header-bottom img {
 #tenebrae .outer-container::after {
 	background: linear-gradient(0deg, rgb(51 46 46) 0%, rgb(0 5 22) 70%, rgba(0,0,0,0) 100%);
 }
-
+.tenebrae-top {
+	background: linear-gradient(180deg, rgba(6,34,24,1) 0%, rgba(0,2,21,1) 60%, rgba(0,2,21,1) 100%);
+	position: relative;
+}
+.tenebrae-flowers {
+	position: absolute;
+	left: 0;
+	z-index: 11;
+	max-width: 1300px;
+	transform: scale(0.1);	
+}
+#tenebrae-top-a {
+	transform-origin: 756px 286px;
+}
+#tenebrae-top-b {
+	transform-origin: 760px 261px;
+}
+#tenebrae-top-c {
+	transform-origin: 885px 283px;
+}
+#tenebrae-top-d {
+	transform-origin: 911px 293px;
+}
+#tenebrae-top-e {
+	transform-origin: 925px 267px;
+}
+#tenebrae-top-f {
+	transform-origin: 974px 261px;
+}
+#tenebrae-top-g {
+	transform-origin: 952px 283px;
+}
+#tenebrae-top-h {
+	transform-origin: 638px 248px;
+}
+#tenebrae-top-i {
+	transform-origin: 615px 259px;
+}
+#tenebrae-top-j {
+	transform-origin: 638px 269px;
+}
+#tenebrae-top-k {
+	transform-origin: 671px 305px;;
+}
+#tenebrae-top-m {
+	transform-origin: 639px 295px;
+}
+#tenebrae-top-n {
+	transform-origin: 699px 303px;
+}
+#tenebrae-top-o {
+	transform-origin: 688px 277px;
+}
+#tenebrae-top-p {
+	transform-origin: 703px 327px;
+}
+#tenebrae-top-q {
+	transform-origin: 678px 337px;
+}
+#tenebrae-top-r {
+	transform-origin: 650px 337px;
+}
+#tenebrae-top-s {
+	transform-origin: 662px 353px;
+}
+#tenebrae-top-t {
+	transform-origin: 343px 249px;
+}
+#tenebrae-top-u {
+	transform-origin: 331px 228px;
+}
+#tenebrae-top-v {
+	transform-origin: 349px 278px;
+}
+/*#tenebrae-top-w {
+	transform-origin: 662px 353px;
+}*/
+#tenebrae-top-x {
+	transform-origin: 269px 247px;
+}
+#tenebrae-top-y {
+	transform-origin: 271px 270px;
+}
+#tenebrae-top-z {
+	transform-origin: 269px 297px;
+}
+#tenebrae-top-aa {
+	transform-origin: 247px 275px;
+}
+#tenebrae-top-ab {
+	transform-origin: 220px 280px;
+}
+#tenebrae-top-ac {
+	transform-origin: 237px 309px;
+}
+#tenebrae-top-ad {
+	transform-origin: 204px 362px;
+}
+#tenebrae-top-ae {
+	transform-origin: 196px 377px;
+}
+#tenebrae-top-af {
+	transform-origin: 179px 363px;
+}
+#tenebrae-top-ag {
+	transform-origin: 141px 338px;
+}
+#tenebrae-top-ah {
+	transform-origin: 136px 364px;
+}
+#tenebrae-top-ai {
+	transform-origin: 82px 352px;
+}
+#tenebrae-top-aj {
+	transform-origin: 57px 352px;
+}
+#tenebrae-top-ak {
+	transform-origin: 14px 353px;
+}
 
 @media (min-width: 530px) {
 	#mirabilis .bottle {
 		padding-bottom: 200px;
 	}
 	.mirabilis-open-bud-container {
-    right: 190px;
+    right: 165px;
 	}
 	#venenum-bg-left {
 
@@ -1606,15 +1735,16 @@ header .header-bottom img {
 @media (min-width: 767px) {
 	#mirabilis {
 		padding-top: 180px;
-		padding-bottom: 900px;
+		padding-bottom: 460px;
 	}
 	#mirabilis .bottle {
 		padding-bottom: 0px;
 	}
 	.mirabilis-open-bud-container {
-		transform: rotate(340deg);
-		right: 300px;
-		top: 330px;
+		transform: rotate(345deg);
+		right: 260px;
+		top: 0px;
+		z-index: 5;
 	}
 	#venenum .top-elements {
 		height: 0;
@@ -1631,13 +1761,15 @@ header .header-bottom img {
 		height: 50px;
 	}
 	#mirabilis {
-		padding-bottom: 1200px;
+		padding-bottom: 700px;
 		padding-top: 260px;
 	}
 	.mirabilis-open-bud-container {
-		transform: rotate(336deg);
-		right: 420px;
-		top: 500px;
+		/*transform: rotate(336deg);*/
+		right: 310px;
+	}
+	.mirabilis-closed-buds {
+		top: 135px;
 	}
 	.tenebrae-bottom {
 		padding-top: 300px;
@@ -1648,23 +1780,26 @@ header .header-bottom img {
 }
 @media (min-width: 1199px) {
 	#mirabilis {
-		padding-bottom: 1500px;
+		padding-bottom: 600px;
 		padding-top: 350px;
 	}
 	.mirabilis-open-bud-container {
-		transform: rotate(336deg);
-		right: 500px;
-		top: 600px;
+		transform: rotate(0deg);
+		right: 370px;
+		top: -290px;
 	}
 }
 @media (min-width: 1500px) {
 	#mirabilis {
 		padding-top: 450px;
+		padding-bottom: 800px;
 	}
 	.mirabilis-open-bud-container {
-		right: 550px;
-    top: 700px;
-	}
+		right: 485px;
+    top: -190px;
+    z-index: 10;
+    transform: translateY(100px);
+   }
 }
 
 /*HOME QUOTE*/
