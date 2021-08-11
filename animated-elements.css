@@ -452,8 +452,10 @@
 	bottom: 225px;
 }
 #mirabilis-bottom-left {
+	display: none;
 	right: 30px;
 	max-height: 280px;
+	transform-origin: bottom center;
 	transform: translateY(60px) scale(0.8);
 }
 #mirabilis-bottom-right {
@@ -474,15 +476,90 @@
 #mirabilis-leaf-left-large {
 	display: none;
 }
+#mirabilis-leaf-b {
+	position: absolute;
+	left: -780px;
+	/*left: -620px;*/
+    z-index: 2;
+    transform-origin: bottom left;
+    top: 200px;
+    /*top: 800px;*/
+    max-width: 1100px;
+}
+#mirabilis-leaf-c {
+	position: absolute;
+	right: -250px;
+	/*right: -100px;*/
+    z-index: 2;
+    transform-origin: bottom right;
+    transform: rotate(-15deg);
+    max-width: 550px;
+}
+#mirabilis-desktop-bottle,
+#mirabilis-mobile-bottle {
+	transform: scale(0.9);
+	opacity: 0;
+}
+#mirabilis-animation-bottle {
+    max-width: 280px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    /*top: 730px;*/
+    top: 288px;
+    margin: auto;
+    transform: scale(0.9);
+    max-width: 130px;
+}
+#mirabilis-bottom-right-two {
+	position: absolute;
+	transform: scale(0.9);
+	transform-origin: bottom left;
+    /*bottom: -200px;*/
+    bottom: 220px;
+    left: 47px;
+    /*left: 255px;*/
+    /*max-width: 300px;*/
+    max-width: 100px;
+}
+#mirabilis-leaf-a {
+	position: absolute;
+	bottom: -50px;
+	/*bottom: -650px;*/
+    left: -165px;
+    /*max-width: 650px;*/
+    transform-origin: bottom left;
+    max-width: 350px;
+}
+#mirabilis-pop-a {
+	position: absolute;
+	max-width: 250px;
+	top: 340px;
+	left: -30px;
+	transform-origin: center bottom;
+	display: none;
+}
+#mirabilis-leaf-ab {
+	position: absolute;
+	/*max-width: 1000px;*/
+	max-width: 450px;
+	/*top: 165px;*/
+	top: 45px;
+	right: -300px;
+	/*right: -895px;*/
+	transform-origin: right bottom;
+	transform: rotate(-45deg);
+}
 
 /*TENENBRAE*/
 
 #tenebrae-top {
-	position: absolute;
+	/*position: absolute;
 	left: 50%;
-	transform: translateX(-50%);
-	max-width: 700px;
+	transform: translateX(-50%);*/
+	max-width: 100%;
 	bottom: 0;
+	z-index: 11;
 }
 #tenebrae-right-1,
 #tenebrae-right-2,
@@ -654,8 +731,19 @@
 	#mirabilis #mirabilis-open-bud-petal-4 {
 	    max-width: 210px;
 	}
-	#tenebrae-top {
-		max-width: 767px;
+	#mirabilis-leaf-ab {
+		top: 45px;
+		right: -375px;
+	}
+	#mirabilis-leaf-b {
+		left: -650px;
+	}
+	#mirabilis-leaf-a {
+		max-width: 450px;
+		bottom: -130px;
+	}
+	#mirabilis-bottom-right-two {
+		max-width: 120px;
 	}
 	#venenum .elements #snake2 {
 		bottom: -140px;
@@ -887,6 +975,11 @@
 		left: -40px;
 		max-height: 500px;
 	}
+	#mirabilis-leaf-ab {
+		top: 0px;
+		right: -430px;
+		max-width: 500px;
+	}
 	#mirabilis #mirabilis-open-bud,
 	#mirabilis #mirabilis-open-bud-petal-1, 
 	#mirabilis #mirabilis-open-bud-petal-2,
@@ -902,8 +995,24 @@
 	#mirabilis #mirabilis-open-bud-petal-4 {
 		transform-origin: 188px 169px ;
 	}
-	#tenebrae-top {
-		max-width: 991px;
+	#mirabilis-animation-bottle {
+	    max-width: 162px;
+    	top: 377px;
+	}
+	#mirabilis-leaf-a {
+		max-width: 445px;
+		bottom: -110px;
+	}
+	#mirabilis-leaf-b {
+	    left: -420px;
+	    top: 400px;
+	    max-width: 1300px;
+	}
+	#mirabilis-leaf-c {
+		max-width: 690px;
+	}
+	#mirabilis-bottom-right-two {
+		max-width: 160px;
 	}
 	#venenum-vine {
 		display: block;
@@ -1217,8 +1326,33 @@
 		max-height: 380px;
 		bottom: 400px;
 	}
-	#tenebrae-top {
-		max-width: 1199px;
+	#mirabilis-bottom-right-two {
+		max-width: 200px;
+		left: 170px;
+	}
+	#mirabilis-bottom-left {
+		display: block;
+		bottom: 200px;
+		transform: translateY(10px);
+		max-height: 350px;
+		left: 65px;
+	}
+	#mirabilis-leaf-a {
+		max-width: 700px;
+		bottom: -300px;
+	}
+	#mirabilis-leaf-b {
+		top: 600px;
+		left: -300px;
+	}
+	#mirabilis-leaf-c {
+		max-width: 690px;
+	    top: 400px;
+	    right: 0;
+	}
+	#mirabilis-leaf-ab {
+		top: -10px;
+		max-width: 700px;
 	}
 	#home-snake-desktop {
 	    right: 745px;
@@ -1295,6 +1429,10 @@
 	#mirabilis #mirabilis-open-bud-petal-3,
 	#mirabilis #mirabilis-open-bud-petal-4 {
 		transform-origin: 248px 228px ;
+	}
+	#mirabilis-animation-bottle {
+	    max-width: 280px;
+	    top: 540px;
 	}
 	#tenebrae-right-1,
 	#tenebrae-right-2,
@@ -1493,14 +1631,37 @@
 	}
 	#mirabilis-bottom-left {
 		right: auto;
-		left: 140px;
-		max-height: 100%;
-		bottom: 440px;
+		left: 60px;
+		max-height: 400px;
+		bottom: 300px;
 	}
 	#mirabilis-bottom-right {
 		right: 140px;
 		max-height: 100%;
 		bottom: 500px;
+	}
+	#mirabilis-animation-bottle {
+	    max-width: 280px;
+	    top: 630px;
+	}
+	#mirabilis-leaf-a {
+		max-width: 800px;
+	}
+	#mirabilis-leaf-b {
+		top: 700px;
+	}
+	#mirabilis-leaf-c {
+		max-width: 760px;
+    	top: 540px;
+	}
+	#mirabilis-leaf-ab {
+		top: 324px;
+		max-width: 800px;
+		right: -780px;
+	}
+	#mirabilis-bottom-right-two {
+		max-width: 250px;
+		bottom: 280px;
 	}
 	#tenebrae-top {
 		max-width: 1500px;
@@ -1708,14 +1869,50 @@
 		left: 0px;
 	}
 	#mirabilis-bottom-left {
-		bottom: 500px;
+		bottom: 300px;
+	    height: 465px;
+	    max-height: none;
+	    left: 90px;
+	    right: auto;
+	    transform: rotate(0deg);
+	    transform-origin: center bottom;
+	}
+	#mirabilis-pop-a {
+		display: block;
+	}
+	#mirabilis-leaf-a {
+		max-width: 1000px;
+		bottom: -430px;
+	}
+	#mirabilis-leaf-b {
+		top: 800px;
+		max-width: 1600px;
+	}
+	#mirabilis-leaf-c {
+		max-width: 900px;
 	}
 	#mirabilis-bottom-right {
-		bottom: 550px;
+		bottom: 0px;
+		height: 500px;
+		max-height: none;
+		left: 200px;
+		right: auto;
+	}
+	#mirabilis-bottom-right-two {
+		left: 250px;
+	}
+	#mirabilis-animation-bottle {
+	    max-width: 280px;
+	    top: 730px;
 	}
 	#tenebrae-top {
-		width: 100%;
-		max-width:  none;
+		/*width: 100%;*/
+		max-width:  1300px;
+		left: 0;
+		transform: none;
+		top: 0;
+		bottom: auto;
+		position: relative;
 	}
 	#tenebrae-right-1,
 	#tenebrae-right-2,
