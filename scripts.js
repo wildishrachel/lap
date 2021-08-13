@@ -5,6 +5,8 @@ jQuery( document ).ready(function($) {
     var windowHeight = $(window).outerHeight();
     var headerHeight = $('header').outerHeight();
 
+    resizeIntro();
+
     //FRAGRANCE NOTES
     $('.perfume').each(function(){
       $(this).find('.view').click(function(){        
@@ -21,14 +23,29 @@ jQuery( document ).ready(function($) {
     });
 
     // $(this).scrollTop(0);
-    
+
 });
+
+jQuery( window ).resize(function($) {
+  resizeIntro();
+});
+
+function resizeIntro() {
+    var windowHeight = $(window).outerHeight();
+    var headerHeight = $('header').outerHeight();
+
+    var twentyWindow = windowHeight / 100 * 10;
+
+    $('#intro .intro-top').height(windowHeight - twentyWindow);
+}
 
 //BACK TO TOP BUTTON
 jQuery(window).scroll(function($){
     var scrollPos = jQuery(document).scrollTop();
     if(scrollPos > 200) {
       jQuery('#top').addClass('show');
+      jQuery('.scroll').css('opacity',0);
+      jQuery('#intro .col-12 > p').css('opacity',1);
     } else {
       jQuery('#top').removeClass('show');
     }
@@ -58,21 +75,22 @@ function openingAnimations() {
     .to("#blue-flower", 2, {delay:0.5, rotate: -20, x:-40, y: 40, scale:1}, 'start')
     .to("#hand-orange-flowers", 2, {delay:0.5, rotate: -10, x:70, scale:1}, 'start');
 
+var fadeIn = new TimelineLite();
+    fadeIn
+      .to(".fade", 3, {opacity:1, y:0 }, 1)
+      .to(".fadeSecond", 2.5, {delay:2, opacity:1, y:0 }, 1)
+      .to(".scroll", 3, {delay:3, opacity:1}, 1)
+      .to("#intro .col-12 > p", 3, {delay:3, opacity:0.15 }, 1)
   //when tl is done, play handmovement
   tl.eventCallback("onComplete", function() {
     var handmovement = new TimelineLite({repeat: -1, yoyo: true});
     handmovement.to("#hand-orange-flowers", 5, {rotate: -2});
-    var fadeIn = new TimelineLite();
-    fadeIn
-      .to(".fade", 3, {opacity:1, y:0 }, 1)
-      .to(".fadeSecond", 2.5, {delay:2, opacity:1, y:0 }, 1)
-      .to(".scroll", 3, {delay:4, opacity:1}, 1)
-      .to("#intro .col-12 > p", 3, {delay:5, opacity:1 }, 1)
+    
 
-      fadeIn.eventCallback("onComplete", function() {
-        var handmovement = new TimelineLite({repeat: -1, yoyo: true});
-        handmovement.to("#hand-orange-flowers", 5, {rotate: -2});
-      });
+      // fadeIn.eventCallback("onComplete", function() {
+      //   var handmovement = new TimelineLite({repeat: -1, yoyo: true});
+      //   handmovement.to("#hand-orange-flowers", 5, {rotate: -2});
+      // });
   });
 }
 
@@ -127,8 +145,11 @@ butterflywing.to("#butterfly-wing", {rotate: -5});
 var butterflywing2 = new TimelineLite({repeat: -1,defaults: { duration: 2 , ease: "none"}, yoyo: true});
 butterflywing2.to("#butterfly-right-wing", {rotate: -5});
 
-var crepBottleBg = new TimelineLite({repeat: -1,defaults: { duration: 5 , ease: "none"}, yoyo: true});
-crepBottleBg.to("#crepusculum-bottle-bg", {rotate: 5});
+var butterflywing3 = new TimelineLite({repeat: -1,defaults: { duration: 2 , ease: "none"}, yoyo: true});
+butterflywing3.to("#top-wing", {rotate: 5});
+
+var crepBottleBg = new TimelineLite({repeat: -3,defaults: { duration: 2 , ease: "none"}, yoyo: true});
+crepBottleBg.to("#crepusculum-bottle-bg", {rotate: 10});
 
 var circles = new TimelineLite({repeat: -1});
 circles
@@ -150,32 +171,93 @@ var crepusculummirabile = gsap.timeline({ scrollTrigger:{
 .to('#crep-front', {yPercent:-100,duration:10, ease:'none'}, 1);
 
 var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to("#seacircleone", 8, {y: 200, opacity: 0.1});
+seaCircles.to(".seacircleone", 22, {y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacircletwo", 27, {delay:0.5, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacirclethree", 23, {delay:2, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacirclefour", 29, {delay:0.1, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacirclefive", 21, {delay:0.3, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacirclesix", 30, {delay:1.2, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacircleseven", 24, {delay:0.5, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacircleeight", 19, {delay:0.2, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacirclenine", 22, {delay:1, y: -2000, opacity: 0});
 
 var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to("#seacircletwo", 8, {delay:0.5, y: -300, opacity: 0.1});
+seaCircles.to(".seacircleonesecond", 22, {delay: 8, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacircletwosecond", 27, {delay:8.5, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacirclethreesecond", 23, {delay:10, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacirclefoursecond", 29, {delay:8.1, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacirclefivesecond", 21, {delay:8.3, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacirclesixsecond", 30, {delay:9.2, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacirclesevensecond", 24, {delay:8.5, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacircleeightsecond", 19, {delay:8.2, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacircleninesecond", 22, {delay:9, y: -2000, opacity: 0});
 
 var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to("#seacirclethree", 8, {delay:2, y: -300, opacity: 0.1});
-
+seaCircles.to(".seacircleonethird", 22, {delay: 15, y: -2000, opacity: 0});
 var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to("#seacirclefour", 8, {delay:0.1, y: -300, opacity: 0.1});
-
+seaCircles.to(".seacircletwothird", 27, {delay:15.5, y: -2000, opacity: 0});
 var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to("#seacirclefive", 8, {delay:0.3, y: -300, opacity: 0.1});
-
+seaCircles.to(".seacirclethreethird", 23, {delay:17, y: -2000, opacity: 0});
 var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to("#seacirclesix", 8, {delay:1.2, y: -300, opacity: 0.1});
-
+seaCircles.to(".seacirclefourthird", 29, {delay:15.1, y: -2000, opacity: 0});
 var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to("#seacircleseven", 8, {delay:0.5, y: -300, opacity: 0.1});
-
+seaCircles.to(".seacirclefivethird", 21, {delay:15.3, y: -2000, opacity: 0});
 var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to("#seacircleeight", 8, {delay:0.2, y: -300, opacity: 0.1});
-
+seaCircles.to(".seacirclesixthird", 30, {delay:16.2, y: -2000, opacity: 0});
 var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to("#seacirclenine", 8, {delay:1, y: -300, opacity: 0.1});
+seaCircles.to(".seacircleseventhird", 24, {delay:15.5, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacircleeightthird", 19, {delay:15.2, y: -2000, opacity: 0});
+var seaCircles = new TimelineLite({repeat: -1});
+seaCircles.to(".seacircleninethird", 22, {delay:16, y: -2000, opacity: 0});
 
+
+
+var pollenCircles = new TimelineLite({repeat: -1});
+pollenCircles.to(".pollenone", 8, {x: -100, y: -700, opacity: 0, ease:'circ'});
+var pollenCircles = new TimelineLite({repeat: -1});
+pollenCircles.to(".pollentwo", 5, {x: -60, delay:0.5, y: -700, opacity: 0, ease:'circ'});
+var pollenCircles = new TimelineLite({repeat: -1});
+pollenCircles.to(".pollenthree", 7, {x: -20, delay:2, y: -700, opacity: 0, ease:'circ'});
+var pollenCircles = new TimelineLite({repeat: -1});
+pollenCircles.to(".pollenfour", 3, {x: 0, delay:0.1, y: -700, opacity: 0, ease:'circ'});
+var pollenCircles = new TimelineLite({repeat: -1});
+pollenCircles.to(".pollenfive", 5, {x: 30, delay:0.3, y: -700, opacity: 0, ease:'circ'});
+var pollenCircles = new TimelineLite({repeat: -1});
+pollenCircles.to(".pollensix", 6, {x: 70, delay:1.2, y: -700, opacity: 0, ease:'circ'});
+var pollenCircles = new TimelineLite({repeat: -1});
+pollenCircles.to(".pollenseven", 4, {x:100, delay:0.5, y: -700, opacity: 0, ease:'circ'});
+
+var pollenCircles = new TimelineLite({repeat: -1});
+pollenCircles.to(".pollenonesecond", 8, {delay: 1.5, x: -100, y: -700, opacity: 0, ease:'circ'});
+var pollenCircles = new TimelineLite({repeat: -1});
+pollenCircles.to(".pollentwosecond", 5, {x: -60, delay:2.5, y: -700, opacity: 0, ease:'circ'});
+var pollenCircles = new TimelineLite({repeat: -1});
+pollenCircles.to(".pollenthreesecond", 6, {x: -20, delay:4, y: -700, opacity: 0, ease:'circ'});
+var pollenCircles = new TimelineLite({repeat: -1});
+pollenCircles.to(".pollenfoursecond", 3, {x: 0, delay:2.1, y: -700, opacity: 0, ease:'circ'});
+var pollenCircles = new TimelineLite({repeat: -1});
+pollenCircles.to(".pollenfivesecond", 5, {x: 30, delay:2.8, y: -700, opacity: 0, ease:'circ'});
+var pollenCircles = new TimelineLite({repeat: -1});
+pollenCircles.to(".pollensixsecond", 6, {x: 70, delay:3.2, y: -700, opacity: 0, ease:'circ'});
+var pollenCircles = new TimelineLite({repeat: -1});
+pollenCircles.to(".pollensevensecond", 4, {x:100, delay:3.5, y: -700, opacity: 0, ease:'circ'});
 
 
 //SCROLL TRIGGERED ELEMENTS
@@ -186,21 +268,21 @@ var homeSnake = gsap.timeline({
     pin: false,
     scrub:0.2,
     start: 'top bottom',
-    end:'+=10000',
+    end:'+=5000',
   }
 })
-.to('#home-snake', {rotation:-180, duration:10, ease:'none',});
+.to('#home-snake', {rotation:-180, duration:5, ease:'none',});
 
-var homeSnakeDesktop = gsap.timeline({
-  scrollTrigger:{
-    trigger: "#venenum",
-    pin: false,
-    scrub:0.2,
-    start: 'top bottom',
-    end:'+=10000',
-  }
-})
-.to('#home-snake-desktop', {rotation:-180, duration:10, ease:'none',});
+// var homeSnakeDesktop = gsap.timeline({
+//   scrollTrigger:{
+//     trigger: "#venenum",
+//     pin: false,
+//     scrub:0.2,
+//     start: 'top bottom',
+//     end:'+=10000',
+//   }
+// })
+gsap.to('#home-snake-desktop', {rotation:-180, duration:50, ease:'none', repeat:-1, yoyo:true});
 
 var homeSnake = gsap.timeline({
   scrollTrigger:{
@@ -208,21 +290,21 @@ var homeSnake = gsap.timeline({
     pin: false,
     scrub:0.2,
     start: 'top bottom',
-    end:'+=10000',
+    end:'+=5000',
   }
 })
-.to('#snake2', {rotation:-100,duration:15, ease:'none',});
+.to('#snake2', {rotation:-100,duration:5, ease:'none',});
 
-var homeSnake2 = gsap.timeline({
-  scrollTrigger:{
-    trigger: "#venenum",
-    pin: false,
-    scrub:0.2,
-    start: 'top bottom',
-    end:'+=10000',
-  }
-})
-.to('#snake2-desktop', {rotation:-180,duration:15, ease:'none'});
+// var homeSnake2 = gsap.timeline({
+//   scrollTrigger:{
+//     trigger: "#venenum",
+//     pin: false,
+//     scrub:0.2,
+//     start: 'top bottom',
+//     end:'+=10000',
+//   }
+// })
+gsap.to('#snake2-desktop', {rotation:-180,duration:40, ease:'none', repeat:-1, yoyo:true});
 
 
 
@@ -280,6 +362,18 @@ var mirabilisAnimationBottleDesktop = gsap.timeline({
   }
 })
 .to('#mirabilis-animation-bottle', 1, {scale:1, ease:'linear'});
+
+
+var octoContainer = gsap.timeline({
+  scrollTrigger:{
+    trigger: "#octopus-image",
+    pin: false,
+    scrub:0.2,
+    start: 'top 1000px bottom',
+    end:'+=2500',
+  }
+})
+.to('.octo-container', 1, {x:0});
 
 
 const openBudPetalOne = gsap.to('#mirabilis-open-bud-petal-1', {rotate: 0, duration: 2, paused: true });
@@ -353,12 +447,87 @@ gsap.to("#mirabilis-pop-a", {keyframes: [
 ], repeat:-1, yoyo:true});
 
 gsap.to("#mirabilis-leaf-a", {keyframes: [
-  {x: 3, rotate:-1, duration: 2},
+  {x: 3, rotate:-4, duration: 2},
 ], repeat:-1, yoyo:true});
 
 gsap.to("#mirabilis-leaf-ab", {keyframes: [
-  {x: 3, rotate:-47, duration: 3},
+  {x: 3, rotate:-50, duration: 2},
 ], repeat:-1, yoyo:true});
+
+gsap.to("#octopus-image", {keyframes: [
+  {x: 3, y: -6, rotate:-2, duration: 2},
+  {x: -6, y: -1,rotate:2, duration: 2},
+  {x: 5, y: 8,rotate:-4, duration: 2},
+  {x: -6, y: 10, rotate:2, duration: 2},
+], repeat:-1, yoyo:true});
+
+gsap.to("#octopus-leg-1", {keyframes: [
+  {x: 3, y: 2, rotate:3, duration: 2},
+  {x: 8, y: 6,rotate:1, duration: 2},
+  {x: 3, y: 7,rotate:-2, duration: 2},
+  {x: 5, y: 1,rotate:1, duration: 2},
+  {x: 0, y: 6, rotate:-1, duration: 2},
+], repeat:-1, yoyo:true});
+
+gsap.to("#octopus-leg-2", {keyframes: [
+  {x: 3, y: -3, rotate:3, duration: 1},
+  {x: 10, y: 6,rotate:-2, duration: 2},
+  {x: 3, y: 8,rotate:4, duration: 1.3},
+  {x: 5, y: -2,rotate:1, duration: 2},
+  {x: -3, y: 6, rotate:-1, duration: 2},
+], repeat:-1, yoyo:true});
+
+gsap.to("#octopus-leg-3", {keyframes: [
+  {x: -2, y: -4, rotate:-2, duration: 3},
+  {x: 0, y: -10,rotate:1, duration: 3},
+  {x: 2, y: 7,rotate:-2, duration: 3},
+  {x: 1, y: 6, rotate:-1, duration: 2},
+], repeat:-1, yoyo:true});
+
+gsap.to("#octopus-leg-4", {keyframes: [
+  {x: -2, y: -4, rotate:-2, duration: 2},
+  {x: 0, y: -10,rotate:1, duration: 1},
+  {x: 2, y: 12,rotate:-2, duration: 3},
+  {x: 1, y: 6, rotate:-1, duration: 2},
+], repeat:-1, yoyo:true});
+
+gsap.to(".octo-inner-container", {keyframes: [
+  {x: 10, y: -9, rotate:-2, duration: 2},
+  {x: 4, y: 14,rotate:1, duration: 2},
+  {x: 8, y: -12,rotate:-2, duration: 3},
+  {x: 0, y: 15, rotate:-1, duration: 2},
+], repeat:-1, yoyo:true});
+
+gsap.to("#crep-bottle-bg", {keyframes: [
+  {x: -2, y: -4, rotate:38, duration: 3},
+  {x: -6, y: -9, rotate:32, duration: 4},
+], repeat:-1, yoyo:true, ease:'power1'});
+
+gsap.to("#crep-bottle-bg-2", {keyframes: [
+  {x: -2, y: -4, rotate:-33, duration: 2},
+  {x: 3, y: 6, rotate:-28, duration: 3},
+], repeat:-1, yoyo:true});
+
+
+jQuery( document ).ready(function($) {
+  if ($(window).width() > 991) {
+
+    gsap.to(".butterfly-animation", {scrollTrigger: "#butterfly", keyframes: [
+      {x: 210, y: 450, duration: 1, ease:'linear'},
+      {x: 270, y: 480, duration: 1.2},
+      {x: 280, y: 560, duration: 1},
+
+    ]});
+
+  } else {
+    gsap.to("#butterfly", {scrollTrigger: "#arcana-rosa .bottle", duration:2, x:80, y:100});
+    gsap.to("#butterfly-wing", {scrollTrigger: "#arcana-rosa .bottle", duration:2, x:80, y:100});
+  }
+
+});
+
+
+
 
 // var closedBuds = gsap.timeline({ scrollTrigger:{
 //     trigger: "#mirabilis-desktop-bottle",
@@ -507,13 +676,12 @@ gsap.to("#red-flower-large-petal-left", {scrollTrigger: "#obscuratio .bottle-ima
 gsap.to("#red-flower-large", {scrollTrigger: "#obscuratio .bottle-image", delay:1, duration: 2, y:-30});
 
 //HOME-Obscuratio
-gsap.to("#obscuratio-bottle-bg", {scrollTrigger: "#obscuratio-container", delay:1, scale: 1, duration:2, startAt: { scale: 0.7 }, immediateRender: true });
+gsap.to("#obscuratio-bottle-bg", {scrollTrigger: "#obscuratio-container", delay:1, scale: 1, duration:2, startAt: { scale: 0.3 }, immediateRender: true });
 
 gsap.to("#venenum-blue-flower-stem", {scrollTrigger: "#venenum-blue-flower", delay:0, duration:3, rotate:10 });
 gsap.to("#venenum-blue-flower", {scrollTrigger: "#venenum-blue-flower", delay:0, duration:3, rotate:0 });
 
-gsap.to("#butterfly", {scrollTrigger: "#arcana-rosa .bottle", duration:2, x:80, y:100});
-gsap.to("#butterfly-wing", {scrollTrigger: "#arcana-rosa .bottle", duration:2, x:80, y:100});
+
 
 gsap.to("#venenum-bg-left", {scrollTrigger: "#venenum-bottle", delay:1, x:-60, scale: 1, duration:2, startAt: { scale: 0.7 }, immediateRender: true });
 gsap.to("#venenum-bg-right", {scrollTrigger: "#venenum-bottle", delay:1.5, x:60, scale: 1, duration:2, startAt: { scale: 0.7 }, immediateRender: true });
@@ -543,6 +711,52 @@ gsap.to("#tenebrae-center-4", {scrollTrigger: "#tenebrae-left-5", duration: 2, s
 gsap.to("#tenebrae-center-3", {scrollTrigger: "#tenebrae-left-5", delay:0.6, duration: 2, scale:1 });
 gsap.to("#tenebrae-center-2", {scrollTrigger: "#tenebrae-left-5", delay:1.2, duration: 2, scale:1 });
 gsap.to("#tenebrae-center-1", {scrollTrigger: "#tenebrae-left-5", delay:1.4, duration: 2, scale:1 });
+
+// gsap.to(".octo-container", {scrollTrigger: "#octopus-image", x:0, duration:7});
+
+
+//VINES
+
+$(window).scroll(function(){
+  function elementScrolled(elem)
+  {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+    var elemTop = $(elem).offset().top + 100;
+    return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+  }
+
+  if(elementScrolled('#vine-svg-1')) {
+    $('#vine-svg-1').addClass('animate');
+  }
+  if(elementScrolled('#vine-svg-2')) {
+    $('#vine-svg-2').addClass('animate');
+  }
+  if(elementScrolled('#vine-svg-3')) {
+    $('#vine-svg-3').addClass('animate');
+  }
+  if(elementScrolled('#vine-svg-4')) {
+    $('#vine-svg-4').addClass('animate');
+  }
+  if(elementScrolled('#vine-svg-5')) {
+    $('#vine-svg-5').addClass('animate');
+  }
+  if(elementScrolled('#vine-svg-6')) {
+    $('#vine-svg-6').addClass('animate');
+  } 
+  if(elementScrolled('#quote-vine-svg-1')) {
+    $('#quote-vine-svg-1').addClass('animate');
+  } 
+  
+
+  // if(elementScrolled('#butterfly')) {
+  //   $('#butterfly').addClass('butterfly-animation');
+  //   $('#butterfly-wing').addClass('butterfly-animation');
+  // }
+
+});
+
+
 
 
 

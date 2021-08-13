@@ -1,5 +1,251 @@
 /*GLOBAL*/
 
+#vine-svg,
+#vine-svg-1,
+#vine-svg-2,
+#vine-svg-3,
+#vine-svg-4,
+#vine-svg-5,
+#vine-svg-6,
+#quote-vine-svg-1
+ {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: auto;
+  stroke-dasharray: 2000;
+  /*stroke-dashoffset: 2000;*/
+}
+
+.animate {
+	animation: dash 8s linear alternate;
+	stroke: #77925d;
+}
+#vine-svg-1.animate {
+	animation-duration: 4s;
+
+}
+#vine-svg-3.animate {
+	animation-duration: 15s;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1937;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+#vine-svg-1 {
+	width: 290px;
+	left: -115px;
+	top: -60px;
+	transform: rotate(14deg);
+}
+#vine-svg-2 {
+	width: 320px;
+	right: -115px;
+	top: 130px;
+	z-index: 2;
+	transform: rotate(-30deg);
+}
+#vine-svg-3 {
+	width: 400px;
+	left: -45px;
+	top: 430px;
+	transform: rotate(14deg);
+}
+#vine-svg-4 {
+	width: 380px;
+	right: -45px;
+	top: 750px;
+}
+#vine-svg-5 {
+	width: 400px;
+	left: -215px;
+	top: 880px;
+	transform: rotate(22deg);
+}
+#vine-svg-6 {
+	display: none;
+}
+#quote-vine-svg-1 {
+	display: none;
+}
+@media (min-width: 530px) {
+	#vine-svg-1 {
+		width: 400px;
+		transform: rotate(347deg);
+		top: -125px;
+	}
+	#vine-svg-2 {
+		width: 400px;
+	}
+	#vine-svg-3 {
+		width: 460px;
+		transform: rotate(26deg);
+		left: -115px;
+	}
+	#vine-svg-4 {
+		top: 710px;
+		width: 480px;
+	}
+	#vine-svg-5 {
+		width: 400px;
+		transform: rotate(0deg);
+		top: 790px;
+	}
+}
+
+@media (min-width: 767px) {
+	#vine-svg-1 {
+		width: 460px;
+		top: -210px;
+		left: -275px;
+	}
+	#vine-svg-2 {
+		width: 510px;
+	}
+	#vine-svg-3 {
+		width: 530px;
+		transform: rotate(26deg);
+		left: -115px;
+		top: 360px;
+	}
+	#vine-svg-4 {
+		top: 710px;
+		width: 570px;
+	}
+	#vine-svg-5 {
+		width: 550px;
+		transform: rotate(348deg);
+		top: 860px;
+	}
+}
+
+@media (min-width: 991px) {
+	#vine-svg-1 {
+		width: 575px;
+		transform: rotate(340deg);
+		top: -180px;
+	}
+	#vine-svg-2 {
+		width: 600px;
+		right: -150px;
+	}
+	#vine-svg-3 {
+		width: 625px;
+		transform: rotate(13deg);
+		top: 510px;
+	}
+	#vine-svg-4 {
+		top: 810px;
+		right: -185px;
+		width: 710px;
+	}
+	#vine-svg-5 {
+		width: 750px;
+		transform: rotate(1deg);
+		top: 860px;
+		left: -475px;
+	}
+	#vine-svg-6 {
+		display: block;
+		width: 600px;
+		right: -165px;
+		top: 1200px;
+		transform: rotate(-15deg);
+	}
+	#quote-vine-svg-1 {
+		display: block;
+		width: 500px;
+    top: 496px;
+    right: -150px;
+	}
+}
+
+@media (min-width: 1199px) {
+	#vine-svg-1 {
+		width: 660px;
+		transform: rotate(349deg);
+		top: -175px;
+		z-index: 1;
+	}
+	#vine-svg-2 {
+		width: 715px;
+		right: -150px;
+	}
+	#vine-svg-4 {
+		top: 810px;
+		right: -185px;
+		width: 710px;
+	}
+	#vine-svg-5 {
+		width: 860px;
+		transform: rotate(1deg);
+		top: 860px;
+		left: -475px;
+	}
+	#vine-svg-6 {
+		display: block;
+		width: 600px;
+		right: -165px;
+		top: 1200px;
+		transform: rotate(-15deg);
+	}
+	#quote-vine-svg-1 {
+		display: block;
+		width: 700px;
+    top: 600px;
+    right: -150px;
+	}
+}
+
+@media (min-width: 1500px) {
+	#vine-svg-1 {
+		width: 730px;
+		top: -180px;
+		left: -200px;
+	}
+	#vine-svg-2 {
+		width: 770px;
+		right: -190px;
+	}
+	#vine-svg-3 {
+		width: 715px;
+		top: 660px;
+		transform: rotate(19deg);
+	}
+	#vine-svg-4 {
+		top: 850px;
+		right: -185px;
+		transform: rotate(-5deg);
+		width: 760px;
+	}
+	#vine-svg-5 {
+		width: 840px;
+		transform: rotate(346deg);
+		top: 1100px;
+		left: -400px;
+	}
+	#vine-svg-6 {
+		width: 770px;
+		right: -165px;
+		top: 1200px;
+		transform: rotate(-15deg);
+	}
+	#quote-vine-svg-1 {
+		width: 700px;
+    top: 490px;
+	}
+}
+
+
+
+
 @font-face {
   font-family: akkurat;
   src: url(fonts/akkurat.ttf);
@@ -335,7 +581,6 @@ form button.button {
 	z-index: 2;
 }
 #intro {
-	padding-top: 140px;
 	position: relative;
 }
 #intro h1, #intro h2, #intro p, #intro h3 {
@@ -361,6 +606,7 @@ form button.button {
 	position: relative;
 	margin-bottom: 30px;
 	font-family: linotype-didot, serif;
+	transition: 0.5s;
 }
 #opening .music .col-10 > p {
 	font-size: 1.4rem;
@@ -394,6 +640,11 @@ form button.button {
   margin-bottom: 20px;
   opacity: 0;
 	position: relative;
+	transition: 0.5s;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 #intro .scroll p {
 	margin-left: auto;
@@ -431,9 +682,6 @@ form button.button {
 	}
 	#opening .music .intro-top {
 		height: auto;
-	}
-	#intro .intro-top .col-12 {
-		align-content: stretch;
 	}
 	#intro .intro-top .col-12 > div {
 		align-self: flex-end;
@@ -473,9 +721,6 @@ form button.button {
 	}
 }
 @media (min-width: 991px) {
-	#intro {
-		padding-top: 180px;
-	}
 	#opening .music {
 		padding-top: 0;
 	}
@@ -502,15 +747,19 @@ form button.button {
 		font-size: 1rem;
 		margin-top: 10px;
 	}
+	#intro .intro-top .col-12 .scroll {
+		margin-top: 20px;
+		position: fixed;
+		bottom: 10px;
+		left: 0;
+		right: 0;
+	}
 	#intro .intro-top .col-12 .scroll p {
 		margin-bottom: 0;
 	}
 	#intro .col-12 > p {
 		font-size: 2.375rem;
 		max-width: 700px;
-	}
-	#intro .intro-bottom .col-12 {
-		padding-top: 100px;
 	}
 }
 
@@ -552,11 +801,13 @@ form button.button {
   top: 50%;
   transform: translateY(-50%) !important;
   z-index: 10000;
+  transition: 1s;
+  max-height: 100%;
 }
 #slideOut.showSlideOut,
 #samplesSlideOut.showSlideOut {
 	z-index: 11000;
-	transition: 2s;
+	transition: 1s;
 }
 #samplesSlideOut .slideOutTab,
 #samplesSlideOut .modal-body,
@@ -974,12 +1225,6 @@ header .header-bottom img {
 	position: relative;
 }
 
-@media (min-width: 991px) {
-	#below-intro {
-		padding-top: 300px;
-	}
-}
-
 /*HOME BOTTLES*/
 
 #bottles {
@@ -1042,13 +1287,18 @@ header .header-bottom img {
 /*HOME PERFUME*/
 
 .perfume#obscuratio {
-	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(80,38,6,1) 40%, rgba(41,37,25,1) 100%);
+	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(51 22 1) 40%, rgba(41,37,25,1) 100%);
 	padding-bottom: 430px;
+	z-index: 12;
 }
 .perfume#crepusculum-mirabile {
 	background: linear-gradient(180deg, rgba(41,37,25,1) 0%, rgba(18,36,36,1) 60%, rgba(18,36,36,1) 100%);
 	padding-bottom: 290px;
 }
+#crepusculum-mirabile-container > .row:nth-child(1) {
+	z-index: 11;
+}
+
 .perfume#venenum {
 	background: linear-gradient(180deg, rgba(33,22,17,1) 0%, rgba(33,11,1,1) 10%, rgba(33,11,1,1) 100%);
 	position: relative;
@@ -1065,7 +1315,10 @@ header .header-bottom img {
 }
 .perfume .row {
 	position: relative;
-	z-index: 11;
+	/*z-index: 11;*/
+}
+.perfume .row:nth-child(2) {
+	z-index: 12;
 }
 .perfume p {
 	margin: 10px auto 0;
@@ -1073,7 +1326,7 @@ header .header-bottom img {
 }
 .perfume h2 {
 	text-transform: uppercase;
-	font-size: 3rem;
+	font-size: 2.4rem;
 	text-align: left;
 	position: relative;
 	z-index: 3;
@@ -1203,6 +1456,9 @@ header .header-bottom img {
 	}
 }
 @media (min-width: 991px) {
+	.perfume#obscuratio {
+		z-index: unset;
+	}
 	.perfume .details ul {
 		margin-top: 110px;
 		margin-bottom: 15px;
@@ -1374,7 +1630,7 @@ header .header-bottom img {
 	position: relative;
 }
 .toggle.outer-container {	
-	z-index: 11!important;
+	z-index: 12!important;
 }
 .toggle.outer-container .container {	
 	background-image: url('assets/dropdown-flower.png');
@@ -1396,11 +1652,11 @@ header .header-bottom img {
 .toggle .view.more {
 	opacity: 0;
 	pointer-events: none;
-	transition: 1s;
+	transition: 0s;
 }
 .outer-container.fadeIn {
 	position: absolute;
-	z-index: 10;
+	z-index: 11;
 }
 .fadeIn {
 	opacity: 0;
@@ -1437,6 +1693,9 @@ header .header-bottom img {
 	position: relative;
 	transform: translateY(20px);
 }
+/*#obscuratio.perfume .row {
+	z-index: unset;
+}*/
 
 /*CREPUSCULUM MIRABILE*/
 
@@ -1908,7 +2167,7 @@ header .header-bottom img {
 }
 @media (min-width: 991px) {
 	.quote {
-		padding-top: 100px;
+		padding-top: 200px;
 		background-image: url('assets/quote-background.jpg');
 		background-repeat: no-repeat;
 		background-position: bottom left;
@@ -1961,7 +2220,7 @@ header .header-bottom img {
 }
 @media (min-width: 1199px) {
 	.quote {
-		padding-top: 200px;
+		padding-top: 250px;
 	}
 }
 
@@ -2050,8 +2309,8 @@ header .header-bottom img {
     z-index: 10000;
 }
 #play-icon {
-    background-image: url('assets/play.png');
-    background-size: 16px;
+    background-image: url('assets/sound-off.png');
+    background-size: 25px;
     background-position: left 12px center;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -2059,8 +2318,8 @@ header .header-bottom img {
     border: 0;
     cursor: pointer;
     outline: none;
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     border: 1px solid white;
     border-radius: 100px;
     overflow: hidden;
@@ -2068,7 +2327,7 @@ header .header-bottom img {
     color: white;
 }
 #play-icon.playing {
-	background-image: url('assets/pause.png');
+	background-image: url('assets/sound-on.png');
 	background-position: left 11px center;
 }
 
@@ -2147,17 +2406,19 @@ header .header-bottom img {
 	-webkit-appearance: none;
 	border: 0;
 	background-color: transparent;
-	background-image: url('assets/slider-left-arrow.png'), linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%);
+	background-image: url('assets/slider-left-arrow.png');
 	width: 70px;
   height: 299px;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: 20px auto;
 	position: absolute;
 	z-index: 2;
 	top: -5px;
 	left: 0;
 	overflow: hidden;
 	text-indent: 9999px;
+	z-index: 5;
 }
 .slider-content {
 	max-width: 400px;
@@ -2167,7 +2428,7 @@ header .header-bottom img {
 	margin-right: auto;
 }
 .slider-single button.slick-next {
-	background-image: url('assets/slider-right-arrow.png'), linear-gradient(-90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%);
+	background-image: url('assets/slider-right-arrow.png');
 	left: auto;
 	right: 0;
 }
@@ -2222,6 +2483,29 @@ header .header-bottom img {
 	}
 }
 @media (min-width: 991px) {
+	.sample-slider {
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+	.sample-slider:before {
+		content: '';
+		left: 50px;
+		height: 100%;
+		width: 100px;
+		background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		position: absolute;
+		z-index: 2;
+	}
+	.sample-slider:after {
+		content: '';
+		right: 50px;
+		top: 0;
+		height: 100%;
+		width: 100px;
+		background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		position: absolute;
+		z-index: 2;
+	}
 	.slider-single .slick-slide img.sample-img {
 		display: block;
 	}

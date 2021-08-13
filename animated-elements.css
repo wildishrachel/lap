@@ -1,5 +1,6 @@
 /*INTRO*/
 
+
 #opening-flower-container {
 	position: absolute;
 	right: 10px;
@@ -152,6 +153,20 @@
 	bottom: 0px;
 	max-width: 340px;
 }
+.pollen-container,
+.pollen-container-two {
+	position: absolute;
+	bottom: 0px;
+	transform: rotate(15deg);
+	left: 54%;
+    right: 0;
+    margin: auto;
+}
+.pollen-container-two {
+	transform: rotate(-15deg);
+	left: 0;
+	right: 54%;
+}
 
 /*CREPUSCULUM MIRABILE*/
 
@@ -159,12 +174,34 @@
 	left: -70px;
 	right: auto;
 	max-width: 255px;
+	display: none;
 }
 #crepusculum-bottle-bg-2 {
 	max-width: 150px;
     position: absolute;
     right: -50px;
-    top: 130px
+    top: 130px;
+    display: none;
+}
+#crep-bottle-bg {
+	position: absolute;
+    bottom: 50px;
+    width: 120px;
+    transform: rotate(30deg);
+    right: 0%;
+    left: 0%;
+    margin: auto;
+    transform-origin: bottom left;
+}
+#crep-bottle-bg-2 {
+	position: absolute;
+    bottom: 65px;
+    width: 118px;
+    transform: rotate(-27deg);
+    right: 15%;
+    left: 0%;
+    margin: auto;
+    transform-origin: bottom right;
 }
 
 .break .elements {
@@ -190,9 +227,22 @@
 	bottom: -170px;
 	max-width: 470px;
 }
-.break .elements img#octopus-image {
+.break .elements img#octopus-image,
+.break .elements img#octopus-leg-1,
+.break .elements img#octopus-leg-2,
+.break .elements img#octopus-leg-3,
+.break .elements img#octopus-leg-4 {
 	display: none;
 }
+#octopus-leg-3 {
+	transform-origin: bottom left;
+}
+.octo-container {
+	position: relative;
+    transform: translateX(50%);
+    z-index: 5;
+}
+
 .break .elements img#crep-back-tentacles {
 	left: auto;
     right: -28px;
@@ -209,6 +259,18 @@
     margin: auto;
     bottom: 275px;
     z-index: 1;
+}
+.break .elements svg.sea-circles.second {
+	left: 500px;
+}
+.break .elements svg.sea-circles.third {
+	left: 1000px;
+}
+.break .elements svg.sea-circles.fourth {
+	left: 1500px;
+}
+.break .elements svg.sea-circles circle {
+	opacity: 0.4;
 }
 
 /*QUOTE ONE*/
@@ -634,6 +696,10 @@
 	transform: scale(1);
 }
 
+#top-wing {
+	transform-origin: 27px 109px;
+}
+
 
 @media (min-width: 530px) {
 	#opening-flower-container {
@@ -667,12 +733,30 @@
 	.red-flower-container {
 	    left: -100px;
 	}
+	.pollen-container,
+	.pollen-container-two {
+		position: absolute;
+		bottom: 0px;
+		transform: rotate(25deg);
+		left:40%;
+	    right: 0;
+	    margin: auto;
+	}
+	.pollen-container-two {
+		transform: rotate(-25deg);
+		left: 0;
+		right: 40%;
+	}
 	.bg#crepusculum-bottle-bg {
 		left: auto;
 		right: 400px;
+		display: block;
+		bottom: -420px;
 	}
 	#crepusculum-bottle-bg-2 {
 	    right: 0px;
+	    display: block;
+	    top: 550px;
 	}
 	.break .elements img:not(#crep-back-tentacles) {
 		max-width: 770px;
@@ -855,10 +939,11 @@
 		left: auto;
 		right: 500px;
 		max-width: 350px;
+		bottom: -560px;
 	}
 	#crepusculum-bottle-bg-2 {
 	    max-width: 180px;
-	    top: 150px;
+	    top: 700px;
 	}
 	.break .elements {
 		min-height: 600px;
@@ -875,6 +960,16 @@
 	#red-flower-small-main {
 		right: 30px;
     	top: 140px;
+	}
+	#crep-bottle-bg {
+	    bottom: 50px;
+	    width: 150px;
+	    transform: rotate(30deg);
+	}
+	#crep-bottle-bg-2 {
+	    bottom: 85px;
+	    width: 178px;
+	    transform: rotate(-27deg);
 	}
 	#arcana-rosa .before-elements #at2 {
 		max-width: 870px;
@@ -1064,7 +1159,7 @@
 		max-width: 170px;
 	}
 	.break .elements {
-		margin-bottom: 100px;
+		margin-bottom: 250px;
 	}
 	.break .elements img#crep-middle {
 		width: 100%;
@@ -1072,9 +1167,13 @@
 	.break .elements img#octopus {
 		display: none;
 	}
-	.break .elements img#octopus-image {
+	.break .elements img#octopus-image,
+	.break .elements img#octopus-leg-1,
+	.break .elements img#octopus-leg-2,
+	.break .elements img#octopus-leg-3,
+	.break .elements img#octopus-leg-4 {
 		display: block;
-		position: relative;
+		position: absolute;
 		max-width: 645px;
     	top: 150px;
 	}
@@ -1215,16 +1314,47 @@
 	#red-flower-large-petal-right {
 		transform-origin: 374px 302px;
 	}
+	.pollen-container,
+	.pollen-container-two {
+		position: absolute;
+		bottom: 30px;
+		transform: rotate(25deg);
+		left: 22%;
+	    right: 0;
+	    margin: auto;
+	}
+	.pollen-container-two {
+		transform: rotate(-25deg);
+		left: 0;
+		right: 22%;
+	}
 	.bg#crepusculum-bottle-bg {
 		left: auto;
-		right: 570px;
-		max-width: 550px;
+		right: 700px;
+		max-width: 450px;
+		bottom: -675px;
 	}
 	#crepusculum-bottle-bg-2 {
 	    max-width: 250px;
-	    top: 350px;
+	    top: 850px;
 	} 
-	.break .elements img#octopus-image {
+	#crep-bottle-bg {
+	    bottom: 125px;
+	    width: 250px;
+	    transform: rotate(30deg);
+	    transform-origin: bottom left;
+	}
+	#crep-bottle-bg-2 {
+	    bottom: 85px;
+	    width: 278px;
+	    transform: rotate(-27deg);
+	    transform-origin: bottom right;
+	}
+	.break .elements img#octopus-image,
+	.break .elements img#octopus-leg-1,
+	.break .elements img#octopus-leg-2,
+	.break .elements img#octopus-leg-3,
+	.break .elements img#octopus-leg-4 {
 		max-width: 800px;
 	}
 	.break .elements {
@@ -1234,7 +1364,7 @@
 	.break .elements img#crep-front {
 		bottom: -160px;
 	}
-	#seacircleone, #seacircleseven {
+	/*#seacircleone, #seacircleseven {
 		r: 3;
 	}
 	#seacircletwo, #seacirclefour, #seacirclefive, #seacircleeight {
@@ -1254,9 +1384,9 @@
 	}
 	#seacirclefive {
 		cx: 100;
-	}
+	}*/
 	.break .elements svg.sea-circles {
-		width: 150px;
+		/*width: 150px;*/
 		bottom: 375px;
 	}
 	#red-flower-small,
@@ -1400,7 +1530,9 @@
 	    max-width: 500px;
 	}
 	#arcana-rosa .before-elements #butterfly, #arcana-rosa .before-elements #butterfly-wing {
-		display: none;
+		/*display: none;*/
+		left: 0;
+		transform: translateY(400px) translateX(200px);
 	}
 	#mirabilis-leaf-left {
 		top: 140px;
@@ -1569,14 +1701,14 @@
 	}
 	.bg#crepusculum-bottle-bg {
 		left: auto;
-		right: 800px;
-		max-width: 600px;
+		right: 900px;
+		max-width: 500px;
 	}
 	#crepusculum-bottle-bg-2 {
 	    max-width: 300px;
-	    top: 330px;
+	    top: 830px;
 	}
-	.break .elements img:not(#crep-back-tentacles):not(#octopus-image) {
+	.break .elements img:not(#crep-back-tentacles):not(#octopus-image):not(#octopus-leg-1):not(#octopus-leg-2):not(#octopus-leg-3):not(#octopus-leg-4) {
 		max-width: 120%;
 	}
 	.break .elements {
@@ -1587,10 +1719,15 @@
 	}
 	.break .elements svg.sea-circles {
 		bottom: 520px;
-		right: 45%;
-		height: 600px;
+		left: 0;
+		right: auto;
+		/*height: 600px;*/
 	}
-	.break .elements img#octopus-image {
+	.break .elements img#octopus-image,
+	.break .elements img#octopus-leg-1,
+	.break .elements img#octopus-leg-2,
+	.break .elements img#octopus-leg-3,
+	.break .elements img#octopus-leg-4  {
 		max-width: 900px;
 		top: 250px;
 	}
@@ -1844,7 +1981,11 @@
 	.break .elements img#crep-front {
 		bottom: -250px;
 	}
-	.break .elements img#octopus-image {
+	.break .elements img#octopus-image,
+	.break .elements img#octopus-leg-1,
+	.break .elements img#octopus-leg-2,
+	.break .elements img#octopus-leg-3,
+	.break .elements img#octopus-leg-4 {
 		max-width: 1100px;
 		top: 280px;
 	}
