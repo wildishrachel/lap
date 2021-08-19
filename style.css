@@ -552,6 +552,8 @@ form button.button {
   overflow-x:hidden;
   display: flex;
   justify-content: center;
+  /*align-items: center;*/
+  /*padding-top: 47px;*/
 }
 #opening-videos {
 	position: fixed;
@@ -575,18 +577,23 @@ form button.button {
 	display: none;
 }
 #opening .music {
+	padding-top: 70px;
 	z-index: 2;
-	/*position: relative;*/
+	position: relative;
 	text-align: center;
 	/*display: flex;*/
 	align-items: center;
-	overflow-y:scroll;
-  overflow-x:hidden;
+	/*overflow-y:scroll;
+  overflow-x:hidden;*/
   width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  /*position: absolute;*/
+ /* top: 50%;
+  transform: translateY(-50%);*/
   opacity: 0;
+/*  display: flex;
+  align-items: center;
+  justify-content: center;*/
+	/*height: 100%;*/
 }
 #opening .music .container {
 	position: relative;
@@ -646,6 +653,10 @@ form button.button {
   position: relative;
   z-index: 10;
 }
+#intro .intro-top {
+	padding-top:45px;
+	min-height: 300px;
+}
 #intro .scroll {
 	width: 100%;
 	margin-top: 20px;
@@ -676,6 +687,11 @@ form button.button {
 	align-content: center;
 	justify-content: center;
 }
+#intro .col-12 > div {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
 #intro .elements img {
 	position: absolute;
 	transform: scale(1.5);
@@ -701,9 +717,9 @@ form button.button {
 	#opening .music .intro-top {
 		height: auto;
 	}
-	#intro .intro-top .col-12 > div {
+/*	#intro .intro-top .col-12 > div {
 		align-self: flex-end;
-	}
+	}*/
 	#intro .intro-top .col-12 .scroll {
 		align-self: flex-end;
 		margin-top: 0;
@@ -722,6 +738,7 @@ form button.button {
 	}
 	#intro .scroll img {
 		max-width: 20px;
+		height: 44px;
 	}
 	#intro .scroll p {
 		font-size: 0.9rem;
@@ -738,11 +755,13 @@ form button.button {
 		margin-bottom: 15px;
 	}
 }
-@media (min-width: 991px) {
-
-	#opening .music {
-		padding-top: 0;
+@media (min-width: 800px) {
+	#opening {
+		align-items: center;
 	}
+}
+@media (min-width: 991px) {
+	
 	#intro .container {
 		height: 100%;
 	}
@@ -761,6 +780,7 @@ form button.button {
 	}
 	#intro .scroll img {
 		max-width: 25px;
+		height: 56px;
 	}
 	#intro .scroll p {
 		font-size: 1rem;
@@ -946,7 +966,7 @@ form button.button {
   overflow-y: scroll;
 }
 .slideOutTab {
-  height: 140px;
+  height: 110px;
   width: 40px;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
   box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
@@ -973,7 +993,7 @@ form button.button {
   text-align: center;
   position: relative;
   right: 51px;
-  top: 60px;
+  top: 45px;
   width: 140px;
   -webkit-transform: rotate(-270deg);
   -moz-transform: rotate(-270deg);
@@ -995,6 +1015,10 @@ form button.button {
 	top: 25%;
 	right: 0;
 	z-index: 50;
+	transition: 0.5s;
+}
+.slideoutbuttons.scrolled {
+	top: 8%;
 }
 
 .modal-header {
@@ -1165,6 +1189,7 @@ form button.button {
 	}
 	.slideOutTab div {
 		right: 46px;
+		top: 60px;
 	}
 	#slideOut,
 	#samplesSlideOut {
@@ -1568,31 +1593,11 @@ header .header-bottom img {
 	margin-right: auto;
 	position: relative;
 	margin-top: 20px;
-	padding-top: 30px;
+	padding-top: 25px;
 	margin-bottom: 20px;
+	padding-bottom: 15px;
 }
-.fragrance-container .fragrance-text:before {
-	content: '';
-	position: absolute;
-	top: -18px;
-	left: 0;
-	width: 100%;
-	height: 20px;
-	background-image: url('assets/rip-top.png');
-	background-repeat: repeat-x;
-	background-position: bottom;
-}
-.fragrance-container .fragrance-text:after {
-	content: '';
-	position: absolute;
-	bottom: -9px;
-	left: 0;
-	width: 100%;
-	height: 20px;
-	background-image: url('assets/rip-bottom.png');
-	background-repeat: repeat-x;
-	background-position: bottom;
-}
+
 .fragrance-container .fragrance-image img {
 	max-width: 100%;
 	max-height: 300px;
@@ -1611,7 +1616,7 @@ header .header-bottom img {
 }
 .fragrance-container .fragrance-text h4 {
 	text-transform: uppercase;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	font-size: 1.125rem;
 	text-align: center;
 	color: black;
@@ -1625,7 +1630,7 @@ header .header-bottom img {
 	margin-bottom: 7px;
 	font-size: 0.938rem;
 	text-align: center;
-	margin-bottom: 25px;
+	margin-bottom: 10px;
 }
 .fragrance-container .fragrance-text ul li p {
 	width: 100%;
@@ -1638,12 +1643,15 @@ header .header-bottom img {
 	line-height: 1.3;
 }
 .fragrance-container .fragrance-text ul li img {
-	max-width: 75px;
-	margin-bottom: 20px;
+	max-width: 100px;
+	margin-bottom: 5px;
 }
 @media (min-width: 530px) {
 	.fragrance-container .fragrance-text {
-		width: 100%;
+		max-width: 100%;
+		min-width: 280px;
+		width: auto;
+		padding-top: 20px;
 	}
 	.fragrance-container .fragrance-text:before {
 		width: 20px;
@@ -1665,11 +1673,11 @@ header .header-bottom img {
 	.fragrance-container .fragrance-text ul {
 		display: flex;
 		justify-content: center;
-		padding: 0 30px;
+		padding: 0 10px;
 	}
 	.fragrance-container .fragrance-text ul li {
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
 		flex: 1;
 	}
 
@@ -1677,14 +1685,14 @@ header .header-bottom img {
 
 @media (min-width: 767px) {
 	.fragrance-container .fragrance-text {
-		padding-bottom: 10px;
+		padding-bottom: 15px;
 	}
 	.fragrance-container .fragrance-text h4 {
 		font-size: 1.6rem;
 		margin-bottom: 30px;
 	}
 	.fragrance-container .fragrance-text ul {
-		padding: 0 10px;
+		padding: 0 20px;
 	}
 	.fragrance-container .fragrance-text ul li { 
 		font-size: 1.4rem;
@@ -1706,13 +1714,23 @@ header .header-bottom img {
 	.fragrance-container p {
 		max-width: 100%;
 	}
+	.fragrance-container .fragrance-text ul li p {
+		margin-bottom: 0;
+	}
 }
 @media (min-width: 1199px) {
 	.fragrance-container .fragrance-image img {
 		max-height:380px;
 	}
+	.fragrance-container .fragrance-text ul {
+		padding: 0 10px;
+	}
 	.fragrance-container .fragrance-text ul li {
 		margin-bottom: 0;
+	}
+	.fragrance-container .fragrance-text {
+		padding-bottom: 25px;
+		width: 100%;
 	}
 }
 
@@ -1873,11 +1891,11 @@ header .header-bottom img {
 /*MIRABILIS*/
 
 #mirabilis {
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 550px;
 }
 #mirabilis .bottle {
-	padding-bottom: 120px;
+	/*padding-bottom: 120px;*/
 	margin-top: 60px;
 }
 #mirabilis .top-elements {
@@ -2100,9 +2118,9 @@ header .header-bottom img {
 }
 
 @media (min-width: 530px) {
-	#mirabilis .bottle {
+/*	#mirabilis .bottle {
 		padding-bottom: 200px;
-	}
+	}*/
 	.mirabilis-open-bud-container {
     right: 165px;
 	}
@@ -2196,6 +2214,14 @@ header .header-bottom img {
 .quote img {
 	margin-bottom: 20px;
 }
+.quote p > img {
+  max-width: 30px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.quote p > img:nth-last-child(1) {
+	margin-left: 10px;
+}
 .quote p {
 	color: #A9956D;
 	font-size: 2rem;
@@ -2240,6 +2266,7 @@ header .header-bottom img {
 }
 .inner .quote {
 	margin-top: 50px;
+	z-index: 10;
 }
 .quote.secondary {
 	padding-top: 200px;
@@ -2257,7 +2284,12 @@ header .header-bottom img {
 	padding-bottom: 200px;
 	background-color: transparent;
 }
-
+.quote.third {
+	background-image: none;
+	padding-bottom: 100px;
+	background-color: black;
+	padding-top: 100px;
+}
 @media (min-width: 530px) {
 	.quote.person {
 		padding-bottom: 300px;
@@ -2268,6 +2300,9 @@ header .header-bottom img {
 		font-size: 2.8rem;
 		line-height: 1.1;
 		max-width: 575px;
+	}
+	.quote p > img {
+	  max-width: 40px;
 	}
 	.quote p.quote-name {
 		font-size: 1.6rem;
@@ -2309,8 +2344,20 @@ header .header-bottom img {
 		margin-top: 50px;
 	}
 	.quote img {
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.quote p > img {
+	  max-width: none;
+	  margin-left: 20px;
+		margin-right: 20px;
+	}
+	.quote p > img:nth-last-child(1) {
+		margin-left: 20px;
+	}
+	.quote p > img {
+		position: relative;
+		top: -14px;
 	}
 	.quote .col-10,
 	.quote .col-12 {
@@ -2344,6 +2391,10 @@ header .header-bottom img {
 @media (min-width: 1199px) {
 	.quote {
 		padding-top: 250px;
+	}
+	.quote.third { 
+			padding-top: 200px;
+			padding-bottom: 200px;
 	}
 }
 
@@ -2383,7 +2434,7 @@ header .header-bottom img {
 	margin-top: 45px;
 	margin-bottom: 40px;
 	position: relative;
-	z-index: 5;
+	z-index: 10;
 }
 .inner .content.relative {
 	position: relative;
@@ -2461,6 +2512,9 @@ header .header-bottom img {
 	display: none;
 }
 
+.creative-process #mirabilis-bottle-bg {
+		display: none;
+	}
 @media (min-width: 530px) {
 	.image .person-image {
 		height: 450px;
@@ -2521,6 +2575,7 @@ header .header-bottom img {
 		max-width: 515px;
 		bottom: -350px;
 	}
+
 }
 @media (min-width: 991px) {
 	.image .person-image {
@@ -2622,7 +2677,7 @@ header .header-bottom img {
 		display: block;
 		position: absolute;
 		left: 50px;
-		top: 300px;
+		top: 140px;
 	}
 	.katie-quote-three #venenum-blue-flower {
 		max-width: 900px;
@@ -2761,7 +2816,7 @@ header .header-bottom img {
 .slick-slide h2 {
 	margin-bottom: 20px;
 	margin-top: 40px;
-	font-size: 2.4rem;
+	font-size: 2rem;
 }
 .slick-slide a.button {
 	margin-top: 30px;
@@ -2805,8 +2860,8 @@ header .header-bottom img {
 .slider-content {
 	max-width: 400px;
 	margin-left: auto;
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 50px;
+	padding-right: 50px;
 	margin-right: auto;
 }
 .slider-single button.slick-next {

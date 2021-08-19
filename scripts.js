@@ -44,7 +44,7 @@ function resizeIntro() {
     var windowHeight = $(window).outerHeight();
     var headerHeight = $('header').outerHeight();
 
-    var twentyWindow = windowHeight / 100 * 10;
+    var twentyWindow = windowHeight / 100 * 20;
 
     $('#intro .intro-top').height(windowHeight - twentyWindow);
 }
@@ -52,13 +52,20 @@ function resizeIntro() {
 //BACK TO TOP BUTTON
 jQuery(window).scroll(function($){
     var scrollPos = jQuery(document).scrollTop();
+    if(scrollPos > 100) {
+      jQuery('#intro .col-12 > p').css('opacity',1);
+      jQuery('.scroll').css('opacity',0);
+    }
+
     if(scrollPos > 200) {
       jQuery('#top').addClass('show');
-      jQuery('.scroll').css('opacity',0);
-      jQuery('#intro .col-12 > p').css('opacity',1);
+      jQuery('.slideoutbuttons').addClass('scrolled');
     } else {
       jQuery('#top').removeClass('show');
+      jQuery('.slideoutbuttons').removeClass('scrolled');
     }
+
+
 });
 
 //ANIMATIONS
@@ -323,7 +330,7 @@ var mirabilisLeafB = gsap.timeline({
     trigger: "#mirabilis",
     pin: false,
     scrub:0.2,
-    start: 'top 100px bottom',
+    start: 'top 300px bottom',
     end:'+=900',
   }
 })
@@ -334,7 +341,7 @@ var mirabilisLeafC = gsap.timeline({
     trigger: "#mirabilis",
     pin: false,
     scrub:0.2,
-    start: 'top 300px bottom',
+    start: 'top 500px bottom',
     end:'+=1100',
   }
 })

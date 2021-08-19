@@ -106,10 +106,35 @@ jQuery( document ).ready(function($) {
       }
     });
 
-    $(window).resize(function() {
-      $(".slider-single .slick-slide").css("height", "");
-      fragranceNotesHeight();
+  //   var width = $(window).width(), height = $(window).height();
+
+  //   if($(window).width() != width || $(window).height() != height){
+  // //Do something
+  //   }
+
+    var windowWidth = $(window).width();
+
+    $(window).resize(function(){
+        // Check if the window width has actually changed and it's not just iOS triggering a resize event on scroll
+        if ($(window).width() != windowWidth) {
+
+            // Update the window width for next time
+            windowWidth = $(window).width();
+
+            $(".slider-single .slick-slide").css("height", "");
+            fragranceNotesHeight();
+
+        }
+
+        // Otherwise do nothing
+
     });
+
+
+    // $(window).resize(function() {
+    //   $(".slider-single .slick-slide").css("height", "");
+    //   fragranceNotesHeight();
+    // });
 
     fragranceNotesHeight();
     

@@ -28,7 +28,7 @@
 	top: 195px;
 }
 #opening-red-flower-container {
-	position: absolute;
+	position: fixed;
 	left: -30px;
 	bottom: 0;
 }
@@ -294,92 +294,92 @@
 }
 
 #crep-tentacle-2-arm-1 {
-	transform-origin: 172px 239px;
+	transform-origin: 106px 151px;
 }
 #crep-tentacle-2-arm-2 {
-	transform-origin: 200px 241px;
+	transform-origin: 120px 149px;
 }
 #crep-tentacle-2-arm-3 {
-	transform-origin: 200px 236px;
+	transform-origin: 125px 149px;
 }
 #crep-tentacle-2-arm-4 {
-	transform-origin: 200px 222px;
+	transform-origin: 123px 139px;
 }
 #crep-tentacle-2-arm-5 {
-	transform-origin: 200px 201px;
+	transform-origin: 122px 126px;
 }
 #crep-tentacle-2-arm-6 {
-	transform-origin: 230px 220px;
+	transform-origin: 144px 138px;
 }
 #crep-tentacle-2-arm-7 {
-	transform-origin: 228px 215px;
+	transform-origin: 143px 135px;
 }
 #crep-tentacle-2-arm-8 {
-	transform-origin: 242px 207px;
+	transform-origin: 150px 129px;
 }
 #crep-tentacle-2-arm-9 {
-	transform-origin: 236px 285px;
+	transform-origin: 146px 114px;
 }
 #crep-tentacle-2-arm-10 {
-	transform-origin: 264px 218px;
+	transform-origin: 165px 136px;
 }
 #crep-tentacle-2-arm-11 {
-	transform-origin: 269px 211px;
+	transform-origin: 168px 134px;
 }
 #crep-tentacle-2-arm-12 {
-	transform-origin: 276px 196px;
+	transform-origin: 172px 122px;
 }
 #crep-tentacle-2-arm-13 {
-	transform-origin: 277px 216px;
+	transform-origin: 173px 135px;
 }
 #crep-tentacle-2-arm-14 {
-	transform-origin: 294px 211px;
+	transform-origin: 183px 132px;
 }
 #crep-tentacle-2-arm-15 {
-	transform-origin: 300px 205px;
+	transform-origin: 187px 128px;
 }
 
 #crep-tentacle-1-arm-1 {
-	transform-origin: 77px 166px;
+	transform-origin: 59px 89px;
 }
 #crep-tentacle-1-arm-2 {
-	transform-origin: 81px 117px;
+	transform-origin: 62px 90px;
 }
 #crep-tentacle-1-arm-3 {
-	transform-origin: 89px 109px;
+	transform-origin: 66px 80px;
 }
 #crep-tentacle-1-arm-4 {
-	transform-origin: 100px 120px;
+	transform-origin: 75px 90px;
 }
 #crep-tentacle-1-arm-5 {
-	transform-origin: 92px 121px;
+	transform-origin: 69px 92px;
 }
 #crep-tentacle-1-arm-6 {
-	transform-origin: 100px 103px;
+	transform-origin: 75px 77px;
 }
 #crep-tentacle-1-arm-7 {
-	transform-origin: 117px 124px;
+	transform-origin: 88px 95px;
 }
 #crep-tentacle-1-arm-8 {
-	transform-origin: 119px 91px;
+	transform-origin: 89px 68px;
 }
 #crep-tentacle-1-arm-9 {
-	transform-origin: 125px 115px;
+	transform-origin: 94px 85px;
 }
 #crep-tentacle-1-arm-10 {
-	transform-origin: 138px 108px;
+	transform-origin: 103px 81px;
 }
 #crep-tentacle-1-arm-11 {
-	transform-origin: 144px 105px;
+	transform-origin: 107px 81px;
 }
 #crep-tentacle-1-arm-12 {
-	transform-origin: 145px 100px;
+	transform-origin: 109px 75px;
 }
 
 .break .elements {
 	position: relative;
 	min-height: 450px;
-	margin-bottom: 150px;
+	margin-bottom: 180px;
 }
 .break .elements img:not(#crep-back-tentacles) {
 	max-width: 700px;
@@ -453,6 +453,7 @@
 	bottom: 120px;
     right: -50px;
     z-index: 1;
+    max-width: 200px;
 }
 #red-flower-small-main {
 	transform-origin: 121px 346px;
@@ -1282,6 +1283,88 @@
 		position: absolute;
 		max-width: 330px;
 	}
+	#crep-tentacle-2-arm-1 {
+		transform-origin: 172px 239px;
+	}
+	#crep-tentacle-2-arm-2 {
+		transform-origin: 200px 241px;
+	}
+	#crep-tentacle-2-arm-3 {
+		transform-origin: 200px 236px;
+	}
+	#crep-tentacle-2-arm-4 {
+		transform-origin: 200px 222px;
+	}
+	#crep-tentacle-2-arm-5 {
+		transform-origin: 200px 201px;
+	}
+	#crep-tentacle-2-arm-6 {
+		transform-origin: 230px 220px;
+	}
+	#crep-tentacle-2-arm-7 {
+		transform-origin: 228px 215px;
+	}
+	#crep-tentacle-2-arm-8 {
+		transform-origin: 242px 207px;
+	}
+	#crep-tentacle-2-arm-9 {
+		transform-origin: 236px 285px;
+	}
+	#crep-tentacle-2-arm-10 {
+		transform-origin: 264px 218px;
+	}
+	#crep-tentacle-2-arm-11 {
+		transform-origin: 269px 211px;
+	}
+	#crep-tentacle-2-arm-12 {
+		transform-origin: 276px 196px;
+	}
+	#crep-tentacle-2-arm-13 {
+		transform-origin: 277px 216px;
+	}
+	#crep-tentacle-2-arm-14 {
+		transform-origin: 294px 211px;
+	}
+	#crep-tentacle-2-arm-15 {
+		transform-origin: 300px 205px;
+	}
+
+	#crep-tentacle-1-arm-1 {
+		transform-origin: 77px 166px;
+	}
+	#crep-tentacle-1-arm-2 {
+		transform-origin: 81px 117px;
+	}
+	#crep-tentacle-1-arm-3 {
+		transform-origin: 89px 109px;
+	}
+	#crep-tentacle-1-arm-4 {
+		transform-origin: 100px 120px;
+	}
+	#crep-tentacle-1-arm-5 {
+		transform-origin: 92px 121px;
+	}
+	#crep-tentacle-1-arm-6 {
+		transform-origin: 100px 103px;
+	}
+	#crep-tentacle-1-arm-7 {
+		transform-origin: 117px 124px;
+	}
+	#crep-tentacle-1-arm-8 {
+		transform-origin: 119px 91px;
+	}
+	#crep-tentacle-1-arm-9 {
+		transform-origin: 125px 115px;
+	}
+	#crep-tentacle-1-arm-10 {
+		transform-origin: 138px 108px;
+	}
+	#crep-tentacle-1-arm-11 {
+		transform-origin: 144px 105px;
+	}
+	#crep-tentacle-1-arm-12 {
+		transform-origin: 145px 100px;
+	}
 	#arcana-rosa .before-elements #at2 {
 		max-width: 870px;
 	}
@@ -1416,7 +1499,7 @@
 		bottom: -110px;
 	}
 	#mirabilis-leaf-b {
-	    left: -420px;
+	    left: -620px;
 	    top: 400px;
 	    max-width: 1300px;
 	}
@@ -2600,13 +2683,16 @@
 		top: -580px;
 	}
 	#intro .elements img#sample-white-purple-flower-stem {
-		display: block;
+		display: none;
 	}
 }
 @media (min-width: 767px) {
 	#intro .elements img#samples-snake {
 		right: -640px;
 		top: -615px;
+	}
+	#intro .elements img#sample-white-purple-flower-stem {
+		display: none;
 	}
 }
 @media (min-width: 991px) {
@@ -2616,7 +2702,14 @@
 		top: -750px;
 	}
 	#intro .elements img#sample-white-purple-flower-stem {
-		left: 30px;
+		left: 40px;
+		max-height: 350px;
+		display: block;
+	}
+}
+@media (min-width: 1199px) {
+	#intro .elements img#sample-white-purple-flower-stem {
+		left: 120px;
 		max-height: 350px;
 	}
 }
