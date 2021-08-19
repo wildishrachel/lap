@@ -241,6 +241,13 @@
 		width: 700px;
     top: 490px;
 	}
+	.quote p {
+		font-size: 5rem;
+		line-height: 1;
+		text-align: center;
+		margin-top: 15px;
+		max-width: 100%;
+	} 
 }
 
 
@@ -365,6 +372,9 @@ a.back img {
 	top: -2px;
 	margin-right: 8px;
 }
+.block {
+	display: inline-block;
+}
 .button {
 	border: 1px solid #A9956D;
 	color: #A9956D;
@@ -478,11 +488,11 @@ form button.button {
 @media (min-width: 991px) {
 	p,
 	.didot * {
-		font-size: 1.563rem;
+		font-size: 1.4rem;
 	}
 	h4,
 	h3 {
-		font-size: 2.375rem;
+		font-size: 2rem;
 	}
 	.mobile {
 		display: none;
@@ -491,7 +501,7 @@ form button.button {
 		display: block;
 	}
 	a.view {
-		font-size: 2.25rem;
+		font-size: 2rem;
 		margin-top: 40px;
 	}
 	a.view.less {
@@ -501,13 +511,13 @@ form button.button {
 		display: block;
 	}
 	.button {
-		font-size: 2.4rem;
+		font-size: 2rem;
 		margin-top: 30px;
 		display: inline-block;
 		padding: 15px 90px;
 	}
 	.button.white {
-		font-size: 2.25rem;
+		font-size: 2rem;
 	}
 }
 
@@ -561,7 +571,9 @@ form button.button {
 }
 
 /*INTRO*/
-
+#opening-video-desktop {
+	display: none;
+}
 #opening .music {
 	z-index: 2;
 	/*position: relative;*/
@@ -676,6 +688,12 @@ form button.button {
 	position: absolute;
 }
 @media (min-width: 767px) {
+	#opening-video-desktop {
+		display: block;
+	}
+	#opening-video-mobile {
+		display: none;
+	}
 	#intro .intro-top {
 		height: 100%;
 		flex: 0 100%;
@@ -721,6 +739,7 @@ form button.button {
 	}
 }
 @media (min-width: 991px) {
+
 	#opening .music {
 		padding-top: 0;
 	}
@@ -758,7 +777,7 @@ form button.button {
 		margin-bottom: 0;
 	}
 	#intro .col-12 > p {
-		font-size: 2.375rem;
+		font-size: 2rem;
 		max-width: 700px;
 	}
 }
@@ -1156,13 +1175,13 @@ form button.button {
 		top: 265px;
 	}
 	.modal-body ul li span p {
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 	}
 	.modal-body ul li span p:nth-child(2) {
 		font-size: 1.1rem;
 	}
 	.modal-header h4 {
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 	}
 	.modal-header .close img {
 		width: 17px;
@@ -1267,7 +1286,7 @@ header .header-bottom img {
 		margin-bottom: 50px;
 	}
 	#bottles p {
-		font-size: 2.375rem;
+		font-size: 1.7rem;
 		max-width: 58%;
 		margin-left: auto;
 		margin-right: auto;
@@ -1384,7 +1403,7 @@ header .header-bottom img {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 280px;
+	max-width: 250px;
 }
 .perfume .bottle .bottle-image.mobile {
 	max-width: 130px;
@@ -1449,10 +1468,13 @@ header .header-bottom img {
 		right: -290px;
 	}
 	.perfume .details ul li {
-		font-size: 1.6rem;
+		font-size: 1.3rem;
 	}
 	.perfume .bottle a.order.unavailable {
 		right: -250px;
+	}
+	#crepusculum-mirabile.perfume h2 {
+		margin-bottom: 100px;
 	}
 }
 @media (min-width: 991px) {
@@ -1460,11 +1482,11 @@ header .header-bottom img {
 		z-index: unset;
 	}
 	.perfume .details ul {
-		margin-top: 110px;
+		margin-top: 85px;
 		margin-bottom: 15px;
 	}
 	.perfume .details ul li {
-		font-size: 1.875rem;
+		font-size: 1.4rem;
 		padding: 5px 70px;
 	}
 	.perfume .bottle {
@@ -1476,19 +1498,19 @@ header .header-bottom img {
 	}
 	.perfume h2 {
 		margin-bottom: 100px;
-		font-size: 6.25rem;
+		font-size: 5rem;
 	}
 	.perfume .bottle a.order {
-		font-size: 2.25rem;
-		max-width: 200px;
+		font-size: 2rem;
+		max-width: 185px;
 		padding-top: 15px;
 		padding-bottom: 15px;
-		right: -460px;
+		right: -415px;
 		bottom: 90px;
 	}
 	.perfume .bottle a.order:hover,
 	.perfume .bottle a.order:focus {
-		right: -475px;
+		right: -425px;
 		box-shadow: 0px 0px 10px 0px #ffffff9c;
 	}
 	.perfume .button-container p {
@@ -1505,9 +1527,12 @@ header .header-bottom img {
 		margin-bottom: 0;
 	}
 	.perfume .bottle a.order.unavailable {
-		right: -460px;
+		right: -425px;
 		font-size: 2rem;
 		max-width: 210px;
+	}
+	#crepusculum-mirabile.perfume h2 {
+		margin-bottom: 80px;
 	}
 }
 
@@ -1534,10 +1559,39 @@ header .header-bottom img {
 	max-width: 66.66666667%;
 }
 .fragrance-container .fragrance-image {
-	flex: 0 58%;
+	flex: 0 53%;
 }
 .fragrance-container .fragrance-text {
-	flex: 0 42%;
+	width: 285px;
+	background-image: url('assets/paper-bg.jpg');
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	margin-top: 20px;
+	padding-top: 30px;
+	margin-bottom: 20px;
+}
+.fragrance-container .fragrance-text:before {
+	content: '';
+	position: absolute;
+	top: -18px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	background-image: url('assets/rip-top.png');
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.fragrance-container .fragrance-text:after {
+	content: '';
+	position: absolute;
+	bottom: -9px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	background-image: url('assets/rip-bottom.png');
+	background-repeat: repeat-x;
+	background-position: bottom;
 }
 .fragrance-container .fragrance-image img {
 	max-width: 100%;
@@ -1557,29 +1611,83 @@ header .header-bottom img {
 }
 .fragrance-container .fragrance-text h4 {
 	text-transform: uppercase;
-	text-align: left;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	font-size: 1.125rem;
-	font-family: akkurat;
+	text-align: center;
+	color: black;
 }
 .fragrance-container .fragrance-text ul {
 	margin: 0;
 	padding: 0;
 }
 .fragrance-container .fragrance-text ul li {
-	color: white;
-	text-align: left;
 	list-style-type: none;
 	margin-bottom: 7px;
 	font-size: 0.938rem;
+	text-align: center;
+	margin-bottom: 25px;
+}
+.fragrance-container .fragrance-text ul li p {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	text-align: center;
+	max-width: 100%;
+	font-family: linotype-didot, serif;
+	color: black;
+	line-height: 1.3;
+}
+.fragrance-container .fragrance-text ul li img {
+	max-width: 75px;
+	margin-bottom: 20px;
+}
+@media (min-width: 530px) {
+	.fragrance-container .fragrance-text {
+		width: 100%;
+	}
+	.fragrance-container .fragrance-text:before {
+		width: 20px;
+		left: -13px;
+		height: 100%;
+		top: 0;
+		background-image: url('assets/rip-left.png');
+		background-repeat: repeat-y;
+	}
+	.fragrance-container .fragrance-text:after {
+		width: 20px;
+		right: -13px;
+		left: auto;
+		height: 100%;
+		top: 0;
+		background-image: url('assets/rip-right.png');
+		background-repeat: repeat-y;
+	}
+	.fragrance-container .fragrance-text ul {
+		display: flex;
+		justify-content: center;
+		padding: 0 30px;
+	}
+	.fragrance-container .fragrance-text ul li {
+		padding-left: 20px;
+		padding-right: 20px;
+		flex: 1;
+	}
+
 }
 
 @media (min-width: 767px) {
+	.fragrance-container .fragrance-text {
+		padding-bottom: 10px;
+	}
 	.fragrance-container .fragrance-text h4 {
 		font-size: 1.6rem;
+		margin-bottom: 30px;
+	}
+	.fragrance-container .fragrance-text ul {
+		padding: 0 10px;
 	}
 	.fragrance-container .fragrance-text ul li { 
-		font-size: 1.563rem;
+		font-size: 1.4rem;
 	}
 	.fragrance-container .fragrance-image img {
 		max-height: 330px;
@@ -1601,8 +1709,10 @@ header .header-bottom img {
 }
 @media (min-width: 1199px) {
 	.fragrance-container .fragrance-image img {
-		
 		max-height:380px;
+	}
+	.fragrance-container .fragrance-text ul li {
+		margin-bottom: 0;
 	}
 }
 
@@ -1623,7 +1733,9 @@ header .header-bottom img {
 	opacity: 0;
 	transition-delay: 1s;
 	transition: 0.5s;
-	background: linear-gradient(0deg, rgba(0,21,27,1) 0%, rgba(0,21,27,1) 70%, rgba(0,0,0,0) 100%);
+	/*background: linear-gradient(0deg, rgba(0,21,27,0.95) 0%, rgba(0,21,27,0.95) 55%, rgba(0,0,0,0) 100%);*/
+	background: linear-gradient(0deg, rgba(0,21,27,.8) 0%, rgba(0,21,27,0.95) 10%, rgba(0,21,27,0.95) 65%, rgba(0,21,27,0) 100%);
+	box-shadow: 0px 20px 15px 0px rgba(0,21,27,.8);
 }
 .outer-container .container {
 	z-index: 2;
@@ -1632,12 +1744,12 @@ header .header-bottom img {
 .toggle.outer-container {	
 	z-index: 12!important;
 }
-.toggle.outer-container .container {	
+/*.toggle.outer-container .container {	
 	background-image: url('assets/dropdown-flower.png');
 	background-repeat: no-repeat;
 	background-size: 250px;
  	background-position: right -150px bottom;
-}
+}*/
 .toggle.outer-container::after {
 	opacity: 1;
 }
@@ -1700,7 +1812,7 @@ header .header-bottom img {
 /*CREPUSCULUM MIRABILE*/
 
 #crepusculum-mirabile .outer-container::after {
-	background: linear-gradient(0deg, rgb(37 50 50) 0%, rgb(18 37 37) 70%, rgba(0,0,0,0) 100%);
+	background: linear-gradient(0deg, rgba(37 50 50,0.8) 0%, rgba(18 37 37, 1) 70%, rgba(0,0,0,0) 100%);
 }
 
 /*ARCANA*/
@@ -1730,11 +1842,12 @@ header .header-bottom img {
     max-width: 370px;
 }
 #arcana-rosa .before-elements {
-	height: 200px;
+	height: 0px;
 	position: relative;
 }
 #arcana-rosa .outer-container::after {
-	background: linear-gradient(0deg, rgb(52 45 45) 0%, rgb(33 22 18) 70%, rgba(0,0,0,0) 100%);
+	background: linear-gradient(0deg, rgba(33, 22, 18, 0.8 ) 0%, rgba(33, 22, 18, 0.97 ) 10%, rgb(33, 22, 18, 0.97) 65%, rgba(0,0,0,0) 100%);
+	box-shadow: 0px 20px 15px 0px rgb(33 22 18 / 80%);
 }
 
 /*VENENUM*/
@@ -1749,7 +1862,8 @@ header .header-bottom img {
 	position: relative;
 }
 #venenum .outer-container::after {
-	background: linear-gradient(0deg, rgb(47 49 47) 0%, rgb(33 22 18) 70%, rgba(0,0,0,0) 100%);
+	background: linear-gradient(0deg, rgba(33, 22, 18, 0.97) 0%, rgba(33, 22, 18, 0.95) 65%, rgba(0,0,0,0) 100%);
+	box-shadow: 0px 20px 15px 0px rgb(33 22 18 / 99%);
 }
 
 .perfume > .container.venenum-snake-container {
@@ -1788,7 +1902,8 @@ header .header-bottom img {
   top: -10px;
 }
 #mirabilis .outer-container::after {
-	background: linear-gradient(0deg, rgb(58 46 39) 0%, rgb(6 34 24) 70%, rgb(206 105 105 / 0%) 100%);
+	background: linear-gradient(0deg, rgba(6, 34, 24, 0.9) 0%, rgba(6, 34, 24, 0.9) 65%, rgb(206 105 105 / 0%) 100%);
+	box-shadow: 0px 20px 15px 0px rgb(6 34 24 / 90%);
 }
 
 #mirabilis > .elements {
@@ -1836,6 +1951,9 @@ header .header-bottom img {
 	position: relative;
 	z-index: 2;
 }
+.tenebrae-top #crep-tentacle-1 img {
+	max-width: 120px;
+}
 .tenebrae-bottom {
 	position: relative;
 	display: flex;
@@ -1858,7 +1976,8 @@ header .header-bottom img {
 	background-color: rgba(0,2,21,0.6);
 }
 #tenebrae .outer-container::after {
-	background: linear-gradient(0deg, rgb(51 46 46) 0%, rgb(0 5 22) 70%, rgba(0,0,0,0) 100%);
+	background: linear-gradient(0deg, rgba(0, 5, 22, 0.9) 0%, rgba(0, 5, 22, 0.9) 70%, rgba(0,0,0,0) 100%);
+	box-shadow: 0px 20px 15px 0px rgb(0 5 22 / 90%);
 }
 .tenebrae-top {
 	background: linear-gradient(180deg, rgba(6,34,24,1) 0%, rgba(0,2,21,1) 60%, rgba(0,2,21,1) 100%);
@@ -2013,6 +2132,9 @@ header .header-bottom img {
 	}
 }
 @media (min-width: 991px) {
+	#crepusculum-mirabile.perfume .bottle {
+		margin-bottom: 80px;
+	}
 	#arcana-rosa {
 		padding-bottom: 700px;
 	}
@@ -2076,7 +2198,7 @@ header .header-bottom img {
 }
 .quote p {
 	color: #A9956D;
-	font-size: 2.75rem;
+	font-size: 2rem;
 	line-height: 1.2;
 	font-family: linotype-didot, serif;
 	max-width: 360px;
@@ -2121,7 +2243,7 @@ header .header-bottom img {
 }
 .quote.secondary {
 	padding-top: 200px;
-	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 90%, rgba(6,34,24,1) 100%);
+	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(6,34,24,1) 100%);
 	z-index: 1;
 }
 .quote.secondary .elements {
@@ -2133,6 +2255,7 @@ header .header-bottom img {
 }
 .quote.person {
 	padding-bottom: 200px;
+	background-color: transparent;
 }
 
 @media (min-width: 530px) {
@@ -2142,7 +2265,7 @@ header .header-bottom img {
 }
 @media (min-width: 767px) {
 	.quote p {
-		font-size: 3.4rem;
+		font-size: 2.8rem;
 		line-height: 1.1;
 		max-width: 575px;
 	}
@@ -2155,7 +2278,7 @@ header .header-bottom img {
 		background-color: inherit;
 	}
 	.quote.secondary {
-		background: linear-gradient(180deg, rgba(33,11,1,1) 0%, rgba(33,11,1,1) 90%, rgba(6,34,24,1) 100%);
+		background: linear-gradient(180deg, rgba(33,11,1,1) 0%, rgba(33,11,1,1) 35%, rgba(6,34,24,1) 100%);
 		padding-top: 100px;
 	}
 	.quote.secondary .elements {
@@ -2168,14 +2291,14 @@ header .header-bottom img {
 @media (min-width: 991px) {
 	.quote {
 		padding-top: 200px;
-		background-image: url('assets/quote-background.jpg');
+		background-image: url('assets/quote-background.png');
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-size: 120% auto;
 		background-color: #211611;
 	}
 	.quote p {
-		font-size: 6.25rem;
+		font-size: 4.5rem;
 		line-height: 1;
 		text-align: center;
 		margin-top: 15px;
@@ -2204,7 +2327,7 @@ header .header-bottom img {
 	.quote-video {
 		padding-bottom: 516px;
 		margin-top: 150px;
-		background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(33,22,17,1) 100%);
+		/*background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(33,22,17,1) 100%);*/
 	}
 	.quote-video-container {
 		position: relative;
@@ -2245,6 +2368,7 @@ header .header-bottom img {
 	font-size: 2.2rem;
 	margin-top: 10px;
 	line-height: 1.2;
+	color: #CFB881;
 }
 .inner #intro h2 {
 	text-transform: uppercase;
@@ -2258,6 +2382,11 @@ header .header-bottom img {
 .inner .content {
 	margin-top: 45px;
 	margin-bottom: 40px;
+	position: relative;
+	z-index: 5;
+}
+.inner .content.relative {
+	position: relative;
 }
 .inner .content p {
 	margin-bottom: 30px;
@@ -2271,15 +2400,126 @@ header .header-bottom img {
 	background-repeat: no-repeat;
 }
 
+.inner #venenum-lily, .inner #venenum-lily-stem-1, .inner #venenum-lily-stem-2 {
+	display: block;
+  max-height: 345px;
+  position: absolute;
+  right: -63px;
+  top: -200px;
+}
+
+.katie-snake {
+	padding-top: 130px;
+}
+.katie-snake #home-snake {
+	transform: translateX(-50%)!important;
+}
+.creative-process #mirabilis-bottom-right-two {
+	left: -15px;
+	bottom: auto;
+  top: -88px;
+}
+.creative-process #mirabilis-leaf-ab {
+	transform: rotate(20deg)!important;
+	right: -50px;
+	bottom: -450px;
+	top: auto;
+}
+.katie-quote-three #venenum-blue-flower {
+	position: absolute;
+	    bottom: -200px;
+    transform: rotate(
+352deg
+)!important;
+    right: -280px;
+}
+
+.inner #arcana-butterfly {
+	position: absolute;
+	left: 0;
+}
+
+.inner #arcana-butterfly img {
+	position: absolute;
+	max-width: 100px;
+	left: -130px;
+  top: -150px;
+  display: none;
+}
+.inner .seabed {
+	margin-bottom: 0;
+}
+.inner .seabed #crep-front{
+	width: 100%;
+	transform: translateY(0px)!important;
+}
+.inner #home-snake-desktop {
+	display: none;
+}
+
+.inner #crep-tentacle-2 {
+	display: none;
+}
+
 @media (min-width: 530px) {
 	.image .person-image {
 		height: 450px;
+	}
+	.quote.person #red-flower-small,
+	.quote.person #red-flower-small-main {
+		top: 0;
+		right: -20px;
+	}
+	.inner #venenum-lily,
+	.inner #venenum-lily-stem-1,
+	.inner #venenum-lily-stem-2 {
+		max-height: 400px;
+		top: -180px;
+	}
+	.creative-process #mirabilis-bottom-right-two {
+		max-width: 160px;
+		left: -25px;
+	}
+	.creative-process #mirabilis-leaf-ab {
+		max-width: 600px;
+		bottom: -600px;
+	}
+	.katie-quote-three #venenum-blue-flower {
+		max-width: 485px;
+		bottom: -275px;
+	}
+	.inner #arcana-butterfly img {
+		max-width: 150px;
+		display: block;
+		left: -180px;
+		top: -170px;
 	}
 }
 @media (min-width: 767px) {
 	.image .person-image {
 		height: 580px;
 		width: 75%;
+	}
+	.inner #venenum-lily,
+	.inner #venenum-lily-stem-1,
+	.inner #venenum-lily-stem-2 {
+		max-height: 530px;
+		max-width: 600px;
+		top: -60px;
+	}
+	.katie-snake {
+		padding-top: 220px;
+	}
+	.katie-snake #home-snake {
+		max-width: 1300px;
+	}
+	.creative-process #mirabilis-bottom-right-two {
+		max-width: 200px;
+		left: -30px;
+	}
+	.katie-quote-three #venenum-blue-flower {
+		max-width: 515px;
+		bottom: -350px;
 	}
 }
 @media (min-width: 991px) {
@@ -2291,6 +2531,138 @@ header .header-bottom img {
 		background: linear-gradient(180deg, rgba(33,22,17,1) 0%, rgba(33,22,17,1) 45%, rgba(0,0,0,1) 100%);
 		margin-top: 0;
 		padding-top: 45px;
+	}
+	.inner #venenum-lily,
+	.inner #venenum-lily-stem-1,
+	.inner #venenum-lily-stem-2 {
+		max-height: 620px;
+		max-width: 800px;
+		top: -370px;
+	}
+	.katie-snake #home-snake {
+		display: none;
+	}
+	.katie-snake {
+		padding-top: 0px;
+	}
+	.inner #arcana-butterfly img {
+		max-width: 250px;
+	}
+	.inner .quote {
+		background-image: none;
+		background-color: transparent;
+		padding-top: 50px;
+		padding-bottom: 100px;
+	}
+	.inner #home-snake-desktop {
+		display: block;
+		right: -1000px;
+	}
+	.inner .content {
+		margin-bottom: 100px;
+	}
+	.quote.person {
+		padding-bottom: 50px;
+		padding-top: 100px;
+	}
+	.inner .content.seabed {
+		margin-bottom: 0;
+	}
+	.inner #crep-tentacle-2 {
+		display: block;
+		transform: rotate(67deg);
+		bottom: auto;
+		top: -300px;
+		left: 145px;
+		right: auto;
+	}
+	.creative-process #mirabilis-bottom-right-two {
+		max-width: 300px;
+		left: -40px;
+		top: -150px;
+	}
+	.katie-quote-three #venenum-blue-flower {
+		max-width: 700px;
+		bottom: -650px;
+		right: -400px;
+	}
+}
+@media (min-width: 1199px) {
+	.inner #venenum-lily,
+	.inner #venenum-lily-stem-1,
+	.inner #venenum-lily-stem-2 {
+		max-height: 820px;
+		max-width: 800px;
+		top: -470px;
+	}
+	.inner #arcana-butterfly img {
+		max-width: 350px;
+	}
+	.inner #home-snake-desktop {
+		display: block;
+		top: -350px;
+	}
+	.inner #crep-tentacle-2 {
+		left: 190px;
+	}
+	.inner #crep-tentacle-2 img {
+		max-width: 530px;
+	}
+	.creative-process #mirabilis-bottom-right-two {
+		max-width: 400px;
+		left: -40px;
+		top: -150px;
+	}
+	.creative-process #mirabilis-leaf-ab {
+		max-width: 800px;
+		bottom: -800px;
+		display: none;
+	}
+	.creative-process #mirabilis-bottle-bg {
+		display: block;
+		position: absolute;
+		left: 50px;
+		top: 300px;
+	}
+	.katie-quote-three #venenum-blue-flower {
+		max-width: 900px;
+		bottom: -800px;
+		right: -450px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.inner #home-snake-desktop {
+		display: block;
+		top: -350px;
+		right: -1150px;
+	}
+}
+@media (min-width: 1500px) {
+	.inner #venenum-lily,
+	.inner #venenum-lily-stem-1,
+	.inner #venenum-lily-stem-2 {
+		max-height: 1000px;
+		max-width: 800px;
+		top: -650px;
+	}
+	.creative-process #mirabilis-leaf-ab {
+		max-width: 800px;
+		bottom: -700px;
+	}
+	.katie-quote-three #venenum-blue-flower {
+		max-width: 1100px;
+		bottom: -800px;
+		right: -450px;
+	}
+	.creative-process #mirabilis-bottom-right-two {
+		top: -350px;
+	}
+	.creative-process #mirabilis-bottle-bg {
+		display: block;
+		position: absolute;
+		left: 50px;
+		top: 100px;
 	}
 }
 
@@ -2373,9 +2745,10 @@ header .header-bottom img {
 	z-index: 10;
 	background-color: black;
 }
-.slick-slide {
-	height: auto !important;
+.slick-initialized .slick-slide {
+	height: auto;
 	text-align: center;
+	position: relative;
 }
 .slide-container {
 	text-align: center;
@@ -2419,6 +2792,15 @@ header .header-bottom img {
 	overflow: hidden;
 	text-indent: 9999px;
 	z-index: 5;
+}
+.slider-single button.slick-prev.sticky,
+.slider-single button.slick-next.sticky {
+	position: fixed;
+	right: 50px;
+}
+.slider-single button.slick-prev.sticky {
+	left: 50px;
+	right: 0;
 }
 .slider-content {
 	max-width: 400px;
@@ -2489,7 +2871,7 @@ header .header-bottom img {
 	}
 	.sample-slider:before {
 		content: '';
-		left: 50px;
+		left: 48px;
 		height: 100%;
 		width: 100px;
 		background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
@@ -2498,7 +2880,7 @@ header .header-bottom img {
 	}
 	.sample-slider:after {
 		content: '';
-		right: 50px;
+		right: 48px;
 		top: 0;
 		height: 100%;
 		width: 100px;
@@ -2513,8 +2895,8 @@ header .header-bottom img {
 		display: none;
 	}
 	.slider-content {
-		padding-left: 10%;
-		padding-right: 10%;
+		padding-left: 13%;
+		padding-right: 13%;
 		padding-top: 20px;
 	}
 	.slick-slide a.button {
@@ -2531,11 +2913,21 @@ header .header-bottom img {
 	.slick-slide p, .slick-slide .didot *, .slick-slide .fragrance-container .fragrance-text ul li {
 		font-size: 1.1rem;
 	}
+	.slick-slide .fragrance-container {
+		position: absolute;
+		bottom: 0;
+		width: 300px;
+		left: 0;
+		right: 0;
+	}
 	.slick-slide .fragrance-container .fragrance-text h4 {
 		font-size: 1.25rem;
 	}
 	.slick-slide h2 {
 		font-size: 2.2rem;
+	}
+	.slick-slide .selected {
+		position: initial;
 	}
 	.selected.slider-content:before {
 		display: block;
@@ -2549,15 +2941,30 @@ header .header-bottom img {
 	.slick-slide .fragrance-container .fragrance-image img {
 		max-height: 210px;
 	}
+	.slick-slide .fragrance-container .fragrance-text ul {
+		display: block;
+	}
 }
 @media (min-width: 1199px) {
 	.slick-slide .fragrance-container .fragrance-image img {
 		max-height: 280px;
 	}
+	.slick-slide .fragrance-container .fragrance-text ul {
+		display: flex;
+	}
+	.slick-slide .fragrance-container {
+		width: 450px;
+	}
 }
 @media (min-width: 1350px) {
 	.slick-slide .fragrance-container .fragrance-image img {
 		max-height: 210px;
+	}
+	.slick-slide .fragrance-container .fragrance-text ul {
+		display: block;
+	}
+	.slick-slide .fragrance-container {
+		width: 300px;
 	}
 }
 @media (min-width: 1600px) {

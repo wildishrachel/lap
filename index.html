@@ -18,6 +18,8 @@
 	<!-- <body> -->
 	<div class="main-container">
 
+
+
 	<div id="overlay">
 	</div>
 
@@ -61,6 +63,7 @@
 	<div id="opening-videos">
 		<button id="skipbutton" class="video-skip" onclick="setCookie('clicklink', 'yes', 30)">skip</button>
 		<iframe title="vimeo-player" src="https://player.vimeo.com/video/544958017" frameborder="0" allowfullscreen id="opening-video-desktop" allow="autoplay"></iframe>
+		<iframe title="vimeo-player" src="https://player.vimeo.com/video/544958017" frameborder="0" allowfullscreen id="opening-video-mobile" allow="autoplay"></iframe>
 	</div>
 
 	
@@ -248,6 +251,10 @@
 		</section>
 
 		<section id="intro">
+			<!-- <span id="following-butterfly">
+				<img alt="butterfly" src="assets/arcana-butterfly-bg.png" id="butterfly" class="butterfly-animation"/>
+				<img alt="butterfly wing" src="assets/arcana-butterfly-wing.png" id="butterfly-wing" class="butterfly-animation"/>
+			</span> -->
 			<div class="container">
 				<div class="row intro-top">
 					<div class="col-12">
@@ -269,7 +276,7 @@
 				<div class="row intro-bottom">
 					<div class="col-12">
 						<p>Six imaginary journeys.<br/>Six unexpected combinations.</p>
-						<p>Through six Eaux de Parfum, L'Artisan Parfumeur bares the secrets of the mysterious flora that only awakens once night falls.</p>
+						<p>Through six Eaux de Parfum, <span class="block">L'Artisan Parfumeur</span> bares the secrets of the mysterious flora that only awakens once night falls.</p>
 					</div>
 				</div>
 			</div>
@@ -342,36 +349,36 @@
 							<img alt="leaf" src="assets/obscuratio-bottle-bg.png" class="bg mobile" id="obscuratio-bottle-bg"/>
 							<img alt="leaf" src="assets/obscuratio-bottle-bg-large.png" class="bg desktop" id="obscuratio-bottle-bg"/>
 							<svg class="pollen-container" width="200" height="700" >
-							    <circle class="pollen pollenone" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="4"></circle>
-							    <circle class="pollen pollentwo" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="3"></circle>
-							    <circle class="pollen pollenthree" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="4"></circle>
-							    <circle class="pollen pollenfour" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="3"></circle>
-							    <circle class="pollen pollenfive" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="5"></circle>
+							    <circle class="pollen pollenone" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
+							    <circle class="pollen pollentwo" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+							    <circle class="pollen pollenthree" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
+							    <circle class="pollen pollenfour" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+							    <circle class="pollen pollenfive" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
 							    <circle class="pollen pollensix" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
-							    <circle class="pollen pollenseven" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="3"></circle>
-							     <circle class="pollen pollenonesecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="4"></circle>
-							    <circle class="pollen pollentwosecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="3"></circle>
-							    <circle class="pollen pollenthreesecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="4"></circle>
-							    <circle class="pollen pollenfoursecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="3"></circle>
-							    <circle class="pollen pollenfivesecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="5"></circle>
+							    <circle class="pollen pollenseven" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+							    <circle class="pollen pollenonesecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
+							    <circle class="pollen pollentwosecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+							    <circle class="pollen pollenthreesecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
+							    <circle class="pollen pollenfoursecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+							    <circle class="pollen pollenfivesecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
 							    <circle class="pollen pollensixsecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
-							    <circle class="pollen pollensevensecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="3"></circle>
+							    <circle class="pollen pollensevensecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
 							</svg>
 							<svg class="pollen-container-two" width="200" height="700" >
-							    <circle class="pollen pollenone" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="4"></circle>
-							    <circle class="pollen pollentwo" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="3"></circle>
-							    <circle class="pollen pollenthree" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="4"></circle>
-							    <circle class="pollen pollenfour" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="3"></circle>
-							    <circle class="pollen pollenfive" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="5"></circle>
+							    <circle class="pollen pollenone" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
+							    <circle class="pollen pollentwo" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+							    <circle class="pollen pollenthree" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
+							    <circle class="pollen pollenfour" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+							    <circle class="pollen pollenfive" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
 							    <circle class="pollen pollensix" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
-							    <circle class="pollen pollenseven" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="3"></circle>
-							     <circle class="pollen pollenonesecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="4"></circle>
-							    <circle class="pollen pollentwosecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="3"></circle>
-							    <circle class="pollen pollenthreesecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="4"></circle>
-							    <circle class="pollen pollenfoursecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="3"></circle>
-							    <circle class="pollen pollenfivesecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="5"></circle>
+							    <circle class="pollen pollenseven" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+							     <circle class="pollen pollenonesecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
+							    <circle class="pollen pollentwosecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+							    <circle class="pollen pollenthreesecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
+							    <circle class="pollen pollenfoursecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+							    <circle class="pollen pollenfivesecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
 							    <circle class="pollen pollensixsecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
-							    <circle class="pollen pollensevensecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="3"></circle>
+							    <circle class="pollen pollensevensecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
 							</svg>
 						</div>
 					</div>
@@ -389,7 +396,7 @@
 								<div class="fragrance-container collapse" id="obscuratio-collapse">
 									<p>Luminous under the stars, a tropical garden secretly breathes and exhales the heady scent of a star-shaped flower with long yellow petals.</p>
 									<div class="flex-container">
-										<div class="fragrance-image">
+										<!-- <div class="fragrance-image">
 											<img alt="obscuratio dome" src="assets/bottles/obscuratio-dome.png"/>
 										</div>
 										<div class="fragrance-text">
@@ -398,6 +405,14 @@
 												<li>Ylang-Ylang</li>
 												<li>Patchouli</li>
 												<li>Vanilla</li>
+											</ul>
+										</div> -->
+										<div class="fragrance-text">
+											<h4>Fragrance notes</h4>
+											<ul>
+												<li><img src="assets/ylang-ylang.png"/><p>Ylang-Ylang</p></li>
+												<li><img src="assets/patchouli.png"/><p>Patchouli</p></li>
+												<li><img src="assets/vanilla.png"/><p>Vanilla</p></li>
 											</ul>
 										</div>
 									</div>
@@ -419,6 +434,22 @@
 			</div>
 			<div class="elements">
 				<span class="red-flower-container">
+					<!-- <svg class="pollen-container" width="200" height="700" >
+					    <circle class="pollen pollenone" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
+					    <circle class="pollen pollentwo" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+					    <circle class="pollen pollenthree" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
+					    <circle class="pollen pollenfour" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+					    <circle class="pollen pollenfive" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
+					    <circle class="pollen pollensix" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+					    <circle class="pollen pollenseven" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+					    <circle class="pollen pollenonesecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
+					    <circle class="pollen pollentwosecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+					    <circle class="pollen pollenthreesecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
+					    <circle class="pollen pollenfoursecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+					    <circle class="pollen pollenfivesecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="1.5"></circle>
+					    <circle class="pollen pollensixsecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+					    <circle class="pollen pollensevensecond" style="fill:#ffffff;" class="circle" cx="100" cy="700" r="2"></circle>
+					</svg> -->
 					<img alt="red flower" id="red-flower-large" src="assets/red-flower-large.png"/>
 					<img alt="red flower petal" id="red-flower-large-petal-left" src="assets/red-flower-large-petal-left.png"/>
 					<img alt="second red flower petal" id="red-flower-large-petal-right" src="assets/red-flower-large-petal-right.png"/>
@@ -438,8 +469,44 @@
 								<img alt="crepusculum mirabile bottle" src="assets/bottles/crepusculum-bottle.png" class="bottle-image mobile"/>
 								<img alt="crepusculum mirabile bottle" src="assets/bottles/crepusculum-mirabile-bottle-large.png" class="bottle-image desktop"/>
 								<a class="order" href="#">Order Sample</a>
-								<img src="assets/crep-bottle-bg.png" id="crep-bottle-bg"/>
-								<img src="assets/crep-bottle-bg-2.png" id="crep-bottle-bg-2"/>
+								<img src="assets/crep-bg.png" id="crep-bg"/>
+								<img src="assets/crep-coral.png" id="crep-coral"/>
+								<span id="crep-tentacle-1">
+									<img src="assets/crep-tentacle-1-arm-12.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-12"/>
+									<img src="assets/crep-tentacle-1-arm-11.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-11"/>
+									<img src="assets/crep-tentacle-1-arm-10.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-10"/>
+									<img src="assets/crep-tentacle-1-arm-9.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-9"/>
+									<img src="assets/crep-tentacle-1-arm-8.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-8"/>
+									<img src="assets/crep-tentacle-1-arm-7.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-7"/>
+									<img src="assets/crep-tentacle-1-arm-6.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-6"/>
+									<img src="assets/crep-tentacle-1-arm-5.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-5"/>
+									<img src="assets/crep-tentacle-1-arm-4.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-4"/>
+									<img src="assets/crep-tentacle-1-arm-3.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-3"/>
+									<img src="assets/crep-tentacle-1-arm-2.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-2"/>
+									<img src="assets/crep-tentacle-1-arm-1.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-1"/>
+									<img src="assets/crep-tentacle-1-base.png"/>
+								</span>
+								<span id="crep-tentacle-2">
+									<img src="assets/crep-tentacle-2-arm-15.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-15"/>
+									<img src="assets/crep-tentacle-2-arm-14.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-14"/>
+									<img src="assets/crep-tentacle-2-arm-13.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-13"/>
+									<img src="assets/crep-tentacle-2-arm-12.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-12"/>
+									<img src="assets/crep-tentacle-2-arm-11.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-11"/>
+									<img src="assets/crep-tentacle-2-arm-10.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-10"/>
+									<img src="assets/crep-tentacle-2-arm-9.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-9"/>
+									<img src="assets/crep-tentacle-2-arm-8.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-8"/>
+									<img src="assets/crep-tentacle-2-arm-7.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-7"/>
+									<img src="assets/crep-tentacle-2-arm-6.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-6"/>
+									<img src="assets/crep-tentacle-2-arm-5.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-5"/>
+									<img src="assets/crep-tentacle-2-arm-4.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-4"/>
+									<img src="assets/crep-tentacle-2-arm-3.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-3"/>
+									<img src="assets/crep-tentacle-2-arm-2.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-2"/>
+									<img src="assets/crep-tentacle-2-arm-1.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-1"/>
+									<img src="assets/crep-tentacle-2-base.png"/>
+								</span>
+								
+								<!-- <img src="assets/crep-bottle-bg.png" id="crep-bottle-bg"/>
+								<img src="assets/crep-bottle-bg-2.png" id="crep-bottle-bg-2"/> -->
 							</span>
 							<img alt="tenacle" src="assets/crepusculum-bottle-bg.png" class="bg" id="crepusculum-bottle-bg"/>
 						</div>
@@ -458,7 +525,7 @@
 								<div class="fragrance-container collapse crepusculum-collapse" id="crepusculum-collapse">
 									<p>The jasmine awaits its mysterious evening visitors: fluttering hummingbirds who get drunk on its pollen.</p>
 									<div class="flex-container">
-										<div class="fragrance-image">
+										<!-- <div class="fragrance-image">
 											<img alt="crepusculum mirabile dome" src="assets/bottles/crepusculum-mirabile-dome.png"/>
 										</div>
 										<div class="fragrance-text">
@@ -467,6 +534,14 @@
 												<li>Jasmine</li>
 												<li>Sandalwood</li>
 												<li>Tonka Bean</li>
+											</ul>
+										</div> -->
+										<div class="fragrance-text">
+											<h4>Fragrance notes</h4>
+											<ul>
+												<li><img src="assets/jasmine.png"/><p>Jasmine</p></li>
+												<li><img src="assets/sandalwood.png"/><p>Sandalwood</p></li>
+												<li><img src="assets/tonka-beans.png"/><p>Tonka Bean</p></li>
 											</ul>
 										</div>
 									</div>
@@ -658,11 +733,16 @@
 				<img alt="branch" src="assets/arcana-desktop.png" id="arcana-desktop"/>
 				<!-- <img alt="vine" src="assets/arcana-vine-1.png" id="av1"/> -->
 				<img alt="tree" src="assets/arcana-tree-2.png" id="at2"/>
-				<img alt="butterfly" src="assets/butterfly.png" id="butterfly" class="butterfly-animation"/>
-				<img alt="butterfly wing" src="assets/butterfly-wing.png" id="butterfly-wing" class="butterfly-animation"/>
+				
 			</div>
 			<div class="parent-container container" id="arcana-rosa-container">
+
+				
 				<div class="row">
+					<span id="arcana-butterfly">
+						<img alt="butterfly" src="assets/arcana-butterfly-bg.png" id="butterfly" class="butterfly-animation"/>
+						<img alt="butterfly wing" src="assets/arcana-butterfly-wing.png" id="butterfly-wing" class="butterfly-animation"/>
+					</span>
 					<div class="col-12">
 						<div class="svg-container">
 							<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1131.11 564.81" id="vine-svg" style="enable-background:new 0 0 595.28 841.89;">
@@ -681,12 +761,13 @@
 						<div class="bottle fadeIn">
 							<span>
 								<img alt="arcana bottle" src="assets/bottles/arcana-bottle.png" class="bottle-image mobile"/>
-								<img alt="arcana bottle" src="assets/bottles/arcana-rosa-bottle-large.png" class="bottle-image desktop"/>
+								<img id="arcana-bottle" alt="arcana bottle" src="assets/bottles/arcana-rosa-bottle-large.png" class="bottle-image desktop"/>
 								<a class="order" href="#">Order Sample</a>
 							</span>
 							<span>
 								<img alt="branch" src="assets/arcana-bg.png" id="arcana-bg"/>
 							</span>
+							<!-- <img src="assets/arcana-butterfly.png" id="arcana-butterfly"/> -->
 						</div>
 					</div>
 				</div>
@@ -703,7 +784,7 @@
 								<div class="fragrance-container collapse" id="arcana-collapse">
 									<p> It exudes a smoky murmur that bewitches anyone who approaches, thus keeping its secret.</p>
 									<div class="flex-container">
-										<div class="fragrance-image">
+										<!-- <div class="fragrance-image">
 											<img alt="arcana dome" src="assets/bottles/arcana-dome.png"/>
 										</div>
 										<div class="fragrance-text">
@@ -712,6 +793,14 @@
 												<li>Clove</li>
 												<li>Bulgarian Rose</li>
 												<li>Guaiac Wood</li>
+											</ul>
+										</div> -->
+										<div class="fragrance-text">
+											<h4>Fragrance notes</h4>
+											<ul>
+												<li><img src="assets/clove.png"/><p>Clove</p></li>
+												<li><img src="assets/bulgarian-rose.png"/><p>Bulgarian Rose</p></li>
+												<li><img src="assets/wood.png"/><p>Guaiac Wood</p></li>
 											</ul>
 										</div>
 									</div>
@@ -781,7 +870,7 @@
 								<div class="fragrance-container collapse" id="venenum-collapse">
 									<p>Their juice is delicate, and their soft, milky aroma is savoured by forest wildlife in the summer evenings of eternal India.</p>
 									<div class="flex-container">
-										<div class="fragrance-image">
+										<!-- <div class="fragrance-image">
 											<img alt="venenum dome" src="assets/bottles/venenum-dome.png"/>
 										</div>
 										<div class="fragrance-text">
@@ -790,6 +879,14 @@
 												<li>Masala Chai Tea</li>
 												<li>Rice</li>
 												<li>Sandalwood</li>
+											</ul>
+										</div> -->
+										<div class="fragrance-text">
+											<h4>Fragrance notes</h4>
+											<ul>
+												<li><img src="assets/masala-chai.png"/><p>Masala Chai Tea</p></li>
+												<li><img src="assets/camargue-rice.png"/><p>Rice</p></li>
+												<li><img src="assets/sandalwood.png"/><p>Sandalwood</p></li>
 											</ul>
 										</div>
 									</div>
@@ -843,7 +940,7 @@
 			<div class="animation-container">
 				<img src="assets/mirabilis-leaf-b.png" id="mirabilis-leaf-b"/>
 				<img src="assets/mirabilis-leaf-c.png" id="mirabilis-leaf-c"/>
-				<img id="mirabilis-animation-bottle" alt="mirabilis bottle" src="assets/bottles/mirabilis-bottle-large.png" class="bottle-image"/> 
+				<!-- <img id="mirabilis-animation-bottle" alt="mirabilis bottle" src="assets/bottles/mirabilis-bottle-large.png" class="bottle-image"/>  -->
 			</div>
 			
 			<div class="parent-container container" id="mirabilis-container">
@@ -873,7 +970,7 @@
 								<div class="fragrance-container collapse" id="mirabilis-collapse">
 									<p>It unites with vanilla, making the night a temple to the glory of these addictive scents.</p>
 									<div class="flex-container">
-										<div class="fragrance-image">
+										<!-- <div class="fragrance-image">
 											<img alt="mirabilis dome" src="assets/bottles/mirabilis-dome.png"/>
 										</div>
 										<div class="fragrance-text">
@@ -882,6 +979,14 @@
 												<li>Ambrox</li>
 												<li>Incense</li>
 												<li>Vanilla</li>
+											</ul>
+										</div> -->
+										<div class="fragrance-text">
+											<h4>Fragrance notes</h4>
+											<ul>
+												<li><img src="assets/ambrox.png"/><p>Ambrox</p></li>
+												<li><img src="assets/vapeur-d-encens.png"/><p>Incense</p></li>
+												<li><img src="assets/vanilla.png"/><p>Vanilla</p></li>
 											</ul>
 										</div>
 									</div>
@@ -931,6 +1036,21 @@
 
 		<section class="tenebrae-top">
 			<img alt="seabed" src="assets/tenebrae-top-new.png" id="tenebrae-top"/>
+			<!-- <span id="crep-tentacle-1">
+									<img src="assets/crep-tentacle-1-arm-12.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-12"/>
+									<img src="assets/crep-tentacle-1-arm-11.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-11"/>
+									<img src="assets/crep-tentacle-1-arm-10.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-10"/>
+									<img src="assets/crep-tentacle-1-arm-9.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-9"/>
+									<img src="assets/crep-tentacle-1-arm-8.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-8"/>
+									<img src="assets/crep-tentacle-1-arm-7.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-7"/>
+									<img src="assets/crep-tentacle-1-arm-6.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-6"/>
+									<img src="assets/crep-tentacle-1-arm-5.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-5"/>
+									<img src="assets/crep-tentacle-1-arm-4.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-4"/>
+									<img src="assets/crep-tentacle-1-arm-3.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-3"/>
+									<img src="assets/crep-tentacle-1-arm-2.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-2"/>
+									<img src="assets/crep-tentacle-1-arm-1.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-1"/>
+									<img src="assets/crep-tentacle-1-base.png"/>
+								</span> -->
 			<!-- <img alt="seabed" src="assets/tenebrae-top-new-a.png" id="tenebrae-top-a" class="tenebrae-flowers"/>
 			<img alt="seabed" src="assets/tenebrae-top-new-b.png" id="tenebrae-top-b" class="tenebrae-flowers"/>
 			<img alt="seabed" src="assets/tenebrae-top-new-c.png" id="tenebrae-top-c" class="tenebrae-flowers"/>
@@ -978,6 +1098,10 @@
 				 	<img alt="pattern left three" id="tenebrae-left-3" src="assets/tenebrae-left-3.png"/>
 				 	<img alt="pattern left four" id="tenebrae-left-4" src="assets/tenebrae-left-4.png"/>
 				 	<img alt="pattern left five" id="tenebrae-left-5" src="assets/tenebrae-left-5.png"/>
+				 	<img alt="pattern left six" id="tenebrae-left-6" src="assets/tenebrae-left-6.png"/>
+				 	<img alt="pattern left seven" id="tenebrae-left-7" src="assets/tenebrae-left-7.png"/>
+				 	<img alt="pattern left eight" id="tenebrae-left-8" src="assets/tenebrae-left-8.png"/>
+				 	<img alt="pattern left nine" id="tenebrae-left-9" src="assets/tenebrae-left-9.png"/>
 				 </div>
 				<div class="tenebrae-right">
 				 	<img alt="pattern right one" id="tenebrae-right-1" src="assets/tenebrae-right-1.png"/>
@@ -985,6 +1109,10 @@
 				 	<img alt="pattern right three" id="tenebrae-right-3" src="assets/tenebrae-right-3.png"/>
 				 	<img alt="pattern right four" id="tenebrae-right-4" src="assets/tenebrae-right-4.png"/>
 				 	<img alt="pattern right five" id="tenebrae-right-5" src="assets/tenebrae-right-5.png"/>
+				 	<img alt="pattern right six" id="tenebrae-right-6" src="assets/tenebrae-right-6.png"/>
+				 	<img alt="pattern right seven" id="tenebrae-right-7" src="assets/tenebrae-right-7.png"/>
+				 	<img alt="pattern right eight" id="tenebrae-right-8" src="assets/tenebrae-right-8.png"/>
+				 	<img alt="pattern right nine" id="tenebrae-right-9" src="assets/tenebrae-right-9.png"/>
 				 </div>
 			</div>
 			<div class="parent-container container" id="tenebrae-container">
@@ -1004,6 +1132,12 @@
 								<img alt="centre pattern four" src="assets/tenebrae-center-4.png" id="tenebrae-center-4"/>
 								<img alt="centre pattern five" src="assets/tenebrae-center-5.png" id="tenebrae-center-5"/>
 								<img alt="centre pattern six" src="assets/tenebrae-center-6.png" id="tenebrae-center-6"/>
+								<img alt="centre pattern seven" src="assets/tenebrae-center-7.png" id="tenebrae-center-7"/>
+								<img alt="centre pattern eight" src="assets/tenebrae-center-8.png" id="tenebrae-center-8"/>
+								<img alt="centre pattern nine" src="assets/tenebrae-center-9.png" id="tenebrae-center-9"/>
+								<img alt="centre pattern ten" src="assets/tenebrae-center-10.png" id="tenebrae-center-10"/>
+								<img alt="centre pattern eleven" src="assets/tenebrae-center-11.png" id="tenebrae-center-11"/>
+								<img alt="centre pattern twelve" src="assets/tenebrae-center-12.png" id="tenebrae-center-12"/>
 							</span>
 						</div>
 					</div>
@@ -1021,7 +1155,7 @@
 								<div class="fragrance-container collapse" id="tenebrae-collapse">
 									<p>Wrapped in nocturnal coolness, the cedars are sentries of time, exuding their dry, resinous scent.</p>
 									<div class="flex-container">
-										<div class="fragrance-image">
+										<!-- <div class="fragrance-image">
 											<img alt="tenebrae dome" src="assets/bottles/mirabilis-dome.png"/>
 										</div>
 										<div class="fragrance-text">
@@ -1030,6 +1164,14 @@
 												<li>Cedarwood</li>
 												<li>Incense</li>
 												<li>Resin</li>
+											</ul>
+										</div> -->
+										<div class="fragrance-text">
+											<h4>Fragrance notes</h4>
+											<ul>
+												<li><img src="assets/bois.png"/><p>Cedarwood</p></li>
+												<li><img src="assets/vapeur-d-encens.png"/><p>Incense</p></li>
+												<li><img src="assets/s-ve.png"/><p>Resin</p></li>
 											</ul>
 										</div>
 									</div>

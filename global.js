@@ -15,6 +15,7 @@ $('#slideOut').next('.after').on('click', function() {
 });
 $('#slideOut').find('a').on('click', function() {
   hideDiscoverSlideOut();
+  
 });
 
 function hideDiscoverSlideOut() {
