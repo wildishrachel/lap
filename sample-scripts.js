@@ -106,35 +106,18 @@ jQuery( document ).ready(function($) {
       }
     });
 
-  //   var width = $(window).width(), height = $(window).height();
-
-  //   if($(window).width() != width || $(window).height() != height){
-  // //Do something
-  //   }
-
     var windowWidth = $(window).width();
 
     $(window).resize(function(){
-        // Check if the window width has actually changed and it's not just iOS triggering a resize event on scroll
         if ($(window).width() != windowWidth) {
 
-            // Update the window width for next time
             windowWidth = $(window).width();
 
             $(".slider-single .slick-slide").css("height", "");
             fragranceNotesHeight();
 
         }
-
-        // Otherwise do nothing
-
     });
-
-
-    // $(window).resize(function() {
-    //   $(".slider-single .slick-slide").css("height", "");
-    //   fragranceNotesHeight();
-    // });
 
     fragranceNotesHeight();
     
@@ -156,7 +139,6 @@ function fragranceNotesHeight() {
         
         if ($(this).find('.fragrance-container').height() > notesHeight) { 
           notesHeight = $(this).find('.fragrance-container').height(); 
-          console.log(notesHeight)
         }
         
         $(".slider-single .slick-slide").height(maxHeight + notesHeight);
@@ -167,21 +149,6 @@ function fragranceNotesHeight() {
   }
 
 }
-
-// //BACK TO TOP BUTTON
-// jQuery(window).scroll(function($){
-//     var scrollPos = jQuery(document).scrollTop();
-//     if(scrollPos > 200) {
-      
-//     } else {
-      
-//     }
-// });
-
-
-
-
-
 
 
 //ANIMATIONS

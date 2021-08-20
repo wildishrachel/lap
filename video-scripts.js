@@ -57,6 +57,9 @@ skip.addEventListener('click',function(){
 desktopPlayer.on('ended', function() {
   videoFinished();
 });
+mobilePlayer.on('ended', function() {
+  videoFinished();
+});
 
 function videoFinished() {
   openingVideoContainer.classList.add('hide');

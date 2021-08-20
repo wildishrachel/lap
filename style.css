@@ -14,7 +14,6 @@
   width: 100%;
   height: auto;
   stroke-dasharray: 2000;
-  /*stroke-dashoffset: 2000;*/
 }
 
 .animate {
@@ -326,6 +325,7 @@ a.view {
 }
 a.less {
 	opacity: 0;
+	visibility: hidden;
 	pointer-events: none;
 	margin: 40px 0 25px 0;
 	font-size: 0.938rem;
@@ -366,6 +366,7 @@ a.back {
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
+	font-family: akkurat, sans-serif;
 }
 a.back img {
 	position: relative;
@@ -387,6 +388,7 @@ a.back img {
 	line-height: 1.3;
 	min-width: 220px;
 	text-align: center;
+	font-family: akkurat, sans-serif;
 }
 .button:hover,
 .button:active,
@@ -552,8 +554,6 @@ form button.button {
   overflow-x:hidden;
   display: flex;
   justify-content: center;
-  /*align-items: center;*/
-  /*padding-top: 47px;*/
 }
 #opening-videos {
 	position: fixed;
@@ -581,19 +581,9 @@ form button.button {
 	z-index: 2;
 	position: relative;
 	text-align: center;
-	/*display: flex;*/
 	align-items: center;
-	/*overflow-y:scroll;
-  overflow-x:hidden;*/
   width: 100%;
-  /*position: absolute;*/
- /* top: 50%;
-  transform: translateY(-50%);*/
   opacity: 0;
-/*  display: flex;
-  align-items: center;
-  justify-content: center;*/
-	/*height: 100%;*/
 }
 #opening .music .container {
 	position: relative;
@@ -626,6 +616,10 @@ form button.button {
 	margin-bottom: 30px;
 	font-family: linotype-didot, serif;
 	transition: 0.5s;
+}
+#intro .col-12 > p.show {
+	display: block;
+	opacity: 1!important;
 }
 #opening .music .col-10 > p {
 	font-size: 1.4rem;
@@ -680,6 +674,10 @@ form button.button {
 	margin-left: auto;
 	margin-right: auto;
 }
+#intro .scroll.hidden {
+	opacity: 0;
+	display: none;
+}
 #intro .col-12 {
 	text-align: center;
 	display: flex;
@@ -717,9 +715,6 @@ form button.button {
 	#opening .music .intro-top {
 		height: auto;
 	}
-/*	#intro .intro-top .col-12 > div {
-		align-self: flex-end;
-	}*/
 	#intro .intro-top .col-12 .scroll {
 		align-self: flex-end;
 		margin-top: 0;
@@ -812,9 +807,11 @@ form button.button {
 	opacity: 0;
 	transition: 0.5s;
 	display: none;
+	visibility: hidden;
 }
 #top.show {
 	opacity: 1;
+	visibility: visible;
 }
 #top > img {
 	position: absolute;
@@ -985,6 +982,7 @@ form button.button {
   z-index: 10000;
   border: 0;
   display: block;
+  padding: 0;
 }
 .slideOutTab:hover,
 .slideOutTab:focus {
@@ -995,6 +993,7 @@ form button.button {
 	font-size: 0.9rem;
 	color: black;
 	font-family: linotype-didot, serif;
+	margin-bottom: 0;
 }
 .slideOutTab p.hide {
 	display: none;
@@ -1002,8 +1001,8 @@ form button.button {
 .slideOutTab div {
   text-align: center;
   position: relative;
-  right: 47px;
-  top: 8px;
+  right: 40px;
+  top: 0px;
   width: 120px;
   -webkit-transform: rotate(-270deg);
   -moz-transform: rotate(-270deg);
@@ -1202,7 +1201,7 @@ form button.button {
 		font-size: 1.2rem;
 	}
 	.slideOutTab div {
-		right: 42px;
+		right: 35px;
 	}
 	#slideOut,
 	#samplesSlideOut {
@@ -1372,7 +1371,6 @@ header .header-bottom img {
 }
 .perfume .row {
 	position: relative;
-	/*z-index: 11;*/
 }
 .perfume .row:nth-child(2) {
 	z-index: 12;
@@ -1723,7 +1721,6 @@ header .header-bottom img {
 	}
 	.fragrance-container .fragrance-image img {
 		max-width: 350px;
-		/*max-height: auto;*/
 	}
 	.fragrance-container p {
 		max-width: 100%;
@@ -1765,7 +1762,6 @@ header .header-bottom img {
 	opacity: 0;
 	transition-delay: 1s;
 	transition: 0.5s;
-	/*background: linear-gradient(0deg, rgba(0,21,27,0.95) 0%, rgba(0,21,27,0.95) 55%, rgba(0,0,0,0) 100%);*/
 	background: linear-gradient(0deg, rgba(0,21,27,.8) 0%, rgba(0,21,27,0.95) 10%, rgba(0,21,27,0.95) 65%, rgba(0,21,27,0) 100%);
 	box-shadow: 0px 20px 15px 0px rgba(0,21,27,.8);
 }
@@ -1776,12 +1772,6 @@ header .header-bottom img {
 .toggle.outer-container {	
 	z-index: 12!important;
 }
-/*.toggle.outer-container .container {	
-	background-image: url('assets/dropdown-flower.png');
-	background-repeat: no-repeat;
-	background-size: 250px;
- 	background-position: right -150px bottom;
-}*/
 .toggle.outer-container::after {
 	opacity: 1;
 }
@@ -1792,6 +1782,7 @@ header .header-bottom img {
 .toggle .view.less {
 	opacity: 1;
 	pointer-events: all;
+	visibility: visible;
 }
 .toggle .view.more {
 	opacity: 0;
@@ -1806,6 +1797,7 @@ header .header-bottom img {
 	opacity: 0;
 	transform: translateY(20px);
 	position: relative;
+	visibility: visible!important;
 }
 .break {
 	background-color: rgba(18,36,36,1);
@@ -1837,9 +1829,6 @@ header .header-bottom img {
 	position: relative;
 	transform: translateY(20px);
 }
-/*#obscuratio.perfume .row {
-	z-index: unset;
-}*/
 
 /*CREPUSCULUM MIRABILE*/
 
@@ -1909,7 +1898,6 @@ header .header-bottom img {
 	padding-bottom: 550px;
 }
 #mirabilis .bottle {
-	/*padding-bottom: 120px;*/
 	margin-top: 60px;
 }
 #mirabilis .top-elements {
@@ -1930,7 +1918,6 @@ header .header-bottom img {
 .mirabilis-open-bud-container {
   position: absolute!important;
   right: 95px;
-  /*top: 230px;*/
   top: -10px;
 }
 #mirabilis .outer-container::after {
@@ -2085,9 +2072,6 @@ header .header-bottom img {
 #tenebrae-top-v {
 	transform-origin: 349px 278px;
 }
-/*#tenebrae-top-w {
-	transform-origin: 662px 353px;
-}*/
 #tenebrae-top-x {
 	transform-origin: 269px 247px;
 }
@@ -2132,9 +2116,6 @@ header .header-bottom img {
 }
 
 @media (min-width: 530px) {
-/*	#mirabilis .bottle {
-		padding-bottom: 200px;
-	}*/
 	.mirabilis-open-bud-container {
     right: 165px;
 	}
@@ -2178,7 +2159,6 @@ header .header-bottom img {
 		padding-top: 260px;
 	}
 	.mirabilis-open-bud-container {
-		/*transform: rotate(336deg);*/
 		right: 310px;
 	}
 	.mirabilis-closed-buds {
@@ -2247,7 +2227,8 @@ header .header-bottom img {
 	display: inline-block;
 	background-color: black;
 }
-.quote .button:hover {
+.quote .button:hover,
+.quote .button:focus {
 	background-color: #A9956D;
 }
 .quote p.quote-name {
@@ -2388,7 +2369,6 @@ header .header-bottom img {
 	.quote-video {
 		padding-bottom: 516px;
 		margin-top: 150px;
-		/*background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(33,22,17,1) 100%);*/
 	}
 	.quote-video-container {
 		position: relative;
@@ -2463,6 +2443,9 @@ header .header-bottom img {
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
+}
+.person-justify-content-end {
+	justify-content: flex-end;
 }
 
 .inner #venenum-lily, .inner #venenum-lily-stem-1, .inner #venenum-lily-stem-2 {
@@ -2593,8 +2576,8 @@ header .header-bottom img {
 }
 @media (min-width: 991px) {
 	.image .person-image {
-		width: 80%;
-		height: 700px;
+		max-width: 700px;
+		height: 500px;
 	}
 	.inner .content.brown-bg {
 		background: linear-gradient(180deg, rgba(33,22,17,1) 0%, rgba(33,22,17,1) 45%, rgba(0,0,0,1) 100%);
@@ -2655,6 +2638,9 @@ header .header-bottom img {
 		bottom: -650px;
 		right: -400px;
 	}
+	.person-justify-content-end {
+		justify-content: center;
+	} 
 }
 @media (min-width: 1199px) {
 	.inner #venenum-lily,
@@ -2767,6 +2753,9 @@ header .header-bottom img {
     text-indent: 9999px;
     color: white;
 }
+#play-icon:focus {
+	outline: 1px solid red;
+}
 #play-icon.playing {
 	background-image: url('assets/sound-on.png');
 	background-position: left 11px center;
@@ -2818,6 +2807,7 @@ header .header-bottom img {
 	height: auto;
 	text-align: center;
 	position: relative;
+	outline: 0;
 }
 .slide-container {
 	text-align: center;
@@ -2923,6 +2913,9 @@ header .header-bottom img {
 	.slick-slide a.button {
 		max-width: 400px;
 	}
+	.slick-slide .fragrance-container .fragrance-text ul {
+		display: block;
+	}
 }
 @media (min-width: 650px) {
 	.slider-content {
@@ -2932,6 +2925,14 @@ header .header-bottom img {
 @media (min-width: 750px) {
 	.slider-content {
 		max-width: 700px;
+	}
+}
+@media (min-width: 767px) {
+	.slick-slide .fragrance-container .fragrance-text {
+		min-width: 100%;
+	}
+	.slick-slide .fragrance-container .fragrance-text ul {
+		display: flex;
 	}
 }
 @media (min-width: 991px) {

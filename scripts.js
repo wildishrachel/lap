@@ -5,6 +5,8 @@ jQuery( document ).ready(function($) {
     var windowHeight = $(window).outerHeight();
     var headerHeight = $('header').outerHeight();
 
+    $('#overlay').addClass('hide');
+
     resizeIntro();
 
     //FRAGRANCE NOTES
@@ -22,7 +24,6 @@ jQuery( document ).ready(function($) {
       $('.slideOutTab').removeClass('active');
       $('#discover').removeClass('open');
       $('.fragrance-container').removeClass('in');
-      // $('.fragrance-container').removeClass('collapse');
     });
 
     //FRAGRANCE NOTES
@@ -31,8 +32,6 @@ jQuery( document ).ready(function($) {
         $(this).closest('.perfume').toggleClass('overflow-bottom');
       })
     });
-
-    // $(this).scrollTop(0);
 
 });
 
@@ -55,6 +54,8 @@ jQuery(window).scroll(function($){
     if(scrollPos > 100) {
       jQuery('#intro .col-12 > p').css('opacity',1);
       jQuery('.scroll').css('opacity',0);
+      jQuery('#intro .col-12 > p').addClass('show');
+      jQuery('.scroll').addClass('hidden');
     }
 
     if(scrollPos > 200) {
@@ -81,6 +82,9 @@ skip.addEventListener('click',function(){
 desktopPlayer.on('ended', function() {
   openingAnimations();
 });
+mobilePlayer.on('ended', function() {
+  openingAnimations();
+});
 
 function openingAnimations() {
   var tl = new TimelineLite();
@@ -103,11 +107,6 @@ var fadeIn = new TimelineLite();
     var handmovement = new TimelineLite({repeat: -1, yoyo: true});
     handmovement.to("#hand-orange-flowers", 5, {rotate: -2});
     
-
-      // fadeIn.eventCallback("onComplete", function() {
-      //   var handmovement = new TimelineLite({repeat: -1, yoyo: true});
-      //   handmovement.to("#hand-orange-flowers", 5, {rotate: -2});
-      // });
   });
 }
 
@@ -140,18 +139,6 @@ venenumlilyone.to("#venenum-lily-stem-1", 3, {rotate: 10});
 
 var venenumlilytwo = new TimelineLite({repeat: -1,defaults: { duration: 1 }, yoyo: true});
 venenumlilytwo.to("#venenum-lily-stem-2", 3, {rotate: 10});
-
-var arcanavine = new TimelineLite({repeat: -1,defaults: { duration: 1}, yoyo: true});
-arcanavine.to("#av1", 3, {rotate: -3});
-
-var arcanavine2 = new TimelineLite({repeat: -1,defaults: { duration: 1,  repeatDelay: 1}, yoyo: true});
-arcanavine2.to("#av2", 4, {rotate: -10});
-
-var arcanavine3 = new TimelineLite({repeat: -1,defaults: { duration: 1, y:-5, x:-4}, yoyo: true});
-arcanavine3.to("#av3", 3, {rotate: -2});
-
-var arcanavine4 = new TimelineLite({repeat: -1,defaults: { duration: 2,}, yoyo: true});
-arcanavine4.to("#av4", 6, {rotate: -7});
 
 var redflowersmall = new TimelineLite({repeat: -1,defaults: { duration: 1 }, yoyo: true});
 redflowersmall.to("#red-flower-small-main", 3, {rotate: -3});
@@ -186,95 +173,6 @@ var crepusculummirabile = gsap.timeline({ scrollTrigger:{
   }
 })
 .to('#crep-front', {yPercent:-100,duration:10, ease:'none'}, 1);
-
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacircleone", 22, {y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacircletwo", 27, {delay:0.5, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacirclethree", 23, {delay:2, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacirclefour", 29, {delay:0.1, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacirclefive", 21, {delay:0.3, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacirclesix", 30, {delay:1.2, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacircleseven", 24, {delay:0.5, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacircleeight", 19, {delay:0.2, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacirclenine", 22, {delay:1, y: -2000, opacity: 0});
-
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacircleonesecond", 22, {delay: 8, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacircletwosecond", 27, {delay:8.5, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacirclethreesecond", 23, {delay:10, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacirclefoursecond", 29, {delay:8.1, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacirclefivesecond", 21, {delay:8.3, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacirclesixsecond", 30, {delay:9.2, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacirclesevensecond", 24, {delay:8.5, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacircleeightsecond", 19, {delay:8.2, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacircleninesecond", 22, {delay:9, y: -2000, opacity: 0});
-
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacircleonethird", 22, {delay: 15, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacircletwothird", 27, {delay:15.5, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacirclethreethird", 23, {delay:17, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacirclefourthird", 29, {delay:15.1, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacirclefivethird", 21, {delay:15.3, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacirclesixthird", 30, {delay:16.2, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacircleseventhird", 24, {delay:15.5, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacircleeightthird", 19, {delay:15.2, y: -2000, opacity: 0});
-var seaCircles = new TimelineLite({repeat: -1});
-seaCircles.to(".seacircleninethird", 22, {delay:16, y: -2000, opacity: 0});
-
-
-
-var pollenCircles = new TimelineLite({repeat: -1});
-pollenCircles.to(".pollenone", 8, {x: -100, y: -700, opacity: 0, ease:'circ'});
-var pollenCircles = new TimelineLite({repeat: -1});
-pollenCircles.to(".pollentwo", 5, {x: -60, delay:0.5, y: -700, opacity: 0, ease:'circ'});
-var pollenCircles = new TimelineLite({repeat: -1});
-pollenCircles.to(".pollenthree", 7, {x: -20, delay:2, y: -700, opacity: 0, ease:'circ'});
-var pollenCircles = new TimelineLite({repeat: -1});
-pollenCircles.to(".pollenfour", 3, {x: 0, delay:0.1, y: -700, opacity: 0, ease:'circ'});
-var pollenCircles = new TimelineLite({repeat: -1});
-pollenCircles.to(".pollenfive", 5, {x: 30, delay:0.3, y: -700, opacity: 0, ease:'circ'});
-var pollenCircles = new TimelineLite({repeat: -1});
-pollenCircles.to(".pollensix", 6, {x: 70, delay:1.2, y: -700, opacity: 0, ease:'circ'});
-var pollenCircles = new TimelineLite({repeat: -1});
-pollenCircles.to(".pollenseven", 4, {x:100, delay:0.5, y: -700, opacity: 0, ease:'circ'});
-
-var pollenCircles = new TimelineLite({repeat: -1});
-pollenCircles.to(".pollenonesecond", 8, {delay: 1.5, x: -100, y: -700, opacity: 0, ease:'circ'});
-var pollenCircles = new TimelineLite({repeat: -1});
-pollenCircles.to(".pollentwosecond", 5, {x: -60, delay:2.5, y: -700, opacity: 0, ease:'circ'});
-var pollenCircles = new TimelineLite({repeat: -1});
-pollenCircles.to(".pollenthreesecond", 6, {x: -20, delay:4, y: -700, opacity: 0, ease:'circ'});
-var pollenCircles = new TimelineLite({repeat: -1});
-pollenCircles.to(".pollenfoursecond", 3, {x: 0, delay:2.1, y: -700, opacity: 0, ease:'circ'});
-var pollenCircles = new TimelineLite({repeat: -1});
-pollenCircles.to(".pollenfivesecond", 5, {x: 30, delay:2.8, y: -700, opacity: 0, ease:'circ'});
-var pollenCircles = new TimelineLite({repeat: -1});
-pollenCircles.to(".pollensixsecond", 6, {x: 70, delay:3.2, y: -700, opacity: 0, ease:'circ'});
-var pollenCircles = new TimelineLite({repeat: -1});
-pollenCircles.to(".pollensevensecond", 4, {x:100, delay:3.5, y: -700, opacity: 0, ease:'circ'});
 
 
 //SCROLL TRIGGERED ELEMENTS
@@ -369,17 +267,6 @@ var mirabilisBottleDesktop = gsap.timeline({
 })
 .to('#mirabilis-mobile-bottle', 1, {opacity:1, ease:'linear'});
 
-var mirabilisAnimationBottleDesktop = gsap.timeline({
-  scrollTrigger:{
-    trigger: "#mirabilis",
-    pin: false,
-    scrub:0.2,
-    start: 'top -100px bottom',
-    end:'+=500',
-  }
-})
-.to('#mirabilis-animation-bottle', 1, {scale:1, ease:'linear'});
-
 
 var octoContainer = gsap.timeline({
   scrollTrigger:{
@@ -422,23 +309,6 @@ const resetOpenBudPetalOne = ScrollTrigger.create({
   }
 });
 
-
-// const mirabilisClosedBud = gsap.to("#mirabilis-bottom-right-two", {scale: 1, y:0, duration: 2, paused: true });
-
-// const playMirabilisClosedBud = ScrollTrigger.create({
-//   trigger:'.mirabilis-closed-buds', 
-//   start:'top 700px', 
-//   onEnter: () => {
-//       mirabilisClosedBud.play()
-//   }
-// });
-
-// const resetMirabilisClosedBud = ScrollTrigger.create({
-//   trigger:'.mirabilis-closed-buds',
-//   onLeaveBack: () => {
-//       mirabilisClosedBud.pause(0)
-//   }
-// });
 
 gsap.to("#mirabilis-bottom-right-two", {keyframes: [
   {x: 3, y:0, rotate:1, duration: 1.5},
@@ -515,17 +385,6 @@ gsap.to(".octo-inner-container", {keyframes: [
   {x: 0, y: 15, rotate:-1, duration: 2},
 ], repeat:-1, yoyo:true});
 
-gsap.to("#crep-bottle-bg", {keyframes: [
-  {x: -2, y: -4, rotate:38, duration: 3},
-  {x: -6, y: -9, rotate:32, duration: 4},
-], repeat:-1, yoyo:true, ease:'power1'});
-
-gsap.to("#crep-bottle-bg-2", {keyframes: [
-  {x: -2, y: -4, rotate:-33, duration: 2},
-  {x: 3, y: 6, rotate:-28, duration: 3},
-], repeat:-1, yoyo:true});
-
-
 
 gsap.to("#crep-tentacle-2-arm-1", {keyframes: [{rotate:-3.5, duration: 1.3},{rotate:3, duration: 2},], repeat:-1, yoyo:true});
 gsap.to("#crep-tentacle-2-arm-2", {keyframes: [{rotate:-3, duration: 2},{rotate:3, duration: 3},], repeat:-1, yoyo:true});
@@ -561,172 +420,8 @@ gsap.to("#crep-tentacle-1-arm-12", {keyframes: [{rotate:-8, duration: 2.1},{rota
 
 gsap.to(".crep-tentacle-1", {scrollTrigger: "#crep-tentacle-1", delay:1.5, scale:1, y:0, x:0, duration:3});
 
-
-// jQuery( document ).ready(function($) {
-//   if ($(window).width() <= 766 ) {
-
-//     gsap.to("#butterfly", {scrollTrigger: "#arcana-rosa .bottle", duration:2, x:60, y:70});
-//     gsap.to("#butterfly-wing", {scrollTrigger: "#arcana-rosa .bottle", duration:2, x:60, y:70});
-//     // gsap.to("#butterfly", {scrollTrigger: "#arcana-rosa .bottle", duration:2, x:80, y:100, rotate:-30});
-//     // gsap.to("#butterfly-wing", {scrollTrigger: "#arcana-rosa .bottle", duration:2, x:80, y:100});
-
-//   } else if ($(window).width() <= 990) {
-//     gsap.to("#butterfly", {scrollTrigger: "#arcana-rosa .bottle", duration:2, x:130, y:130});
-//     gsap.to("#butterfly-wing", {scrollTrigger: "#arcana-rosa .bottle", duration:2, x:130, y:130});
-
-//   } else if ($(window).width() <= 1198) {
-//     gsap.to("#butterfly", {scrollTrigger: "#arcana-rosa .bottle", duration:2, x:165, y:330});
-//     gsap.to("#butterfly-wing", {scrollTrigger: "#arcana-rosa .bottle", duration:2, x:165, y:330});
-
-//   } else if ($(window).width() <= 1499) {
-//     gsap.to("#butterfly", {scrollTrigger: "#arcana-rosa .bottle", duration:2, x:240, y:330});
-//     gsap.to("#butterfly-wing", {scrollTrigger: "#arcana-rosa .bottle", duration:2, x:240, y:330});
-//   }
-
-// });
-
-
 gsap.to("#butterfly", {scrollTrigger: "#arcana-rosa .bottle", duration:2, x:130, y:130});
 gsap.to("#butterfly-wing", {scrollTrigger: "#arcana-rosa .bottle", duration:2, x:130, y:130});
-
-// var closedBuds = gsap.timeline({ scrollTrigger:{
-//     trigger: "#mirabilis-desktop-bottle",
-//     scrub: true,
-//     start: 'top',
-//     end:'+=1600',
-//   }
-// }).to('#mirabilis-closed-buds', {yPercent:-100,duration:6, ease:'none'});
-
-
-
-// const openFlowerA = gsap.to("#tenebrae-top-a", {scale:1, duration: 2, paused: true });
-// const openFlowerB = gsap.to("#tenebrae-top-b", {scale:1, duration: 3, paused: true });
-// const openFlowerC = gsap.to("#tenebrae-top-c", {scale:1, duration: 2.5, paused: true });
-// const openFlowerD = gsap.to("#tenebrae-top-d", {scale:1, duration: 2, paused: true });
-// const openFlowerE = gsap.to("#tenebrae-top-e", {scale:1, duration: 2, paused: true });
-// const openFlowerF = gsap.to("#tenebrae-top-f", {scale:1, duration: 3.5, paused: true });
-// const openFlowerG = gsap.to("#tenebrae-top-g", {scale:1, duration: 2, paused: true });
-// const openFlowerH = gsap.to("#tenebrae-top-h", {scale:1, duration: 2.5, paused: true });
-// const openFlowerI = gsap.to("#tenebrae-top-i", {scale:1, duration: 2, paused: true });
-// const openFlowerJ = gsap.to("#tenebrae-top-j", {scale:1, duration: 1.5, paused: true });
-// const openFlowerK = gsap.to("#tenebrae-top-k", {scale:1, duration: 2, paused: true });
-// const openFlowerM = gsap.to("#tenebrae-top-m", {scale:1, duration: 3.5, paused: true });
-// const openFlowerN = gsap.to("#tenebrae-top-n", {scale:1, duration: 2, paused: true });
-// const openFlowerO = gsap.to("#tenebrae-top-o", {scale:1, duration: 2, paused: true });
-// const openFlowerP = gsap.to("#tenebrae-top-p", {scale:1, duration: 1, paused: true });
-// const openFlowerQ = gsap.to("#tenebrae-top-q", {scale:1, duration: 4, paused: true });
-// const openFlowerR = gsap.to("#tenebrae-top-r", {scale:1, duration: 5, paused: true });
-// const openFlowerS = gsap.to("#tenebrae-top-s", {scale:1, duration: 2, paused: true });
-// const openFlowerT = gsap.to("#tenebrae-top-t", {scale:1, duration: 2, paused: true });
-// const openFlowerU = gsap.to("#tenebrae-top-u", {scale:1, duration: 2, paused: true });
-// const openFlowerV = gsap.to("#tenebrae-top-v", {scale:1, duration: 2, paused: true });
-// const openFlowerW = gsap.to("#tenebrae-top-w", {scale:1, duration: 2, paused: true });
-// const openFlowerX = gsap.to("#tenebrae-top-x", {scale:1, duration: 2, paused: true });
-// const openFlowerY = gsap.to("#tenebrae-top-y", {scale:1, duration: 2, paused: true });
-// const openFlowerZ = gsap.to("#tenebrae-top-z", {scale:1, duration: 2, paused: true });
-// const openFlowerAA = gsap.to("#tenebrae-top-aa", {scale:1, duration: 2, paused: true });
-// const openFlowerAB = gsap.to("#tenebrae-top-ab", {scale:1, duration: 2, paused: true });
-// const openFlowerAC = gsap.to("#tenebrae-top-ac", {scale:1, duration: 2, paused: true });
-// const openFlowerAD = gsap.to("#tenebrae-top-ad", {scale:1, duration: 2, paused: true });
-// const openFlowerAE = gsap.to("#tenebrae-top-ae", {scale:1, duration: 2, paused: true });
-// const openFlowerAF = gsap.to("#tenebrae-top-af", {scale:1, duration: 2, paused: true });
-// const openFlowerAG = gsap.to("#tenebrae-top-ag", {scale:1, duration: 2, paused: true });
-// const openFlowerAH = gsap.to("#tenebrae-top-ah", {scale:1, duration: 2, paused: true });
-// const openFlowerAI = gsap.to("#tenebrae-top-ai", {scale:1, duration: 2, paused: true });
-// const openFlowerAJ = gsap.to("#tenebrae-top-aj", {scale:1, duration: 2, paused: true });
-// const openFlowerAK = gsap.to("#tenebrae-top-ak", {scale:1, duration: 2, paused: true });
-
-
-// const playOpenFlower = ScrollTrigger.create({
-//   trigger:'.tenebrae-top', 
-//   start:'top 700px', 
-//   onEnter: () => {
-//       openFlowerA.play()
-//       openFlowerB.play()
-//       openFlowerC.play()
-//       openFlowerD.play()
-//       openFlowerE.play()
-//       openFlowerF.play()
-//       openFlowerG.play()
-//       openFlowerH.play()
-//       openFlowerI.play()
-//       openFlowerJ.play()
-//       openFlowerK.play()
-//       openFlowerM.play()
-//       openFlowerN.play()
-//       openFlowerO.play()
-//       openFlowerP.play()
-//       openFlowerQ.play()
-//       openFlowerR.play()
-//       openFlowerS.play()
-//       openFlowerT.play()
-//       openFlowerU.play()
-//       openFlowerV.play()
-//       openFlowerW.play()
-//       openFlowerX.play()
-//       openFlowerY.play()
-//       openFlowerZ.play()
-//       openFlowerAA.play()
-//       openFlowerAB.play()
-//       openFlowerAC.play()
-//       openFlowerAD.play()
-//       openFlowerAE.play()
-//       openFlowerAF.play()
-//       openFlowerAG.play()
-//       openFlowerAH.play()
-//       openFlowerAI.play()
-//       openFlowerAJ.play()
-//       openFlowerAK.play()
-//   }
-// });
-
-// const resetOpenFlower = ScrollTrigger.create({
-//   trigger:'.tenebrae-top',
-//   onLeaveBack: () => {
-//       openFlowerA.pause(0)
-//       openFlowerB.pause(0)
-//       openFlowerC.pause(0)
-//       openFlowerD.pause(0)
-//       openFlowerE.pause(0)
-//       openFlowerF.pause(0)
-//       openFlowerG.pause(0)
-//       openFlowerH.pause(0)
-//       openFlowerI.pause(0)
-//       openFlowerJ.pause(0)
-//       openFlowerK.pause(0)
-//       openFlowerM.pause(0)
-//       openFlowerN.pause(0)
-//       openFlowerO.pause(0)
-//       openFlowerP.pause(0)
-//       openFlowerQ.pause(0)
-//       openFlowerR.pause(0)
-//       openFlowerS.pause(0)
-//       openFlowerT.pause(0)
-//       openFlowerU.pause(0)
-//       openFlowerV.pause(0)
-//       openFlowerW.pause(0)
-//       openFlowerX.pause(0)
-//       openFlowerY.pause(0)
-//       openFlowerZ.pause(0)
-//       openFlowerAA.pause(0)
-//       openFlowerAB.pause(0)
-//       openFlowerAC.pause(0)
-//       openFlowerAD.pause(0)
-//       openFlowerAE.pause(0)
-//       openFlowerAF.pause(0)
-//       openFlowerAG.pause(0)
-//       openFlowerAH.pause(0)
-//       openFlowerAI.pause(0)
-//       openFlowerAJ.pause(0)
-//       openFlowerAK.pause(0)
-//   }
-// });
-
-// gsap.to("#mirabilis-open-bud-petal-1", {scrollTrigger: "#mirabilis-open-bud", delay:1, rotate: 0, duration: 2 });
-// gsap.to("#mirabilis-open-bud-petal-2", {scrollTrigger: "#mirabilis-open-bud", delay:1, rotate: 0, duration: 2 });
-// gsap.to("#mirabilis-open-bud-petal-3", {scrollTrigger: "#mirabilis-open-bud", delay:1, rotate: 0, duration: 2 });
-// gsap.to("#mirabilis-open-bud-petal-4", {scrollTrigger: "#mirabilis-open-bud", delay:1, rotate: 0, duration: 2 });
-
 
 // BELOW INTRO
 gsap.to("#yellow-flower-container", {scrollTrigger: "#yellow-flower-container", rotate: 10, duration: 4});
@@ -741,21 +436,8 @@ gsap.to("#obscuratio-bottle-bg", {scrollTrigger: "#obscuratio-container", delay:
 gsap.to("#venenum-blue-flower-stem", {scrollTrigger: "#venenum-blue-flower", delay:0, duration:3, rotate:10 });
 gsap.to("#venenum-blue-flower", {scrollTrigger: "#venenum-blue-flower", delay:0, duration:3, rotate:0 });
 
-
-
 gsap.to("#venenum-bg-left", {scrollTrigger: "#venenum-bottle", delay:1, x:-60, scale: 1, duration:2, startAt: { scale: 0.7 }, immediateRender: true });
 gsap.to("#venenum-bg-right", {scrollTrigger: "#venenum-bottle", delay:1.5, x:60, scale: 1, duration:2, startAt: { scale: 0.7 }, immediateRender: true });
-
-gsap.to("#mirabilis-bottle-bg", {scrollTrigger: "#mirabilis-container", delay:1, rotate: 0, duration: 2.5 });
-
-// gsap.to("#arcana-butterfly", {scrollTrigger: "#arcana-bottle", x:-800, y:500, duration:3 });
-
-
-gsap.to("#mirabilis-leaf-left", {scrollTrigger: "#mirabilis-open-bud", delay:1, rotate: 0, duration: 3 });
-gsap.to("#mirabilis-leaf-right", {scrollTrigger: "#mirabilis-leaf-left", delay:1, rotate: 0, duration: 3 });
-
-// gsap.to("#mirabilis-bottom-left", {scrollTrigger: "#tenebrae-top", y: 0, duration: 3, scale:1 });
-// gsap.to("#mirabilis-bottom-right", {scrollTrigger: "#tenebrae-top", delay:0.5, rotate:-5, y: 0, duration: 3, scale:1 });
 
 gsap.to("#tenebrae-right-8", {scrollTrigger: "#tenebrae-right-5", x: 0, duration: 2, scale:1 });
 gsap.to("#tenebrae-right-7", {scrollTrigger: "#tenebrae-right-5", delay:0.4, x: 0, duration: 2, scale:1 });
@@ -786,8 +468,6 @@ gsap.to("#tenebrae-center-4", {scrollTrigger: "#tenebrae-left-5", delay: 2.4, du
 gsap.to("#tenebrae-center-3", {scrollTrigger: "#tenebrae-left-5", delay: 2.8, duration: 2, scale:1 });
 gsap.to("#tenebrae-center-2", {scrollTrigger: "#tenebrae-left-5", delay: 3.2, duration: 2, scale:1 });
 gsap.to("#tenebrae-center-1", {scrollTrigger: "#tenebrae-left-5", delay: 3.6, duration: 2, scale:1 });
-
-// gsap.to(".octo-container", {scrollTrigger: "#octopus-image", x:0, duration:7});
 
 
 //VINES
@@ -822,31 +502,7 @@ $(window).scroll(function(){
   if(elementScrolled('#quote-vine-svg-1')) {
     $('#quote-vine-svg-1').addClass('animate');
   } 
-  
-
-  // if(elementScrolled('#butterfly')) {
-  //   $('#butterfly').addClass('butterfly-animation');
-  //   $('#butterfly-wing').addClass('butterfly-animation');
-  // }
 
 });
-
-// var scrollSunTl = gsap.timeline();
-// scrollSunTl.to('#following-butterfly', {
-//   scrollTrigger: {
-//     trigger: '#obscuratio',
-//     start: 'top 100%-=40', // which means "when the top of the trigger hits 40px above the bottom of the viewport
-//    // end: 'bottom 50%',
-//     toggleActions: "play none none reset",
-//     markers: true,
-//   },
-//   right:100,
-//   left:'auto'
-//   // position:'absolute', // new
-//   // top:10 // new 
-// });
-
-
-
 
 
