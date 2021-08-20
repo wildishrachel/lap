@@ -89,14 +89,16 @@ gsap.registerPlugin(ScrollTrigger);
 //FADE IN ON SCROLL
 
 var sections = gsap.utils.toArray('.fadeIn');
-sections.forEach((section) => {
+sections.forEach(function(section) {
   gsap.to(section, { autoAlpha: 1, y:0, duration: 2,
     scrollTrigger: {
         trigger: section,
         start: 'top bottom-=100',
         scrub: false,
         end: '+=500',
-        onRefresh: self => self.progress === 1 && self.animation.progress(1),
+        // onRefresh: self => self.progress === 1 && self.animation.progress(1),
     }
   });
-})
+});
+
+

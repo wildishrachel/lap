@@ -289,18 +289,19 @@ const openBud = gsap.to(".mirabilis-open-bud-container", {y:0, duration: 2, paus
 const playOpenBudPetalOne = ScrollTrigger.create({
   trigger:'.mirabilis-open-bud-container', 
   start:'top 700px', 
-  onEnter: () => {
+  onEnter: function() {
       openBudPetalOne.play()
       openBudPetalTwo.play()
       openBudPetalThree.play()
       openBudPetalFour.play()
       openBud.play()
   }
+
 });
 
 const resetOpenBudPetalOne = ScrollTrigger.create({
   trigger:'.mirabilis-open-bud-container',
-  onLeaveBack: () => {
+  onLeaveBack: function() {
       openBudPetalOne.pause(0)
       openBudPetalTwo.pause(0)
       openBudPetalThree.pause(0)

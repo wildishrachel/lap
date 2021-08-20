@@ -878,7 +878,7 @@
 	#opening-red-flower-container > img {
 		max-width: 230px;
 	}
-	#below-intro img#hand-orange-flowers {
+	.lap-container #below-intro img#hand-orange-flowers {
 		right: 100px;
 	}
 	#below-intro img#yellow-flower, 
@@ -1122,7 +1122,7 @@
 	#stem-two {
 		transform-origin: 319px 177px !important;
 	}
-	#below-intro img#hand-orange-flowers {
+	.lap-container #below-intro img#hand-orange-flowers {
 		right: 150px;
 		width: 400px;
 	}
@@ -1639,7 +1639,7 @@
 	    top: 420px;
 	    transform: scale(1) rotate(348deg);
 	}
-	#below-intro img#hand-orange-flowers {
+	.lap-container #below-intro img#hand-orange-flowers {
 		right: 250px;
 		width: 500px;
 	}
@@ -2083,7 +2083,7 @@
 	    transform: scale(1) rotate(348deg);
 		bottom: -200px;
 	}
-	#below-intro img#hand-orange-flowers {
+	.lap-container #below-intro img#hand-orange-flowers {
 		right: 250px;
 		width: 700px;
 	}
@@ -2369,7 +2369,7 @@
 	#blue-flower {
 	    right: -380px;
 	}
-	#below-intro img#hand-orange-flowers {
+	.lap-container #below-intro img#hand-orange-flowers {
 		right: 350px;
 	}
 	#below-intro img#yellow-flower,
@@ -2675,6 +2675,13 @@
 	position: absolute;
 	z-index: 1;
 }
+.daphne-video {
+	z-index: 15;
+	position: relative;
+}
+.daphne-video #venenum-lily-person{
+	display: none;
+}
 #mirabilis-leaf-person {
 	position: absolute;
 	max-width: 110%;
@@ -2690,7 +2697,7 @@
 	right: 5px;
 }
 
-.inner #mirabilis-leaf-c {
+.lap-inner #mirabilis-leaf-c {
 	display: none;
 }
 
@@ -2764,11 +2771,12 @@
 	.flower-circles.inner {
 		right: 50px;
 	}
-	.inner #mirabilis-leaf-c {
+	.lap-inner #mirabilis-leaf-c {
 		display: block;
 		right: -500px;
     	top: 0;
 	}
+	
 }
 @media (min-width: 1199px) {
 	#mirabilis-closed-bud-person {
@@ -2787,14 +2795,19 @@
 		right: 100px;
 		top: 245px;
 	}
-	.inner #mirabilis-leaf-c {
+	.lap-inner #mirabilis-leaf-c {
 		display: block;
 		right: -400px;
     	top: 85px;
 	}
+	.daphne-video #venenum-lily-person{
+		display: block;
+		left: -230px;
+		top: -160px;
+	}
 }
 @media (min-width: 1500px) {
-	.inner #mirabilis-leaf-c {
+	.lap-inner #mirabilis-leaf-c {
 		max-width: 760px;
 		right: -350px;
     	top: 85px;
