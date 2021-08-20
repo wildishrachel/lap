@@ -882,7 +882,8 @@ form button.button {
 	max-height: none;
 	margin-right: 20px;
 }
-#samplesSlideOut .slideOutTab:hover {
+#samplesSlideOut .slideOutTab:hover,
+#samplesSlideOut .slideOutTab:focus {
 	background-color: #e0e0e0;
 }
 #samplesSlideOut .slideOutTab.active {
@@ -923,6 +924,12 @@ form button.button {
 }
 #basketpopover h4 {
 	font-family: akkurat;
+}
+.slideout {
+	visibility: hidden;
+}
+.slideout.showSlideOut {
+	visibility: visible;
 }
 .slideout p {
 	font-size: 1rem;
@@ -976,8 +983,11 @@ form button.button {
   top: 20%;
   right: 0;
   z-index: 10000;
+  border: 0;
+  display: block;
 }
-.slideOutTab:hover {
+.slideOutTab:hover,
+.slideOutTab:focus {
 	background-color: #b19865;
 	cursor: pointer;
 }
@@ -992,9 +1002,9 @@ form button.button {
 .slideOutTab div {
   text-align: center;
   position: relative;
-  right: 51px;
-  top: 45px;
-  width: 140px;
+  right: 47px;
+  top: 8px;
+  width: 120px;
   -webkit-transform: rotate(-270deg);
   -moz-transform: rotate(-270deg);
   -o-transform: rotate(-270deg);
@@ -1009,6 +1019,10 @@ form button.button {
 	background-color: white;
 	top: 10px;
 	position: relative;
+}
+#samplesTab:hover, 
+#samplesTab:focus {
+	background-color: #d2d2d2;
 }
 .slideoutbuttons {
 	position: fixed;
@@ -1188,8 +1202,7 @@ form button.button {
 		font-size: 1.2rem;
 	}
 	.slideOutTab div {
-		right: 46px;
-		top: 60px;
+		right: 42px;
 	}
 	#slideOut,
 	#samplesSlideOut {
@@ -1596,6 +1609,7 @@ header .header-bottom img {
 	padding-top: 25px;
 	margin-bottom: 20px;
 	padding-bottom: 15px;
+	background-color: white;
 }
 
 .fragrance-container .fragrance-image img {
@@ -2847,6 +2861,7 @@ header .header-bottom img {
 	overflow: hidden;
 	text-indent: 9999px;
 	z-index: 5;
+	color: white;
 }
 .slider-single button.slick-prev.sticky,
 .slider-single button.slick-next.sticky {
