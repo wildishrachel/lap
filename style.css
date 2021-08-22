@@ -564,6 +564,7 @@ body.lap-container {
 	width: 100%;
 	height: 100%;
 	background-color: black;
+	display: none;
 }
 .lap-container #opening-videos iframe{
 	width: 100%;
@@ -572,6 +573,15 @@ body.lap-container {
 .lap-container #opening.hide,
 .lap-container #opening-videos.hide {
 	display: none;
+}
+.lap-container #opening-videos.show {
+	display: block;
+}
+.lap-container #inner-home-container {
+	display: none;
+}
+.lap-container #inner-home-container.show {
+	display: block;
 }
 
 /*INTRO*/
@@ -2270,6 +2280,10 @@ body.lap-container {
 	margin-top: 50px;
 	z-index: 10;
 }
+.lap-container .lap-inner .video {
+	position: relative;
+	z-index: 20;
+}
 .lap-container .quote.secondary {
 	padding-top: 200px;
 	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(6,34,24,1) 100%);
@@ -2761,7 +2775,7 @@ body.lap-container {
     color: white;
 }
 .lap-container #play-icon:focus {
-	outline: 1px solid red;
+		border: 1px solid #A9956D;
 }
 .lap-container #play-icon.playing {
 	background-image: url('assets/sound-on.png');

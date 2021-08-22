@@ -17,929 +17,926 @@
 <body class="lap-container" onload="checkCookieOnLoad()">
 	<div class="main-container lap-container">
 
-	<div id="overlay">
-	</div>
+		 <div id="overlay">
+		</div>
 
-	<div id="opening">
-		<span id="opening-red-flower-container">
-			<img alt="red flower" id="red-flower-opening" src="assets/opening-red-flower.png"/>
-			<img alt="red flower stem" id="red-flower-opening-stem" src="assets/opening-red-flower-stem.png"/>
-		</span>
-		<span id="opening-flower-container">
-			<img alt="purple flower" id="white-purple-flower-stem-opening" src="assets/white-purple-flower-stem.png"/>
-			<svg class="flower-circles" width="100" height="300" >
-			    <circle id="circleone" style="fill:#ffffff;" class="circle" cx="50" cy="10" r="1.5"></circle>
-			    <circle id="circletwo" style="fill:#ffffff;" class="circle" cx="50" cy="8" r="1"></circle>
-			    <circle id="circlethree" style="fill:#ffffff;" class="circle" cx="50" cy="2" r="2"></circle>
-			    <circle id="circlefour" style="fill:#ffffff;" class="circle" cx="50" cy="7" r="0.5"></circle>
-			    <circle id="circlefive" style="fill:#ffffff;" class="circle" cx="50" cy="10" r="1"></circle>
-			    <circle id="circlesix" style="fill:#ffffff;" class="circle" cx="50" cy="3" r="2"></circle>
-			</svg>
-		</span>
-		
-		<section class="music ">
+		<div id="opening">
+			<span id="opening-red-flower-container">
+				<img alt="red flower" id="red-flower-opening" src="assets/opening-red-flower.png"/>
+				<img alt="red flower stem" id="red-flower-opening-stem" src="assets/opening-red-flower-stem.png"/>
+			</span>
+			<span id="opening-flower-container">
+				<img alt="purple flower" id="white-purple-flower-stem-opening" src="assets/white-purple-flower-stem.png"/>
+				<svg class="flower-circles" width="100" height="300" >
+				    <circle id="circleone" style="fill:#ffffff;" class="circle" cx="50" cy="10" r="1.5"></circle>
+				    <circle id="circletwo" style="fill:#ffffff;" class="circle" cx="50" cy="8" r="1"></circle>
+				    <circle id="circlethree" style="fill:#ffffff;" class="circle" cx="50" cy="2" r="2"></circle>
+				    <circle id="circlefour" style="fill:#ffffff;" class="circle" cx="50" cy="7" r="0.5"></circle>
+				    <circle id="circlefive" style="fill:#ffffff;" class="circle" cx="50" cy="10" r="1"></circle>
+				    <circle id="circlesix" style="fill:#ffffff;" class="circle" cx="50" cy="3" r="2"></circle>
+				</svg>
+			</span>
 			
-			<div class="container">
-				<div class="row intro-top">
-					<div class="col-12">
-						<div>
-							<img alt="lArtisan Parfumeur Seal" class="lap-seal" src="assets/LAP-gold.png"/>
+			<section class="music">
+				
+				<div class="container">
+					<div class="row intro-top">
+						<div class="col-12">
+							<div>
+								<img alt="lArtisan Parfumeur Seal" class="lap-seal" src="assets/LAP-gold.png"/>
+							</div>
+						</div>
+					</div>
+					<div class="row intro-bottom">
+						<div class="col-10 offset-1 didot">
+							<p>This site includes sound as part of the immersive experience.</p>
+							<p>We kindly ask that you select the option below for the full experience.</p>
+							<p><a href="#" id="play-video-sound" class="button white">Turn on Sound</a></p>
+							<p><a href="#" id="play-video" class="white">Continue Without</a></p>
 						</div>
 					</div>
 				</div>
-				<div class="row intro-bottom">
-					<div class="col-10 offset-1 didot">
-						<p>This site includes sound as part of the immersive experience.</p>
-						<p>We kindly ask that you select the option below for the full experience.</p>
-						<p><a href="#" id="play-video-sound" class="button white">Turn on Sound</a></p>
-						<p><a href="#" id="play-video" class="white">Continue Without</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+			</section>
+		</div>
 
-	<div id="opening-videos">
-		<button id="skipbutton" class="video-skip" onclick="setCookie('clicklink', 'yes', 30)">skip</button>
-		<iframe title="vimeo-player" src="https://player.vimeo.com/video/544958017" frameborder="0" allowfullscreen id="opening-video-desktop" allow="autoplay"></iframe>
-		<iframe title="vimeo-player" src="https://player.vimeo.com/video/544958017" frameborder="0" allowfullscreen id="opening-video-mobile" allow="autoplay"></iframe>
-	</div>
-
-	
+		<div id="opening-videos">
+			<button id="skipbutton" class="video-skip" onclick="setCookie('clicklink', 'yes', 30)">skip</button>
+			<iframe title="vimeo-player" src="https://player.vimeo.com/video/544958017" frameborder="0" allowfullscreen id="opening-video-desktop" allow="autoplay"></iframe>
+			<iframe title="vimeo-player" src="https://player.vimeo.com/video/544958017" frameborder="0" allowfullscreen id="opening-video-mobile" allow="autoplay"></iframe>
+		</div> 
 
 		<div id="audio-player-container">
 		  <audio src="assets/music.wav" preload="metadata" loop id="audio"></audio>
 		  <button id="play-icon" value="play">play</button>
 		</div>
 
-		<header>
-			<div class="header-bottom">
-				<div class="logo">
-					<a href="#"><img alt="lArtisan Parfumeur logo" src="assets/l-artisan-parfumeur-logo.jpg"/></a>
-				</div>
-			</div>
-		</header>
+		<div id="inner-home-container">
 
-		<section id="top">
-			<img alt="butterfly" src="assets/top-butterfly.png"/>
-			<img id="top-wing" alt="butterfly-wing" src="assets/top-butterfly-wing.png"/>
-			<a class="backtotop" href="#intro"><img alt="up" src="assets/up.png"/>Back to top</a>
-		</section>
-
-		<div class="slideoutbuttons">
-			<button class="slideOutTab" id="discoverTab">
-			    <div>
-			      <p>Discover</p>
-			    </div>
-			</button>
-			<button class="slideOutTab" id="samplesTab">
-			    <div>
-			      <p>Samples</p>
-			    </div>
-			</button>
-		</div>
-
-		<section id="discover">
-			<div id="slideOut" class="slideout">
-			  <div class="modal-header menu-header">
-			  	<h4>Discover La Boutique</h4>
-			  	<a href="#" class="close"><img alt="close" src="assets/close.png"/></a>
-			  </div>
-			  <div class="modal-content">
-			    <div class="modal-body">
-			    	<nav>
-					    <ul>
-							<li>
-								<a href="#obscuratio-container">
-									<span class="image"><img alt="obscuratio bottle" src="assets/bottles/obscuratio-bottle-mini.png"/></span>
-									<span><p>Obscuratio</p><p>Woody Spicy</p></span>
-								</a>
-							</li>
-							<li>
-								<a href="#crepusculum-mirabile-container">
-									<span class="image"><img alt="crepusculum mirabile bottle" src="assets/bottles/crepusculum-mirabile-bottle-mini.png"/></span>
-									<span><p>Crepusculum Mirabile</p><p>Floral</p></span>
-								</a>
-							</li>
-							<li>
-								<a href="#arcana-rosa-container">
-									<span class="image"><img alt="arcana rosa bottle" src="assets/bottles/arcana-rosa-bottle-mini.png"/></span>
-									<span><p>Arcana Rosa</p><p>Woody Floral</p></span>
-								</a>
-							</li>
-							<li>
-								<a href="#venenum-container">
-									<span class="image"><img alt="venenum bottle" src="assets/bottles/venenum-bottle-mini.png"/></span>
-									<span><p>Venenum</p><p>Woody Spicy</p></span>
-								</a>
-							</li>
-							<li>
-								<a href="#mirabilis-container">
-									<span class="image"><img alt="mirabilis bottle" src="assets/bottles/mirabilis-bottle-mini.png"/></span>
-									<span><p>Mirabilis</p><p>Oriental Woody</p></span>
-								</a>
-							</li>
-							<li>
-								<a href="#tenebrae-container">
-									<span class="image"><img alt="tenebrae bottle" src="assets/bottles/tenebrae-bottle-mini.png"/></span>
-									<span><p>Tenebrae</p><p>Woody Green</p></span>
-								</a>
-							</li>
-							<li>
-								<a href="sample.html">
-									<span class="image"><img alt="samples" src="assets/samples-menu-icon.png"/></span>
-									<span><p>Order A Sample</p><p>Order two complimentary samples</p></span>
-								</a>
-							</li>
-							<li>
-								<a href="katie.html"><span><p>About Katie Scott</p><p>The Illustrator</p></span></a>
-							</li>
-							<li>
-								<a href="daphne.html"><span><p>About Daphne Bugey</p><p>The Perfumer</p></span></a>
-							</li>
-						</ul>
-					</nav>
-			    </div>
-			  </div>
-			</div>
-			<div class="after"></div>
-		</section>
-
-		<section id="samples">
-			<div id="samplesSlideOut" class="slideout">
-			  <div class="modal-header">
-			  	<h4>My Samples</h4>
-			  	<a href="#" class="close"><img alt="close" src="assets/close.png"/></a>
-			  </div>
-			  <div class="modal-content">
-			    <div class="modal-body">
-			    	<p>Choose your two samples and add them to your basket.</p>
-			      	<ul>
-						<li>
-							<img alt="tenenbrae sample" src="assets/tenebrae-sample.png"/>
-							<span>
-								<h4>Tenebrae</h4>
-								<p>1.5ml</p>
-								<p><a href="#" class="remove">Remove</a></p>
-							</span>
-						</li>
-						<li>
-							<img alt="sample outline" src="assets/sample-outline-grey.png"/>
-							<span>
-								<h4>Empty</h4>
-							</span>
-						</li>
-						<li>
-							<button class="button">Add to Basket</button>
-						</li>
-				  	</ul>
-				  	<p>Samples are free of charge, you'll only need to pay for postage.</p>
-			    </div>
-			  </div>
-			</div>
-			<div class="after"></div>
-		</section>
-
-		<section id="outofstock">
-			<div id="outOfStockSlideOut" class="slideout">
-			  <div class="modal-header">
-			  	<h4>Out of Stock?</h4>
-			  	<a href="#" class="close"><img alt="close" src="assets/close.png"/></a>
-			  </div>
-			  <div class="modal-content">
-			    <div class="modal-body">
-			    	<p>Get notified when it's back in stock</p>
-			    	<form>
-			    		<label for="name">Name</label>
-			    		<input id="name" type="text" placeholder="Enter your name"/>
-			    		<label for="email">Email</label>
-			    		<input id="email" ype="text" placeholder="Enter your email"/>
-			    		<button class="button active">Notify Me</button>
-			    	</form>
-			    </div>
-			  </div>
-			</div>
-			<div class="after"></div>
-		</section>
-
-		<section id="basketpopover">
-			<div id="basketPopOverSlideOut" class="slideout">
-				<div class="modal-header">
-					<a href="#" class="close"><img alt="close" src="assets/close.png"/></a>
-				</div>
-			  <div class="modal-content">
-			    <div class="modal-body">
-			    	<div class="basket-bottle">
-			    		<div class="left">
-			    			<img alt="obscuratio bottle" src="assets/bottles/obscuratio-bottle.png"/>
-			    		</div>
-			    		<div class="right">
-			    			<h4>Obscuratio</h4>
-			    			<p>Eau de Parfum</p>
-			    			<ul>
-			    				<li>75ml</li>
-			    				<li>1 x £175</li>
-			    			</ul>
-			    		</div>
-			    	</div>
-			    	<button class="button active">Proceed to Purchase</button>
-			    	<button class="button active secondary">View Basket</button>
-			    </div>
-			  </div>
-			</div>
-		</section>
-
-		<section id="intro">
-			<div class="container">
-				<div class="row intro-top">
-					<div class="col-12">
-						<div>
-							<picture class="lap-seal fade">
-							    <source srcset="assets/mobile/seal-mobile.png" media="(max-width: 768px)"> 
-							    <img alt="lArtisan Parfumeur Seal" src="assets/seal.jpg"/>
-							</picture>
-							<h2 class="fade">La Botanique presents</h2>
-							<h1 class="fadeSecond">Nature at night.<br/>Transcended.</h1>
-						</div>
-						<div class="scroll">
-							<img alt="" class="desktop" src="assets/scroll.gif"/>
-							<img alt="" class="mobile" src="assets/mobile/scroll-m.png"/>
-							<p>Scroll</p>
-						</div>
+			<header>
+				<div class="header-bottom">
+					<div class="logo">
+						<a href="#"><img alt="lArtisan Parfumeur logo" src="assets/l-artisan-parfumeur-logo.jpg"/></a>
 					</div>
 				</div>
-				<div class="row intro-bottom">
-					<div class="col-12">
-						<p>Six imaginary journeys.<br/>Six unexpected combinations.</p>
-						<p>Through six Eaux de Parfum, <span class="block">L'Artisan Parfumeur</span> bares the secrets of the mysterious flora that only awakens once <span class="block">night falls</span>.</p>
-					</div>
-				</div>
-			</div>
-			<div class="elements">
-				<span id="yellow-flower-stem">
-					<img alt="yellow flower" src="assets/yellow-flower-stem.png"/>
-					<img alt="yellow flower stem" id="stem-one" src="assets/yellow-flower-stem-1.png"/>
-					<img alt="yellow flower stem two" id="stem-two" src="assets/yellow-flower-stem-2.png"/>
-				</span>
-				<span>
-					<img alt="purple flower" id="white-purple-flower-stem" src="assets/white-purple-flower-stem.png"/>
-					<svg class="flower-circles" width="100" height="300" >
-					    <circle id="circleone" style="fill:#ffffff;" class="circle" cx="50" cy="10" r="1.5"></circle>
-					    <circle id="circletwo" style="fill:#ffffff;" class="circle" cx="50" cy="8" r="1"></circle>
-					    <circle id="circlethree" style="fill:#ffffff;" class="circle" cx="50" cy="2" r="2"></circle>
-					    <circle id="circlefour" style="fill:#ffffff;" class="circle" cx="50" cy="7" r="0.5"></circle>
-					    <circle id="circlefive" style="fill:#ffffff;" class="circle" cx="50" cy="10" r="1"></circle>
-					    <circle id="circlesix" style="fill:#ffffff;" class="circle" cx="50" cy="3" r="2"></circle>
-					</svg>
-				</span>
-				<img alt="blue flower" id="blue-flower" src="assets/blue-flower.jpg">
-				<img alt="vine leaf" id="vine-leaf" src="assets/vine-leaf.png"/>
-			</div>
-		</section>
+			</header>
 
-		<section id="below-intro">
-			<div class="container-fluid p-0">
-				<div class="row">
-					<div class="col-12">
-						<div class="elements">
-							<img alt="orange flowers with hand" id="hand-orange-flowers" src="assets/hand-orange-flowers.png"/>
-							<span id="yellow-flower-container">
-								<img alt="yellow flower" id="yellow-flower" src="assets/yellow-flower.jpg"/>
-								<img alt="yellow flower first stem" id="yellow-flower-1" src="assets/yellow-flower-1.png"/>
-								<img alt="yellow flower second stem" id="yellow-flower-2" src="assets/yellow-flower-2.png"/>
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+			<section id="top">
+				<img alt="butterfly" src="assets/top-butterfly.png"/>
+				<img id="top-wing" alt="butterfly-wing" src="assets/top-butterfly-wing.png"/>
+				<a class="backtotop" href="#intro"><img alt="up" src="assets/up.png"/>Back to top</a>
+			</section>
 
-		<section id="bottles" class="fadeIn">
-			<div class="container">
-				<div class="row">
-					<div class="col-10 offset-1 text-center">
-						<div class="sample-outlines">
-							<img alt="sample outline" src="assets/sample-outline.png" />
-							<span>+</span>
-							<img alt="sample outline" src="assets/sample-outline.png" />
-						</div>
-						<p class="text-center">Order two complimentary samples. Delivery fees are redeemable on your next online purchase.</p>
-					</div>
-				</div>
+			<div class="slideoutbuttons">
+				<button class="slideOutTab" id="discoverTab">
+				    <div>
+				      <p>Discover</p>
+				    </div>
+				</button>
+				<button class="slideOutTab" id="samplesTab">
+				    <div>
+				      <p>Samples</p>
+				    </div>
+				</button>
 			</div>
-		</section>
 
-		<section class="perfume" id="obscuratio">
-			<div class="parent-container container" id="obscuratio-container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="fadeIn">Obscuratio</h2>
-						<div class="bottle fadeIn">
-							<span>
-								<img alt="obscuratio bottle" src="assets/bottles/obscuratio-bottle.png" class="bottle-image mobile"/>
-								<img alt="obscuratio bottle" src="assets/bottles/obscuratio-bottle-large.png" class="bottle-image desktop"/>
-								<a class="order" href="#">Order Sample</a>
-							</span>
-							
-							<img alt="leaf" src="assets/obscuratio-bottle-bg.png" class="bg mobile" id="obscuratio-bottle-bg"/>
-							<img alt="leaf" src="assets/obscuratio-bottle-bg-large.png" class="bg desktop" id="obscuratio-bottle-bg"/>
-							
-						</div>
-					</div>
+			<section id="discover">
+				<div id="slideOut" class="slideout">
+				  <div class="modal-header menu-header">
+				  	<h4>Discover La Boutique</h4>
+				  	<a href="#" class="close"><img alt="close" src="assets/close.png"/></a>
+				  </div>
+				  <div class="modal-content">
+				    <div class="modal-body">
+				    	<nav>
+						    <ul>
+								<li>
+									<a href="#obscuratio-container">
+										<span class="image"><img alt="obscuratio bottle" src="assets/bottles/obscuratio-bottle-mini.png"/></span>
+										<span><p>Obscuratio</p><p>Woody Spicy</p></span>
+									</a>
+								</li>
+								<li>
+									<a href="#crepusculum-mirabile-container">
+										<span class="image"><img alt="crepusculum mirabile bottle" src="assets/bottles/crepusculum-mirabile-bottle-mini.png"/></span>
+										<span><p>Crepusculum Mirabile</p><p>Floral</p></span>
+									</a>
+								</li>
+								<li>
+									<a href="#arcana-rosa-container">
+										<span class="image"><img alt="arcana rosa bottle" src="assets/bottles/arcana-rosa-bottle-mini.png"/></span>
+										<span><p>Arcana Rosa</p><p>Woody Floral</p></span>
+									</a>
+								</li>
+								<li>
+									<a href="#venenum-container">
+										<span class="image"><img alt="venenum bottle" src="assets/bottles/venenum-bottle-mini.png"/></span>
+										<span><p>Venenum</p><p>Woody Spicy</p></span>
+									</a>
+								</li>
+								<li>
+									<a href="#mirabilis-container">
+										<span class="image"><img alt="mirabilis bottle" src="assets/bottles/mirabilis-bottle-mini.png"/></span>
+										<span><p>Mirabilis</p><p>Oriental Woody</p></span>
+									</a>
+								</li>
+								<li>
+									<a href="#tenebrae-container">
+										<span class="image"><img alt="tenebrae bottle" src="assets/bottles/tenebrae-bottle-mini.png"/></span>
+										<span><p>Tenebrae</p><p>Woody Green</p></span>
+									</a>
+								</li>
+								<li>
+									<a href="sample.html">
+										<span class="image"><img alt="samples" src="assets/samples-menu-icon.png"/></span>
+										<span><p>Order A Sample</p><p>Order two complimentary samples</p></span>
+									</a>
+								</li>
+								<li>
+									<a href="katie.html"><span><p>About Katie Scott</p><p>The Illustrator</p></span></a>
+								</li>
+								<li>
+									<a href="daphne.html"><span><p>About Daphne Bugey</p><p>The Perfumer</p></span></a>
+								</li>
+							</ul>
+						</nav>
+				    </div>
+				  </div>
 				</div>
-				<div class="row">
-					<div class="col-8 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
-						<h3 class="fadeIn">The lure of Ylang-Ylang within the canopy.</h3>
-						<p class="fadeIn">At the edge of light and darkness, danger comes from an unexpected source.<a data-toggle="collapse" href="#obscuratio-collapse" class="view more">View Fragrance Notes</a></p>
-					</div>
+				<div class="after"></div>
+			</section>
+
+			<section id="samples">
+				<div id="samplesSlideOut" class="slideout">
+				  <div class="modal-header">
+				  	<h4>My Samples</h4>
+				  	<a href="#" class="close"><img alt="close" src="assets/close.png"/></a>
+				  </div>
+				  <div class="modal-content">
+				    <div class="modal-body">
+				    	<p>Choose your two samples and add them to your basket.</p>
+				      	<ul>
+							<li>
+								<img alt="tenenbrae sample" src="assets/tenebrae-sample.png"/>
+								<span>
+									<h4>Tenebrae</h4>
+									<p>1.5ml</p>
+									<p><a href="#" class="remove">Remove</a></p>
+								</span>
+							</li>
+							<li>
+								<img alt="sample outline" src="assets/sample-outline-grey.png"/>
+								<span>
+									<h4>Empty</h4>
+								</span>
+							</li>
+							<li>
+								<button class="button">Add to Basket</button>
+							</li>
+					  	</ul>
+					  	<p>Samples are free of charge, you'll only need to pay for postage.</p>
+				    </div>
+				  </div>
 				</div>
-				<div class="container-fluid p-0 outer-container fadeIn">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
-								<div class="fragrance-container collapse" id="obscuratio-collapse">
-									<p>Luminous under the stars, a tropical garden secretly breathes and exhales the heady scent of a star-shaped flower with long yellow petals.</p>
-									<div class="flex-container">
-										
-										<div class="fragrance-text">
-											<h4>Fragrance notes</h4>
-											<ul>
-												<li><img alt="" src="assets/ylang-ylang.png"/><p class="english">Ylang Ylang</p></li>
-												<li><img alt="" src="assets/patchouli.png"/><p class="english">Patchouli</p></li>
-												<li><img alt="" src="assets/vanilla.png"/><p class="english">Vanilla</p></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="details">
-									<ul>
-										<li>75ml</li>
-										<li>&euro;145</li>
-									</ul>
-								</div>
-								<div>
-									<button class="button white bag">Add to Bag</button>
-									<a data-toggle="collapse" href="#obscuratio-collapse" class="view less">View less</a>
-								</div>
+				<div class="after"></div>
+			</section>
+
+			<section id="outofstock">
+				<div id="outOfStockSlideOut" class="slideout">
+				  <div class="modal-header">
+				  	<h4>Out of Stock?</h4>
+				  	<a href="#" class="close"><img alt="close" src="assets/close.png"/></a>
+				  </div>
+				  <div class="modal-content">
+				    <div class="modal-body">
+				    	<p>Get notified when it's back in stock</p>
+				    	<form>
+				    		<label for="name">Name</label>
+				    		<input id="name" type="text" placeholder="Enter your name"/>
+				    		<label for="email">Email</label>
+				    		<input id="email" ype="text" placeholder="Enter your email"/>
+				    		<button class="button active">Notify Me</button>
+				    	</form>
+				    </div>
+				  </div>
+				</div>
+				<div class="after"></div>
+			</section>
+
+			<section id="basketpopover">
+				<div id="basketPopOverSlideOut" class="slideout">
+					<div class="modal-header">
+						<a href="#" class="close"><img alt="close" src="assets/close.png"/></a>
+					</div>
+				  <div class="modal-content">
+				    <div class="modal-body">
+				    	<div class="basket-bottle">
+				    		<div class="left">
+				    			<img alt="obscuratio bottle" src="assets/bottles/obscuratio-bottle.png"/>
+				    		</div>
+				    		<div class="right">
+				    			<h4>Obscuratio</h4>
+				    			<p>Eau de Parfum</p>
+				    			<ul>
+				    				<li>75ml</li>
+				    				<li>1 x £175</li>
+				    			</ul>
+				    		</div>
+				    	</div>
+				    	<button class="button active">Proceed to Purchase</button>
+				    	<button class="button active secondary">View Basket</button>
+				    </div>
+				  </div>
+				</div>
+			</section>
+
+			<section id="intro">
+				<div class="container">
+					<div class="row intro-top">
+						<div class="col-12">
+							<div>
+								<picture class="lap-seal fade">
+								    <source srcset="assets/mobile/seal-mobile.png" media="(max-width: 768px)"> 
+								    <img alt="lArtisan Parfumeur Seal" src="assets/seal.jpg"/>
+								</picture>
+								<h2 class="fade">La Botanique presents</h2>
+								<h1 class="fadeSecond">Nature at night.<br/>Transcended.</h1>
+							</div>
+							<div class="scroll">
+								<img alt="" class="desktop" src="assets/scroll.gif"/>
+								<img alt="" class="mobile" src="assets/mobile/scroll-m.png"/>
+								<p>Scroll</p>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="elements">
-				<span class="red-flower-container">
-					<img alt="red flower" id="red-flower-large" src="assets/red-flower-large.png"/>
-					<img alt="red flower petal" id="red-flower-large-petal-left" src="assets/red-flower-large-petal-left.png"/>
-					<img alt="second red flower petal" id="red-flower-large-petal-right" src="assets/red-flower-large-petal-right.png"/>
-				</span>
-				<img alt="orange flowers with hand" id="obscuratio-hand-orange-flowers" src="assets/hand-orange-flowers-obscuratio.png"/>
-				<img alt="tentacle" id="obscuratio-tenacle" class="fadeIn" src="assets/obscuratio-tentacle.png"/>
-			</div>
-		</section>
-
-		<section class="perfume" id="crepusculum-mirabile">
-			<div class="parent-container container" id="crepusculum-mirabile-container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="fadeIn">Crepusculum Mirabile</h2>
-						<div class="bottle fadeIn">
-							<span>
-								<img alt="crepusculum mirabile bottle" src="assets/bottles/crepusculum-bottle.png" class="bottle-image mobile"/>
-								<img alt="crepusculum mirabile bottle" src="assets/bottles/crepusculum-mirabile-bottle-large.png" class="bottle-image desktop"/>
-								<a class="order" href="#">Order Sample</a>
-								<img alt="seabed background" src="assets/crep-bg.png" id="crep-bg"/>
-								<img alt="coral" src="assets/crep-coral.png" id="crep-coral"/>
-								<span id="crep-tentacle-1">
-									<img alt="blue anemone tentacle twelve" src="assets/crep-tentacle-1-arm-12.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-12"/>
-									<img alt="blue anemone tentacle eleven" src="assets/crep-tentacle-1-arm-11.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-11"/>
-									<img alt="blue anemone tentacle ten" src="assets/crep-tentacle-1-arm-10.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-10"/>
-									<img alt="blue anemone tentacle nine" src="assets/crep-tentacle-1-arm-9.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-9"/>
-									<img alt="blue anemone tentacle eight" src="assets/crep-tentacle-1-arm-8.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-8"/>
-									<img alt="blue anemone tentacle seven" src="assets/crep-tentacle-1-arm-7.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-7"/>
-									<img alt="blue anemone tentacle six" src="assets/crep-tentacle-1-arm-6.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-6"/>
-									<img alt="blue anemone tentacle five" src="assets/crep-tentacle-1-arm-5.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-5"/>
-									<img alt="blue anemone tentacle four" src="assets/crep-tentacle-1-arm-4.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-4"/>
-									<img alt="blue anemone tentacle three" src="assets/crep-tentacle-1-arm-3.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-3"/>
-									<img alt="blue anemone tentacle two" src="assets/crep-tentacle-1-arm-2.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-2"/>
-									<img alt="blue anemone tentacle one" src="assets/crep-tentacle-1-arm-1.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-1"/>
-									<img alt="blue anemone base" src="assets/crep-tentacle-1-base.png"/>
-								</span>
-								<span id="crep-tentacle-2">
-									<img alt="green anemone tentacle fifteen"src="assets/crep-tentacle-2-arm-15.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-15"/>
-									<img alt="green anemone tentacle fourteen"src="assets/crep-tentacle-2-arm-14.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-14"/>
-									<img alt="green anemone tentacle thirteen"src="assets/crep-tentacle-2-arm-13.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-13"/>
-									<img alt="green anemone tentacle twelve"src="assets/crep-tentacle-2-arm-12.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-12"/>
-									<img alt="green anemone tentacle eleven"src="assets/crep-tentacle-2-arm-11.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-11"/>
-									<img alt="green anemone tentacle ten"src="assets/crep-tentacle-2-arm-10.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-10"/>
-									<img alt="green anemone tentacle nine"src="assets/crep-tentacle-2-arm-9.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-9"/>
-									<img alt="green anemone tentacle eight"src="assets/crep-tentacle-2-arm-8.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-8"/>
-									<img alt="green anemone tentacle seven"src="assets/crep-tentacle-2-arm-7.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-7"/>
-									<img alt="green anemone tentacle six"src="assets/crep-tentacle-2-arm-6.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-6"/>
-									<img alt="green anemone tentacle five"src="assets/crep-tentacle-2-arm-5.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-5"/>
-									<img alt="green anemone tentacle four"src="assets/crep-tentacle-2-arm-4.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-4"/>
-									<img alt="green anemone tentacle three"src="assets/crep-tentacle-2-arm-3.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-3"/>
-									<img alt="green anemone tentacle two"src="assets/crep-tentacle-2-arm-2.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-2"/>
-									<img alt="green anemone tentacle one" src="assets/crep-tentacle-2-arm-1.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-1"/>
-									<img alt="green anemone base" src="assets/crep-tentacle-2-base.png"/>
-								</span>
-								
-								
-							</span>
-							<img alt="tenacle" src="assets/crepusculum-bottle-bg.png" class="bg" id="crepusculum-bottle-bg"/>
+					<div class="row intro-bottom">
+						<div class="col-12">
+							<p>Six imaginary journeys.<br/>Six unexpected combinations.</p>
+							<p>Through six Eaux de Parfum, <span class="block">L'Artisan Parfumeur</span> bares the secrets of the mysterious flora that only awakens once <span class="block">night falls</span>.</p>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-8 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
-						<h3 class="fadeIn">The burning heat of jasmine at twilight.</h3>
-						<p class="fadeIn">Come the dusk, it's hard to believe that jasmine's tiny petals harbour such a powerful nighttime fragrance.<a data-toggle="collapse" href="#crepusculum-collapse" class="view more">View Fragrance Notes</a></p>
-					</div>
-				</div>
-				<div class="container-fluid p-0 outer-container fadeIn">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
-								<div class="fragrance-container collapse crepusculum-collapse" id="crepusculum-collapse">
-									<p>The jasmine awaits its mysterious evening visitors: fluttering hummingbirds who get drunk on its pollen.</p>
-									<div class="flex-container">
-										<div class="fragrance-text">
-											<h4>Fragrance notes</h4>
-											<ul>
-												<li><img alt="" src="assets/jasmine.png"/><p class="english">Jasmine</p></li>
-												<li><img alt="" src="assets/sandalwood.png"/><p class="english">Sandalwood</p></li>
-												<li><img alt="" src="assets/tonka-beans.png"/><p class="english">Tonka Bean</p></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="details">
-									<ul>
-										<li>75ml</li>
-										<li>&euro;145</li>
-									</ul>
-								</div>
-								<div>
-									<button class="button white bag">Add to Bag</button>
-									<a data-toggle="collapse" href="#crepusculum-collapse" class="view less">View less</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="elements">
-				<img alt="tentacle" id="crepusculum-bottle-bg-2" class="fadeIn" src="assets/crepusculum-bottle-bg-2.png"/>
-			</div>
-		</section>
-
-		<section class="break">
-			<div class="elements">
-				<img alt="seabed with green plant" src="assets/crep-back.png" id="crep-back"/>
-				<img alt="seabed front" src="assets/crep-front.png" id="crep-front"/>
-				<img alt="seabed with blue plant" src="assets/crep-middle.png" id="crep-middle"/>
-				<img alt="moving octopus" src="assets/octopus.gif" id="octopus"/>
-				<div class="octo-container">
-					<div class="octo-inner-container">
-						<img alt="octopus tentacle one" src="assets/octopus-leg-1.png" id="octopus-leg-1"/>
-						<img alt="octopus tentacle two" src="assets/octopus-leg-2.png" id="octopus-leg-2"/>
-						<img alt="octopus tentacle three" src="assets/octopus-leg-3.png" id="octopus-leg-3"/>
-						<img alt="octopus tentacle four" src="assets/octopus-leg-4.png" id="octopus-leg-4"/>
-						<img alt="octopus tentacle five" src="assets/octopus.png" id="octopus-image"/>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="quote">
-			<div class="elements">
-				<img alt="tree with blackberry" src="assets/quote-tree-left.jpg" id="quote-tree-left"/>
-				<img alt="blackberry" src="assets/quote-blackberry.jpg" id="quote-blackberry"/>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.73 144.01" id="quote-vine-svg-1" style="enable-background:new 0 0 595.28 841.89;">
-					<path fill="none" stroke-width="3" id="vine-path-1" d="M253.02,20.77C230.3-0.68,192.05-3.5,166.36,14.38c-25.98,18.11-55.44,79.66-87.34,68.3
-			c-26.49-9.43-8.8-31.28,4.26-27.41c19,5.64,18.88,28.16,16.96,35.34c-5.13,19.17-24.59,53.27-49.85,50.37
-			c-28.19-3.2-26.08-26.43-32.55-38.67c-2.61-4.95-4.74-10.1-11.73-7.35c-3.63,1.41-4.66,8-0.57,6.93"/>
-				</svg>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-10 col-md-12 col-xl-10 offset-xl-1 fadeIn">
-						<p><img alt="opening quote mark" src="assets/quote-marks.png"/>My style is like a botanical textbook that you shouldn't take too <span class="block">seriously!<img alt="closing quote mark" src="assets/closing-quote-marks.png"/></span></p>
-						<p class="quote-name">Katie Scott</p>
-					</div>
-				</div>
-				<div class="row fadeIn">
-					<div class="col-12">
-						<a href="katie.html" class="button">About Katie Scott</a>
-					</div>
-				</div>
-			</div>
-			<img alt="red flower" src="assets/red-flower-small.jpg" id="red-flower-small"/>
-			<img alt="red flower" src="assets/red-flower-small-main.png" id="red-flower-small-main"/>
-			<div class="quote-video-container fadeIn">
-				<img alt="butterfly" src="assets/butterfly-right.png" id="butterfly-right"/>
-				<img alt="butterfly wing" src="assets/butterfly-right-wing.png" id="butterfly-right-wing"/>
-				<div class="quote-video">
-					<iframe title="vimeo-player" src="https://player.vimeo.com/video/544958017?api=1" frameborder="0" allowfullscreen id="video"></iframe>
-				</div>
-			</div>
-		</section>
-
-		<section class="perfume brown-bg" id="arcana-rosa">
-			<div class="before-elements">
-
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 547.09 660.9" id="vine-svg-1" style="enable-background:new 0 0 595.28 841.89;">
-					<path fill="none"  stroke-width="5" id="vine-path-1" d="M44.26.5C18.44,2.16-2.93,28.69,1,54.27,4.56,78,26.13,95.62,49.08,102.6S96.5,108.15,120.5,108c70-.54,142.12,10.82,201.46,47.89S425.5,259.43,421.7,329.3c-1.19,21.86-7.15,43.91-20.13,61.55S368,421.19,346.14,421.63c-32.81.66-62.27-28.12-66.19-60.7s15.25-65.61,43.6-82.14,64.13-17.64,95.22-7.11,57.73,31.82,78.83,56.91c27.24,32.44,46.48,73.92,43.08,116.14S506.83,528.29,465,535.25c-14.63,2.44-33.42-2.21-36.64-16.7-3.65-16.41,18.89-29.07,34.17-22s22.19,25.14,23.61,41.9-1.1,33.83,2.16,50.32c2.33,11.78,8.4,23.75,19.27,28.86,8.45,4,38.83,10.59,33.17-9.21-4-14-27.16,6.92-22,24,4.22,14,9,17.87,24.85,23.18"/>
-				</svg>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 478.03 285.88" id="vine-svg-2" style="enable-background:new 0 0 595.28 841.89;">
-					<path fill="none" stroke-width="5" id="vine-path-1" d="M465.01,0.34c8.71,9.22,31.49,45.93-16.87,70.29c-43.02,21.69-162.74-22.92-220.66-1.95
-			C103.55,113.45,165,238.83,206.32,238.83c46.35,0,48.94-66.79,0.5-66.73c-34.26,0.06-38.48,37.99-66.51,71.7
-			c-31.24,37.55-96.22,51.22-128.97,9.43c-10.31-13.15-3.69-27.91,3.07-32.38c8.63-5.7,20.53-0.84,12.6,8.96"/>
-				</svg>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 287.92 164.16" id="vine-svg-3" style="enable-background:new 0 0 595.28 841.89;">
-					<path fill="none" stroke-width="3" id="vine-path-1" d="M0.21,1.29c5.42-2.54,11.9,1.46,14.92,6.58s3.8,11.31,6.05,16.84c5.95,14.65,21.8,23.52,37.55,25.02
-			s31.45-3.21,46.1-9.13c6.62-2.66,13.4-5.8,17.79-11.42s5.49-14.43,0.6-19.65c-6.04-6.41-18.13-3.04-21.92,4.91
-			c-3.78,7.95-0.57,17.87,5.58,24.17c6.15,6.3,14.68,9.67,23.08,12.31s17.09,4.78,24.66,9.28c11.89,7.07,20.02,19.7,22.79,33.25
-			s0.43,27.87-5.33,40.45c-2.24,4.91-5.17,9.78-9.73,12.67c-4.56,2.9-11.1,3.26-15.06-0.41c-4.46-4.13-3.93-11.88,0.08-16.5
-			c4.01-4.62,10.29-6.52,16.37-6.88c13-0.65,25.51,5,36.57,11.85c11.07,6.85,21.36,15.19,33.18,20.59
-			c11.82,5.4,25.89,7.86,37.78,2.57c4.91-2.19,9.52-5.99,10.9-11.2s-1.69-11.68-7.02-12.5"/>
-				</svg>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.73 144.01" id="vine-svg-4" style="enable-background:new 0 0 595.28 841.89;">
-					<path fill="none" stroke-width="3" id="vine-path-1" d="M253.02,20.77C230.3-0.68,192.05-3.5,166.36,14.38c-25.98,18.11-55.44,79.66-87.34,68.3
-			c-26.49-9.43-8.8-31.28,4.26-27.41c19,5.64,18.88,28.16,16.96,35.34c-5.13,19.17-24.59,53.27-49.85,50.37
-			c-28.19-3.2-26.08-26.43-32.55-38.67c-2.61-4.95-4.74-10.1-11.73-7.35c-3.63,1.41-4.66,8-0.57,6.93"/>
-				</svg>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 547.09 660.9" id="vine-svg-5" style="enable-background:new 0 0 595.28 841.89;">
-					<path fill="none" stroke-width="5" id="vine-path-1" d="M44.26.5C18.44,2.16-2.93,28.69,1,54.27,4.56,78,26.13,95.62,49.08,102.6S96.5,108.15,120.5,108c70-.54,142.12,10.82,201.46,47.89S425.5,259.43,421.7,329.3c-1.19,21.86-7.15,43.91-20.13,61.55S368,421.19,346.14,421.63c-32.81.66-62.27-28.12-66.19-60.7s15.25-65.61,43.6-82.14,64.13-17.64,95.22-7.11,57.73,31.82,78.83,56.91c27.24,32.44,46.48,73.92,43.08,116.14S506.83,528.29,465,535.25c-14.63,2.44-33.42-2.21-36.64-16.7-3.65-16.41,18.89-29.07,34.17-22s22.19,25.14,23.61,41.9-1.1,33.83,2.16,50.32c2.33,11.78,8.4,23.75,19.27,28.86,8.45,4,38.83,10.59,33.17-9.21-4-14-27.16,6.92-22,24,4.22,14,9,17.87,24.85,23.18"/>
-				</svg>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 478.03 285.88" id="vine-svg-6" style="enable-background:new 0 0 595.28 841.89;">
-					<path fill="none" stroke-width="5" id="vine-path-1" d="M465.01,0.34c8.71,9.22,31.49,45.93-16.87,70.29c-43.02,21.69-162.74-22.92-220.66-1.95
-			C103.55,113.45,165,238.83,206.32,238.83c46.35,0,48.94-66.79,0.5-66.73c-34.26,0.06-38.48,37.99-66.51,71.7
-			c-31.24,37.55-96.22,51.22-128.97,9.43c-10.31-13.15-3.69-27.91,3.07-32.38c8.63-5.7,20.53-0.84,12.6,8.96"/>
-				</svg>
-
-				<!-- <img alt="vine" src="assets/arcana-vine-2.png" id="av2"/> -->
-				<img alt="branch" src="assets/quote-background.png" id="arcana-branch"/>
-				<img alt="branch" src="assets/arcana-desktop.png" id="arcana-desktop"/>
-				<!-- <img alt="vine" src="assets/arcana-vine-1.png" id="av1"/> -->
-				<img alt="tree" src="assets/arcana-tree-2.png" id="at2"/>
-				
-			</div>
-			<div class="parent-container container" id="arcana-rosa-container">
-				
-				<div class="row">
-					<span id="arcana-butterfly">
-						<img alt="butterfly" src="assets/arcana-butterfly-bg.png" id="butterfly" class="butterfly-animation"/>
-						<img alt="butterfly wing" src="assets/arcana-butterfly-wing.png" id="butterfly-wing" class="butterfly-animation"/>
+				<div class="elements">
+					<span id="yellow-flower-stem">
+						<img alt="yellow flower" src="assets/yellow-flower-stem.png"/>
+						<img alt="yellow flower stem" id="stem-one" src="assets/yellow-flower-stem-1.png"/>
+						<img alt="yellow flower stem two" id="stem-two" src="assets/yellow-flower-stem-2.png"/>
 					</span>
-					<div class="col-12">
-						<h2 class="fadeIn">Arcana<br/> Rosa</h2>
-						<div class="bottle fadeIn">
-							<span>
-								<img alt="arcana bottle" src="assets/bottles/arcana-bottle.png" class="bottle-image mobile"/>
-								<img id="arcana-bottle" alt="arcana bottle" src="assets/bottles/arcana-rosa-bottle-large.png" class="bottle-image desktop"/>
-								<a class="order" href="#">Order Sample</a>
-							</span>
-							<span>
-								<img alt="branch" src="assets/arcana-bg.png" id="arcana-bg"/>
-							</span>
+					<span>
+						<img alt="purple flower" id="white-purple-flower-stem" src="assets/white-purple-flower-stem.png"/>
+						<svg class="flower-circles" width="100" height="300" >
+						    <circle id="circleone" style="fill:#ffffff;" class="circle" cx="50" cy="10" r="1.5"></circle>
+						    <circle id="circletwo" style="fill:#ffffff;" class="circle" cx="50" cy="8" r="1"></circle>
+						    <circle id="circlethree" style="fill:#ffffff;" class="circle" cx="50" cy="2" r="2"></circle>
+						    <circle id="circlefour" style="fill:#ffffff;" class="circle" cx="50" cy="7" r="0.5"></circle>
+						    <circle id="circlefive" style="fill:#ffffff;" class="circle" cx="50" cy="10" r="1"></circle>
+						    <circle id="circlesix" style="fill:#ffffff;" class="circle" cx="50" cy="3" r="2"></circle>
+						</svg>
+					</span>
+					<img alt="blue flower" id="blue-flower" src="assets/blue-flower.jpg">
+					<img alt="vine leaf" id="vine-leaf" src="assets/vine-leaf.png"/>
+				</div>
+			</section>
+
+			<section id="below-intro">
+				<div class="container-fluid p-0">
+					<div class="row">
+						<div class="col-12">
+							<div class="elements">
+								<img alt="orange flowers with hand" id="hand-orange-flowers" src="assets/hand-orange-flowers.png"/>
+								<span id="yellow-flower-container">
+									<img alt="yellow flower" id="yellow-flower" src="assets/yellow-flower.jpg"/>
+									<img alt="yellow flower first stem" id="yellow-flower-1" src="assets/yellow-flower-1.png"/>
+									<img alt="yellow flower second stem" id="yellow-flower-2" src="assets/yellow-flower-2.png"/>
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-8 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
-						<h3 class="fadeIn">This rose likes to change attire at nightfall - sometimes feminine, sometimes masculine.</h3>
-						<p class="fadeIn">Drawn out of its lethargy by the dusk, this strange rose, bristling with thorns, is set ablaze on a fire of vetiver roots and gaiac wood.<a data-toggle="collapse" href="#arcana-collapse" class="view more">View Fragrance Notes</a></p>
+			</section>
+
+			<section id="bottles" class="fadeIn">
+				<div class="container">
+					<div class="row">
+						<div class="col-10 offset-1 text-center">
+							<div class="sample-outlines">
+								<img alt="sample outline" src="assets/sample-outline.png" />
+								<span>+</span>
+								<img alt="sample outline" src="assets/sample-outline.png" />
+							</div>
+							<p class="text-center">Order two complimentary samples. Delivery fees are redeemable on your next online purchase.</p>
+						</div>
 					</div>
 				</div>
-				<div class="container-fluid p-0 outer-container fadeIn">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
-								<div class="fragrance-container collapse" id="arcana-collapse">
-									<p> It exudes a smoky murmur that bewitches anyone who approaches, thus keeping its secret.</p>
-									<div class="flex-container">
-										<div class="fragrance-text">
-											<h4>Fragrance notes</h4>
-											<ul>
-												<li><img alt="" src="assets/clove.png"/><p class="english">Clove</p></li>
-												<li><img alt="" src="assets/bulgarian-rose.png"/><p class="english">Bulgarian Rose</p></li>
-												<li><img alt="" src="assets/wood.png"/><p class="english">Guaiac Wood</p></li>
-											</ul>
+			</section>
+
+			<section class="perfume" id="obscuratio">
+				<div class="parent-container container" id="obscuratio-container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="fadeIn">Obscuratio</h2>
+							<div class="bottle fadeIn">
+								<span>
+									<img alt="obscuratio bottle" src="assets/bottles/obscuratio-bottle.png" class="bottle-image mobile"/>
+									<img alt="obscuratio bottle" src="assets/bottles/obscuratio-bottle-large.png" class="bottle-image desktop"/>
+									<a class="order" href="#">Order Sample</a>
+								</span>
+								
+								<img alt="leaf" src="assets/obscuratio-bottle-bg.png" class="bg mobile" id="obscuratio-bottle-bg"/>
+								<img alt="leaf" src="assets/obscuratio-bottle-bg-large.png" class="bg desktop" id="obscuratio-bottle-bg"/>
+								
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-8 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
+							<h3 class="fadeIn">The lure of Ylang-Ylang within the canopy.</h3>
+							<p class="fadeIn">At the edge of light and darkness, danger comes from an unexpected source.<a data-toggle="collapse" href="#obscuratio-collapse" class="view more">View Fragrance Notes</a></p>
+						</div>
+					</div>
+					<div class="container-fluid p-0 outer-container fadeIn">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
+									<div class="fragrance-container collapse" id="obscuratio-collapse">
+										<p>Luminous under the stars, a tropical garden secretly breathes and exhales the heady scent of a star-shaped flower with long yellow petals.</p>
+										<div class="flex-container">
+											
+											<div class="fragrance-text">
+												<h4>Fragrance notes</h4>
+												<ul>
+													<li><img alt="" src="assets/ylang-ylang.png"/><p class="english">Ylang Ylang</p></li>
+													<li><img alt="" src="assets/patchouli.png"/><p class="english">Patchouli</p></li>
+													<li><img alt="" src="assets/vanilla.png"/><p class="english">Vanilla</p></li>
+												</ul>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="details">
-									<ul>
-										<li>75ml</li>
-										<li>&euro;145</li>
-									</ul>
-								</div>
-								<div>
-									<p class="noStockText">Out of stock</p>
-									<button class="button white nostock">Notify Me</button>
-									<a data-toggle="collapse" href="#arcana-collapse" class="view less">View less</a>
+									<div class="details">
+										<ul>
+											<li>75ml</li>
+											<li>&euro;145</li>
+										</ul>
+									</div>
+									<div>
+										<button class="button white bag">Add to Bag</button>
+										<a data-toggle="collapse" href="#obscuratio-collapse" class="view less">View less</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<img alt="butterfly" src="assets/butterfly-bottom.png" id="butterfly-bottom"/>
-			<img alt="venenum lily" id="arcana-lily" src="assets/venenum-lily.png"/>
-			<!-- <img alt="vine" src="assets/arcana-vine-4.png" id="av4"/> -->
-			<!-- <img alt="vine" src="assets/arcana-vine-3.png" id="av3"/> -->
-			<img alt="tree" src="assets/arcana-bottom.png" id="arcana-bottom"/>
-		</section>
+				<div class="elements">
+					<span class="red-flower-container">
+						<img alt="red flower" id="red-flower-large" src="assets/red-flower-large.png"/>
+						<img alt="red flower petal" id="red-flower-large-petal-left" src="assets/red-flower-large-petal-left.png"/>
+						<img alt="second red flower petal" id="red-flower-large-petal-right" src="assets/red-flower-large-petal-right.png"/>
+					</span>
+					<img alt="orange flowers with hand" id="obscuratio-hand-orange-flowers" src="assets/hand-orange-flowers-obscuratio.png"/>
+					<img alt="tentacle" id="obscuratio-tenacle" class="fadeIn" src="assets/obscuratio-tentacle.png"/>
+				</div>
+			</section>
 
-		<section class="perfume" id="venenum">
-			<div class="top-elements">
-				<span>
-					<img alt="lily" id="venenum-lily" src="assets/venenum-lily.png"/>
-					<img alt="lily stem one" id="venenum-lily-stem-1" src="assets/venenum-lily-stem-1.png"/>
-					<img alt="lily stem two" id="venenum-lily-stem-2" src="assets/venenum-lily-stem-2.png"/>
-				</span>
-				<img alt="vine leaf" src="assets/vine-leaf.png" id="venenum-vine"/>
-				<img alt="snake" id="home-snake" src="assets/home-snake.png"/>
-			</div>
-			<div class="container venenum-snake-container">
-				<img alt="red snake" id="home-snake-desktop" src="assets/home-snake-desktop.png"/>
-				<img alt="snake" id="snake2-desktop" src="assets/snake-2-desktop.png"/>
-			</div>
-			<div class="parent-container container" id="venenum-container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="fadeIn">Venenum</h2>
-						<div class="bottle fadeIn">
-							<span id="venenum-bottle">
-								<img alt="venenum bottle" src="assets/bottles/venenum-bottle.png" class="bottle-image mobile"/>
-								<img alt="venenum bottle" src="assets/bottles/venenum-bottle-large.png" class="bottle-image desktop"/>
-								<img alt="left leaf" src="assets/venenum-bg-left.jpg" class="bg" id="venenum-bg-left"/>
-								<img alt="right leaf" src="assets/venenum-bg-right.jpg" class="bg" id="venenum-bg-right"/>
-								<a class="order" href="#">Order Sample</a>
-							</span>
+			<section class="perfume" id="crepusculum-mirabile">
+				<div class="parent-container container" id="crepusculum-mirabile-container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="fadeIn">Crepusculum Mirabile</h2>
+							<div class="bottle fadeIn">
+								<span>
+									<img alt="crepusculum mirabile bottle" src="assets/bottles/crepusculum-bottle.png" class="bottle-image mobile"/>
+									<img alt="crepusculum mirabile bottle" src="assets/bottles/crepusculum-mirabile-bottle-large.png" class="bottle-image desktop"/>
+									<a class="order" href="#">Order Sample</a>
+									<img alt="seabed background" src="assets/crep-bg.png" id="crep-bg"/>
+									<img alt="coral" src="assets/crep-coral.png" id="crep-coral"/>
+									<span id="crep-tentacle-1">
+										<img alt="blue anemone tentacle twelve" src="assets/crep-tentacle-1-arm-12.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-12"/>
+										<img alt="blue anemone tentacle eleven" src="assets/crep-tentacle-1-arm-11.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-11"/>
+										<img alt="blue anemone tentacle ten" src="assets/crep-tentacle-1-arm-10.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-10"/>
+										<img alt="blue anemone tentacle nine" src="assets/crep-tentacle-1-arm-9.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-9"/>
+										<img alt="blue anemone tentacle eight" src="assets/crep-tentacle-1-arm-8.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-8"/>
+										<img alt="blue anemone tentacle seven" src="assets/crep-tentacle-1-arm-7.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-7"/>
+										<img alt="blue anemone tentacle six" src="assets/crep-tentacle-1-arm-6.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-6"/>
+										<img alt="blue anemone tentacle five" src="assets/crep-tentacle-1-arm-5.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-5"/>
+										<img alt="blue anemone tentacle four" src="assets/crep-tentacle-1-arm-4.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-4"/>
+										<img alt="blue anemone tentacle three" src="assets/crep-tentacle-1-arm-3.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-3"/>
+										<img alt="blue anemone tentacle two" src="assets/crep-tentacle-1-arm-2.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-2"/>
+										<img alt="blue anemone tentacle one" src="assets/crep-tentacle-1-arm-1.png" class="crep-tentacle-1" id="crep-tentacle-1-arm-1"/>
+										<img alt="blue anemone base" src="assets/crep-tentacle-1-base.png"/>
+									</span>
+									<span id="crep-tentacle-2">
+										<img alt="green anemone tentacle fifteen"src="assets/crep-tentacle-2-arm-15.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-15"/>
+										<img alt="green anemone tentacle fourteen"src="assets/crep-tentacle-2-arm-14.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-14"/>
+										<img alt="green anemone tentacle thirteen"src="assets/crep-tentacle-2-arm-13.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-13"/>
+										<img alt="green anemone tentacle twelve"src="assets/crep-tentacle-2-arm-12.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-12"/>
+										<img alt="green anemone tentacle eleven"src="assets/crep-tentacle-2-arm-11.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-11"/>
+										<img alt="green anemone tentacle ten"src="assets/crep-tentacle-2-arm-10.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-10"/>
+										<img alt="green anemone tentacle nine"src="assets/crep-tentacle-2-arm-9.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-9"/>
+										<img alt="green anemone tentacle eight"src="assets/crep-tentacle-2-arm-8.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-8"/>
+										<img alt="green anemone tentacle seven"src="assets/crep-tentacle-2-arm-7.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-7"/>
+										<img alt="green anemone tentacle six"src="assets/crep-tentacle-2-arm-6.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-6"/>
+										<img alt="green anemone tentacle five"src="assets/crep-tentacle-2-arm-5.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-5"/>
+										<img alt="green anemone tentacle four"src="assets/crep-tentacle-2-arm-4.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-4"/>
+										<img alt="green anemone tentacle three"src="assets/crep-tentacle-2-arm-3.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-3"/>
+										<img alt="green anemone tentacle two"src="assets/crep-tentacle-2-arm-2.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-2"/>
+										<img alt="green anemone tentacle one" src="assets/crep-tentacle-2-arm-1.png" class="crep-tentacle-2" id="crep-tentacle-2-arm-1"/>
+										<img alt="green anemone base" src="assets/crep-tentacle-2-base.png"/>
+									</span>
+									
+									
+								</span>
+								<img alt="tenacle" src="assets/crepusculum-bottle-bg.png" class="bg" id="crepusculum-bottle-bg"/>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-8 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
-						<h3 class="fadeIn">The sensation of danger is as sweet as it is enveloping.</h3>
-						<p class="fadeIn">The vines that snake around the trunk of the sandalwood tree appear to be perfectly poisonous - but this is only theatre!<a data-toggle="collapse" href="#venenum-collapse" class="view more">View Fragrance Notes</a></p>
+					<div class="row">
+						<div class="col-8 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
+							<h3 class="fadeIn">The burning heat of jasmine at twilight.</h3>
+							<p class="fadeIn">Come the dusk, it's hard to believe that jasmine's tiny petals harbour such a powerful nighttime fragrance.<a data-toggle="collapse" href="#crepusculum-collapse" class="view more">View Fragrance Notes</a></p>
+						</div>
 					</div>
-				</div>
-				<div class="container-fluid p-0 outer-container fadeIn">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
-								<div class="fragrance-container collapse" id="venenum-collapse">
-									<p>Their juice is delicate, and their soft, milky aroma is savoured by forest wildlife in the summer evenings of eternal India.</p>
-									<div class="flex-container">
-										<div class="fragrance-text">
-											<h4>Fragrance notes</h4>
-											<ul>
-												<li><img alt="" src="assets/masala-chai.png"/><p class="english">Masala Chai Tea</p></li>
-												<li><img alt="" src="assets/camargue-rice.png"/><p class="english">Rice</p></li>
-												<li><img alt="" src="assets/sandalwood.png"/><p class="english">Sandalwood</p></li>
-											</ul>
+					<div class="container-fluid p-0 outer-container fadeIn">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
+									<div class="fragrance-container collapse crepusculum-collapse" id="crepusculum-collapse">
+										<p>The jasmine awaits its mysterious evening visitors: fluttering hummingbirds who get drunk on its pollen.</p>
+										<div class="flex-container">
+											<div class="fragrance-text">
+												<h4>Fragrance notes</h4>
+												<ul>
+													<li><img alt="" src="assets/jasmine.png"/><p class="english">Jasmine</p></li>
+													<li><img alt="" src="assets/sandalwood.png"/><p class="english">Sandalwood</p></li>
+													<li><img alt="" src="assets/tonka-beans.png"/><p class="english">Tonka Bean</p></li>
+												</ul>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="details">
-									<ul>
-										<li>75ml</li>
-										<li>&euro;145</li>
-									</ul>
-								</div>
-								<div>
-									<button class="button white bag">Add to Bag</button>
-									<a data-toggle="collapse" href="#venenum-collapse" class="view less">View less</a>
+									<div class="details">
+										<ul>
+											<li>75ml</li>
+											<li>&euro;145</li>
+										</ul>
+									</div>
+									<div>
+										<button class="button white bag">Add to Bag</button>
+										<a data-toggle="collapse" href="#crepusculum-collapse" class="view less">View less</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="elements">
-				<img alt="yellow flower" src="assets/venenum-yellow.jpg" id="venenum-yellow"/>
-				<img alt="blue flower" src="assets/venenum-blue-flower.png" id="venenum-blue-flower-right"/>
-				<img alt="flower" src="assets/venenum-flower.png" id="venenum-flower"/>
-				<img alt="snake" id="snake2" src="assets/snake-2.png"/>
-			</div>
-		</section>
-
-		<section class="quote secondary">
-			<div class="container">
-				<div class="row">
-					<div class="col-10 col-md-12 fadeIn">
-						
-						<p><img alt="opening quote" src="assets/quote-marks.png"/>My approach is to sublimate the most beautiful natural materials by providing them with authenticity, modernity and <span class="block">harmony.<img alt="closing quote" src="assets/closing-quote-marks.png"/></span></p>
-						<p class="quote-name">Daphne Bugey</p>
-					</div>
+				<div class="elements">
+					<img alt="tentacle" id="crepusculum-bottle-bg-2" class="fadeIn" src="assets/crepusculum-bottle-bg-2.png"/>
 				</div>
-				<div class="row fadeIn">
-					<div class="col-12">
-						<a href="daphne.html" class="button">About Daphne Bugey</a>
-					</div>
-				</div>
-			</div>
-			<div class="elements">
-				<img alt="blue flower" src="assets/venenum-blue-flower-main.png" id="venenum-blue-flower"/>
-				<img alt="blue flower stem" src="assets/venenum-blue-flower-stem.png" id="venenum-blue-flower-stem"/>
-				<img alt="leaf" src="assets/mirabilis-leaf.png" id="mirabilis-leaf-top"/>
-			</div>
-		</section>
+			</section>
 
-		<section class="perfume green-bg" id="mirabilis">
-			<div class="animation-container">
-				<img alt="green background leaf" src="assets/mirabilis-leaf-b.png" id="mirabilis-leaf-b"/>
-				<img alt="green foreground leaf" src="assets/mirabilis-leaf-c.png" id="mirabilis-leaf-c"/>
-			</div>
-			
-			<div class="parent-container container" id="mirabilis-container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="fadeIn">Mirabilis</h2>
-						<div class="bottle fadeIn">
-							<span>
-								<img id="mirabilis-mobile-bottle" alt="mirabilis bottle" src="assets/bottles/mirabilis-bottle.png" class="bottle-image mobile"/>
-								<img id="mirabilis-desktop-bottle" alt="mirabilis bottle" src="assets/bottles/mirabilis-bottle-large.png" class="bottle-image desktop"/>
-								<!-- <img alt="leaf" src="assets/mirabilis-bottle-bg.png" id="mirabilis-bottle-bg" class="bg"/> -->
-								<a class="order unavailable" href="#">Sample Not Available</a>
-							</span>
+			<section class="break">
+				<div class="elements">
+					<img alt="seabed with green plant" src="assets/crep-back.png" id="crep-back"/>
+					<img alt="seabed front" src="assets/crep-front.png" id="crep-front"/>
+					<img alt="seabed with blue plant" src="assets/crep-middle.png" id="crep-middle"/>
+					<img alt="moving octopus" src="assets/octopus.gif" id="octopus"/>
+					<div class="octo-container">
+						<div class="octo-inner-container">
+							<img alt="octopus tentacle one" src="assets/octopus-leg-1.png" id="octopus-leg-1"/>
+							<img alt="octopus tentacle two" src="assets/octopus-leg-2.png" id="octopus-leg-2"/>
+							<img alt="octopus tentacle three" src="assets/octopus-leg-3.png" id="octopus-leg-3"/>
+							<img alt="octopus tentacle four" src="assets/octopus-leg-4.png" id="octopus-leg-4"/>
+							<img alt="octopus tentacle five" src="assets/octopus.png" id="octopus-image"/>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-8 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
-						<h3 class="fadeIn">Mirabilis appears rational, yet becomes mystical on the skin.</h3>
-						<p class="fadeIn">Between heaven and earth, the frankincense tree perfumes the air.<a data-toggle="collapse" href="#mirabilis-collapse" class="view more">View Fragrance Notes</a></p>
+			</section>
+
+			<section class="quote">
+				<div class="elements">
+					<img alt="tree with blackberry" src="assets/quote-tree-left.jpg" id="quote-tree-left"/>
+					<img alt="blackberry" src="assets/quote-blackberry.jpg" id="quote-blackberry"/>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.73 144.01" id="quote-vine-svg-1" style="enable-background:new 0 0 595.28 841.89;">
+						<path fill="none" stroke-width="3" id="vine-path-1" d="M253.02,20.77C230.3-0.68,192.05-3.5,166.36,14.38c-25.98,18.11-55.44,79.66-87.34,68.3
+				c-26.49-9.43-8.8-31.28,4.26-27.41c19,5.64,18.88,28.16,16.96,35.34c-5.13,19.17-24.59,53.27-49.85,50.37
+				c-28.19-3.2-26.08-26.43-32.55-38.67c-2.61-4.95-4.74-10.1-11.73-7.35c-3.63,1.41-4.66,8-0.57,6.93"/>
+					</svg>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-10 col-md-12 col-xl-10 offset-xl-1 fadeIn">
+							<p><img alt="opening quote mark" src="assets/quote-marks.png"/>My style is like a botanical textbook that you shouldn't take too <span class="block">seriously!<img alt="closing quote mark" src="assets/closing-quote-marks.png"/></span></p>
+							<p class="quote-name">Katie Scott</p>
+						</div>
+					</div>
+					<div class="row fadeIn">
+						<div class="col-12">
+							<a href="katie.html" class="button">About Katie Scott</a>
+						</div>
 					</div>
 				</div>
-				<div class="container-fluid p-0 outer-container fadeIn">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
-								<div class="fragrance-container collapse" id="mirabilis-collapse">
-									<p>It unites with vanilla, making the night a temple to the glory of these addictive scents.</p>
-									<div class="flex-container">
-										<div class="fragrance-text">
-											<h4>Fragrance notes</h4>
-											<ul>
-												<li><img alt="" src="assets/ambrox.png"/><p class="english">Ambrox</p></li>
-												<li><img alt="" src="assets/vapeur-d-encens.png"/><p class="english">Incense</p></li>
-												<li><img alt="" src="assets/vanilla.png"/><p class="english">Vanilla</p></li>
-											</ul>
+				<img alt="red flower" src="assets/red-flower-small.jpg" id="red-flower-small"/>
+				<img alt="red flower" src="assets/red-flower-small-main.png" id="red-flower-small-main"/>
+				<div class="quote-video-container fadeIn">
+					<img alt="butterfly" src="assets/butterfly-right.png" id="butterfly-right"/>
+					<img alt="butterfly wing" src="assets/butterfly-right-wing.png" id="butterfly-right-wing"/>
+					<div class="quote-video">
+						<iframe title="vimeo-player" src="https://player.vimeo.com/video/544958017?api=1" frameborder="0" allowfullscreen id="video"></iframe>
+					</div>
+				</div>
+			</section>
+
+			<section class="perfume brown-bg" id="arcana-rosa">
+				<div class="before-elements">
+
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 547.09 660.9" id="vine-svg-1" style="enable-background:new 0 0 595.28 841.89;">
+						<path fill="none"  stroke-width="5" id="vine-path-1" d="M44.26.5C18.44,2.16-2.93,28.69,1,54.27,4.56,78,26.13,95.62,49.08,102.6S96.5,108.15,120.5,108c70-.54,142.12,10.82,201.46,47.89S425.5,259.43,421.7,329.3c-1.19,21.86-7.15,43.91-20.13,61.55S368,421.19,346.14,421.63c-32.81.66-62.27-28.12-66.19-60.7s15.25-65.61,43.6-82.14,64.13-17.64,95.22-7.11,57.73,31.82,78.83,56.91c27.24,32.44,46.48,73.92,43.08,116.14S506.83,528.29,465,535.25c-14.63,2.44-33.42-2.21-36.64-16.7-3.65-16.41,18.89-29.07,34.17-22s22.19,25.14,23.61,41.9-1.1,33.83,2.16,50.32c2.33,11.78,8.4,23.75,19.27,28.86,8.45,4,38.83,10.59,33.17-9.21-4-14-27.16,6.92-22,24,4.22,14,9,17.87,24.85,23.18"/>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 478.03 285.88" id="vine-svg-2" style="enable-background:new 0 0 595.28 841.89;">
+						<path fill="none" stroke-width="5" id="vine-path-1" d="M465.01,0.34c8.71,9.22,31.49,45.93-16.87,70.29c-43.02,21.69-162.74-22.92-220.66-1.95
+				C103.55,113.45,165,238.83,206.32,238.83c46.35,0,48.94-66.79,0.5-66.73c-34.26,0.06-38.48,37.99-66.51,71.7
+				c-31.24,37.55-96.22,51.22-128.97,9.43c-10.31-13.15-3.69-27.91,3.07-32.38c8.63-5.7,20.53-0.84,12.6,8.96"/>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 287.92 164.16" id="vine-svg-3" style="enable-background:new 0 0 595.28 841.89;">
+						<path fill="none" stroke-width="3" id="vine-path-1" d="M0.21,1.29c5.42-2.54,11.9,1.46,14.92,6.58s3.8,11.31,6.05,16.84c5.95,14.65,21.8,23.52,37.55,25.02
+				s31.45-3.21,46.1-9.13c6.62-2.66,13.4-5.8,17.79-11.42s5.49-14.43,0.6-19.65c-6.04-6.41-18.13-3.04-21.92,4.91
+				c-3.78,7.95-0.57,17.87,5.58,24.17c6.15,6.3,14.68,9.67,23.08,12.31s17.09,4.78,24.66,9.28c11.89,7.07,20.02,19.7,22.79,33.25
+				s0.43,27.87-5.33,40.45c-2.24,4.91-5.17,9.78-9.73,12.67c-4.56,2.9-11.1,3.26-15.06-0.41c-4.46-4.13-3.93-11.88,0.08-16.5
+				c4.01-4.62,10.29-6.52,16.37-6.88c13-0.65,25.51,5,36.57,11.85c11.07,6.85,21.36,15.19,33.18,20.59
+				c11.82,5.4,25.89,7.86,37.78,2.57c4.91-2.19,9.52-5.99,10.9-11.2s-1.69-11.68-7.02-12.5"/>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.73 144.01" id="vine-svg-4" style="enable-background:new 0 0 595.28 841.89;">
+						<path fill="none" stroke-width="3" id="vine-path-1" d="M253.02,20.77C230.3-0.68,192.05-3.5,166.36,14.38c-25.98,18.11-55.44,79.66-87.34,68.3
+				c-26.49-9.43-8.8-31.28,4.26-27.41c19,5.64,18.88,28.16,16.96,35.34c-5.13,19.17-24.59,53.27-49.85,50.37
+				c-28.19-3.2-26.08-26.43-32.55-38.67c-2.61-4.95-4.74-10.1-11.73-7.35c-3.63,1.41-4.66,8-0.57,6.93"/>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 547.09 660.9" id="vine-svg-5" style="enable-background:new 0 0 595.28 841.89;">
+						<path fill="none" stroke-width="5" id="vine-path-1" d="M44.26.5C18.44,2.16-2.93,28.69,1,54.27,4.56,78,26.13,95.62,49.08,102.6S96.5,108.15,120.5,108c70-.54,142.12,10.82,201.46,47.89S425.5,259.43,421.7,329.3c-1.19,21.86-7.15,43.91-20.13,61.55S368,421.19,346.14,421.63c-32.81.66-62.27-28.12-66.19-60.7s15.25-65.61,43.6-82.14,64.13-17.64,95.22-7.11,57.73,31.82,78.83,56.91c27.24,32.44,46.48,73.92,43.08,116.14S506.83,528.29,465,535.25c-14.63,2.44-33.42-2.21-36.64-16.7-3.65-16.41,18.89-29.07,34.17-22s22.19,25.14,23.61,41.9-1.1,33.83,2.16,50.32c2.33,11.78,8.4,23.75,19.27,28.86,8.45,4,38.83,10.59,33.17-9.21-4-14-27.16,6.92-22,24,4.22,14,9,17.87,24.85,23.18"/>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 478.03 285.88" id="vine-svg-6" style="enable-background:new 0 0 595.28 841.89;">
+						<path fill="none" stroke-width="5" id="vine-path-1" d="M465.01,0.34c8.71,9.22,31.49,45.93-16.87,70.29c-43.02,21.69-162.74-22.92-220.66-1.95
+				C103.55,113.45,165,238.83,206.32,238.83c46.35,0,48.94-66.79,0.5-66.73c-34.26,0.06-38.48,37.99-66.51,71.7
+				c-31.24,37.55-96.22,51.22-128.97,9.43c-10.31-13.15-3.69-27.91,3.07-32.38c8.63-5.7,20.53-0.84,12.6,8.96"/>
+					</svg>
+
+					<!-- <img alt="vine" src="assets/arcana-vine-2.png" id="av2"/> -->
+					<img alt="branch" src="assets/quote-background.png" id="arcana-branch"/>
+					<img alt="branch" src="assets/arcana-desktop.png" id="arcana-desktop"/>
+					<!-- <img alt="vine" src="assets/arcana-vine-1.png" id="av1"/> -->
+					<img alt="tree" src="assets/arcana-tree-2.png" id="at2"/>
+					
+				</div>
+				<div class="parent-container container" id="arcana-rosa-container">
+					
+					<div class="row">
+						<span id="arcana-butterfly">
+							<img alt="butterfly" src="assets/arcana-butterfly-bg.png" id="butterfly" class="butterfly-animation"/>
+							<img alt="butterfly wing" src="assets/arcana-butterfly-wing.png" id="butterfly-wing" class="butterfly-animation"/>
+						</span>
+						<div class="col-12">
+							<h2 class="fadeIn">Arcana<br/> Rosa</h2>
+							<div class="bottle fadeIn">
+								<span>
+									<img alt="arcana bottle" src="assets/bottles/arcana-bottle.png" class="bottle-image mobile"/>
+									<img id="arcana-bottle" alt="arcana bottle" src="assets/bottles/arcana-rosa-bottle-large.png" class="bottle-image desktop"/>
+									<a class="order" href="#">Order Sample</a>
+								</span>
+								<span>
+									<img alt="branch" src="assets/arcana-bg.png" id="arcana-bg"/>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-8 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
+							<h3 class="fadeIn">This rose likes to change attire at nightfall - sometimes feminine, sometimes masculine.</h3>
+							<p class="fadeIn">Drawn out of its lethargy by the dusk, this strange rose, bristling with thorns, is set ablaze on a fire of vetiver roots and gaiac wood.<a data-toggle="collapse" href="#arcana-collapse" class="view more">View Fragrance Notes</a></p>
+						</div>
+					</div>
+					<div class="container-fluid p-0 outer-container fadeIn">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
+									<div class="fragrance-container collapse" id="arcana-collapse">
+										<p> It exudes a smoky murmur that bewitches anyone who approaches, thus keeping its secret.</p>
+										<div class="flex-container">
+											<div class="fragrance-text">
+												<h4>Fragrance notes</h4>
+												<ul>
+													<li><img alt="" src="assets/clove.png"/><p class="english">Clove</p></li>
+													<li><img alt="" src="assets/bulgarian-rose.png"/><p class="english">Bulgarian Rose</p></li>
+													<li><img alt="" src="assets/wood.png"/><p class="english">Guaiac Wood</p></li>
+												</ul>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="details">
-									<ul>
-										<li>75ml</li>
-										<li>&euro;145</li>
-									</ul>
-								</div>
-								<div>
-									<button class="button white bag">Add to Bag</button>
-									<a data-toggle="collapse" href="#mirabilis-collapse" class="view less">View less</a>
+									<div class="details">
+										<ul>
+											<li>75ml</li>
+											<li>&euro;145</li>
+										</ul>
+									</div>
+									<div>
+										<p class="noStockText">Out of stock</p>
+										<button class="button white nostock">Notify Me</button>
+										<a data-toggle="collapse" href="#arcana-collapse" class="view less">View less</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+				<img alt="butterfly" src="assets/butterfly-bottom.png" id="butterfly-bottom"/>
+				<img alt="venenum lily" id="arcana-lily" src="assets/venenum-lily.png"/>
+				<!-- <img alt="vine" src="assets/arcana-vine-4.png" id="av4"/> -->
+				<!-- <img alt="vine" src="assets/arcana-vine-3.png" id="av3"/> -->
+				<img alt="tree" src="assets/arcana-bottom.png" id="arcana-bottom"/>
+			</section>
 
-			<div class="elements">
-				<span class="mirabilis-open-bud-container">
-					<img alt="open bud" src="assets/mirabilis-open-bud.png" id="mirabilis-open-bud"/>
-					<img alt="petal top left" src="assets/mirabilis-open-bud-petal-1.png" id="mirabilis-open-bud-petal-1"/>
-					<img alt="petal bottom left" src="assets/mirabilis-open-bud-petal-2.png" id="mirabilis-open-bud-petal-2"/>
-					<img alt="petal top right" src="assets/mirabilis-open-bud-petal-3.png" id="mirabilis-open-bud-petal-3"/>
-					<img alt="petal bottom right" src="assets/mirabilis-open-bud-petal-4.png" id="mirabilis-open-bud-petal-4"/>
-					<img alt="petal bottom right" src="assets/mirabilis-pop-a.png" id="mirabilis-pop-a"/>
-					<img alt="leaf" src="assets/mirabilis-leaf-ab.png" id="mirabilis-leaf-ab"/>
-				</span>
-				<div class="mirabilis-closed-buds" id="mirabilis-closed-buds">
-					<img alt="closed bud left" src="assets/mirabilis-bottom-left.jpg" id="mirabilis-bottom-left"/>
-					<img alt="closed bud right" src="assets/mirabilis-bottom-right-2.png" id="mirabilis-bottom-right-two"/>
-					<img alt="leaf" src="assets/mirabilis-leaf-a.png" id="mirabilis-leaf-a"/>
+			<section class="perfume" id="venenum">
+				<div class="top-elements">
+					<span>
+						<img alt="lily" id="venenum-lily" src="assets/venenum-lily.png"/>
+						<img alt="lily stem one" id="venenum-lily-stem-1" src="assets/venenum-lily-stem-1.png"/>
+						<img alt="lily stem two" id="venenum-lily-stem-2" src="assets/venenum-lily-stem-2.png"/>
+					</span>
+					<img alt="vine leaf" src="assets/vine-leaf.png" id="venenum-vine"/>
+					<img alt="snake" id="home-snake" src="assets/home-snake.png"/>
 				</div>
-			</div>
-
-			
-			
-		</section>
-
-		<section class="tenebrae-top">
-			<img alt="seabed" src="assets/tenebrae-top-new.png" id="tenebrae-top"/>
-		</section>
-
-		<section class="perfume blue-bg" id="tenebrae">
-			<div class="elements">
-				<div class="tenebrae-left">
-				 	<img alt="pattern left one" id="tenebrae-left-1" src="assets/tenebrae-left-1.png"/>
-				 	<img alt="pattern left two" id="tenebrae-left-2" src="assets/tenebrae-left-2.png"/>
-				 	<img alt="pattern left three" id="tenebrae-left-3" src="assets/tenebrae-left-3.png"/>
-				 	<img alt="pattern left four" id="tenebrae-left-4" src="assets/tenebrae-left-4.png"/>
-				 	<img alt="pattern left five" id="tenebrae-left-5" src="assets/tenebrae-left-5.png"/>
-				 	<img alt="pattern left six" id="tenebrae-left-6" src="assets/tenebrae-left-6.png"/>
-				 	<img alt="pattern left seven" id="tenebrae-left-7" src="assets/tenebrae-left-7.png"/>
-				 	<img alt="pattern left eight" id="tenebrae-left-8" src="assets/tenebrae-left-8.png"/>
-				 	<img alt="pattern left nine" id="tenebrae-left-9" src="assets/tenebrae-left-9.png"/>
-				 </div>
-				<div class="tenebrae-right">
-				 	<img alt="pattern right one" id="tenebrae-right-1" src="assets/tenebrae-right-1.png"/>
-				 	<img alt="pattern right two" id="tenebrae-right-2" src="assets/tenebrae-right-2.png"/>
-				 	<img alt="pattern right three" id="tenebrae-right-3" src="assets/tenebrae-right-3.png"/>
-				 	<img alt="pattern right four" id="tenebrae-right-4" src="assets/tenebrae-right-4.png"/>
-				 	<img alt="pattern right five" id="tenebrae-right-5" src="assets/tenebrae-right-5.png"/>
-				 	<img alt="pattern right six" id="tenebrae-right-6" src="assets/tenebrae-right-6.png"/>
-				 	<img alt="pattern right seven" id="tenebrae-right-7" src="assets/tenebrae-right-7.png"/>
-				 	<img alt="pattern right eight" id="tenebrae-right-8" src="assets/tenebrae-right-8.png"/>
-				 	<img alt="pattern right nine" id="tenebrae-right-9" src="assets/tenebrae-right-9.png"/>
-				 </div>
-			</div>
-			<div class="parent-container container" id="tenebrae-container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="fadeIn">Tenebrae</h2>
-						<div class="bottle fadeIn">
-							<span>
-								<img alt="tenebrae bottle" src="assets/bottles/tenebrae-bottle.png" class="bottle-image mobile"/>
-								<img alt="tenebrae bottle" src="assets/bottles/tenebrae-bottle-large.png" class="bottle-image desktop"/>
-								<a class="order" href="#">Order Sample</a>
-							</span>
-							<span class="bottle-bg">
-								<img alt="centre pattern one" src="assets/tenebrae-center-1.png" id="tenebrae-center-1"/>
-								<img alt="centre pattern two" src="assets/tenebrae-center-2.png" id="tenebrae-center-2"/>
-								<img alt="centre pattern three" src="assets/tenebrae-center-3.png" id="tenebrae-center-3"/>
-								<img alt="centre pattern four" src="assets/tenebrae-center-4.png" id="tenebrae-center-4"/>
-								<img alt="centre pattern five" src="assets/tenebrae-center-5.png" id="tenebrae-center-5"/>
-								<img alt="centre pattern six" src="assets/tenebrae-center-6.png" id="tenebrae-center-6"/>
-								<img alt="centre pattern seven" src="assets/tenebrae-center-7.png" id="tenebrae-center-7"/>
-								<img alt="centre pattern eight" src="assets/tenebrae-center-8.png" id="tenebrae-center-8"/>
-								<img alt="centre pattern nine" src="assets/tenebrae-center-9.png" id="tenebrae-center-9"/>
-								<img alt="centre pattern ten" src="assets/tenebrae-center-10.png" id="tenebrae-center-10"/>
-								<img alt="centre pattern eleven" src="assets/tenebrae-center-11.png" id="tenebrae-center-11"/>
-								<img alt="centre pattern twelve" src="assets/tenebrae-center-12.png" id="tenebrae-center-12"/>
-							</span>
+				<div class="container venenum-snake-container">
+					<img alt="red snake" id="home-snake-desktop" src="assets/home-snake-desktop.png"/>
+					<img alt="snake" id="snake2-desktop" src="assets/snake-2-desktop.png"/>
+				</div>
+				<div class="parent-container container" id="venenum-container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="fadeIn">Venenum</h2>
+							<div class="bottle fadeIn">
+								<span id="venenum-bottle">
+									<img alt="venenum bottle" src="assets/bottles/venenum-bottle.png" class="bottle-image mobile"/>
+									<img alt="venenum bottle" src="assets/bottles/venenum-bottle-large.png" class="bottle-image desktop"/>
+									<img alt="left leaf" src="assets/venenum-bg-left.jpg" class="bg" id="venenum-bg-left"/>
+									<img alt="right leaf" src="assets/venenum-bg-right.jpg" class="bg" id="venenum-bg-right"/>
+									<a class="order" href="#">Order Sample</a>
+								</span>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-8 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
-						<h3 class="fadeIn">A Shamanic forest where incense fumes infuse the purest sap.</h3>
-						<p class="fadeIn">Darkness makes the cedars with their thousand-year-old roots loom even larger.<a data-toggle="collapse" href="#tenebrae-collapse" class="view more">View Fragrance Notes</a></p>
+					<div class="row">
+						<div class="col-8 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
+							<h3 class="fadeIn">The sensation of danger is as sweet as it is enveloping.</h3>
+							<p class="fadeIn">The vines that snake around the trunk of the sandalwood tree appear to be perfectly poisonous - but this is only theatre!<a data-toggle="collapse" href="#venenum-collapse" class="view more">View Fragrance Notes</a></p>
+						</div>
 					</div>
-				</div>
-				<div class="container-fluid p-0 outer-container fadeIn">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
-								<div class="fragrance-container collapse" id="tenebrae-collapse">
-									<p>Wrapped in nocturnal coolness, the cedars are sentries of time, exuding their dry, resinous scent.</p>
-									<div class="flex-container">
-										<div class="fragrance-text">
-											<h4>Fragrance notes</h4>
-											<ul>
-												<li><img alt="" src="assets/bois.png"/><p class="english">Cedarwood</p></li>
-												<li><img alt="" src="assets/vapeur-d-encens.png"/><p class="english">Incense</p></li>
-												<li><img alt="" src="assets/s-ve.png"/><p class="english">Resin</p></li>
-											</ul>
+					<div class="container-fluid p-0 outer-container fadeIn">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
+									<div class="fragrance-container collapse" id="venenum-collapse">
+										<p>Their juice is delicate, and their soft, milky aroma is savoured by forest wildlife in the summer evenings of eternal India.</p>
+										<div class="flex-container">
+											<div class="fragrance-text">
+												<h4>Fragrance notes</h4>
+												<ul>
+													<li><img alt="" src="assets/masala-chai.png"/><p class="english">Masala Chai Tea</p></li>
+													<li><img alt="" src="assets/camargue-rice.png"/><p class="english">Rice</p></li>
+													<li><img alt="" src="assets/sandalwood.png"/><p class="english">Sandalwood</p></li>
+												</ul>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="details">
-									<ul>
-										<li>75ml</li>
-										<li>&euro;145</li>
-									</ul>
-								</div>
-								<div>
-									<button class="button white bag">Add to Bag</button>
-									<a data-toggle="collapse" href="#tenebrae-collapse" class="view less">View less</a>
+									<div class="details">
+										<ul>
+											<li>75ml</li>
+											<li>&euro;145</li>
+										</ul>
+									</div>
+									<div>
+										<button class="button white bag">Add to Bag</button>
+										<a data-toggle="collapse" href="#venenum-collapse" class="view less">View less</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="tenebrae-bottom">
-				<img alt="pattern bottom left" id="tenebrae-bottom-left" src="assets/tenebrae-bottom-left.png"/>
-				<img alt="pattern bottom right" id="tenebrae-bottom-right" src="assets/tenebrae-bottom-right.png"/>
-				<img alt="pattern bottom center" id="tenebrae-bottom-center" src="assets/tenebrae-bottom-center.png"/>
-			</div>
-		</section>
+				<div class="elements">
+					<img alt="yellow flower" src="assets/venenum-yellow.jpg" id="venenum-yellow"/>
+					<img alt="blue flower" src="assets/venenum-blue-flower.png" id="venenum-blue-flower-right"/>
+					<img alt="flower" src="assets/venenum-flower.png" id="venenum-flower"/>
+					<img alt="snake" id="snake2" src="assets/snake-2.png"/>
+				</div>
+			</section>
 
-		<section class="quote third">
-			<div class="container">
-				<div class="row">
-					<div class="col-10 col-md-12 fadeIn">
-						<p><img alt="opening quote mark" src="assets/quote-marks.png"/>For Daphne Bugey, <span class="block">L'Artisan Parfumeur</span>, is above all a House that offers a great freedom of expression and <span class="block">creativity.<img alt="closing quote" src="assets/closing-quote-marks.png"/></span></p>
+			<section class="quote secondary">
+				<div class="container">
+					<div class="row">
+						<div class="col-10 col-md-12 fadeIn">
+							
+							<p><img alt="opening quote" src="assets/quote-marks.png"/>My approach is to sublimate the most beautiful natural materials by providing them with authenticity, modernity and <span class="block">harmony.<img alt="closing quote" src="assets/closing-quote-marks.png"/></span></p>
+							<p class="quote-name">Daphne Bugey</p>
+						</div>
+					</div>
+					<div class="row fadeIn">
+						<div class="col-12">
+							<a href="daphne.html" class="button">About Daphne Bugey</a>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+				<div class="elements">
+					<img alt="blue flower" src="assets/venenum-blue-flower-main.png" id="venenum-blue-flower"/>
+					<img alt="blue flower stem" src="assets/venenum-blue-flower-stem.png" id="venenum-blue-flower-stem"/>
+					<img alt="leaf" src="assets/mirabilis-leaf.png" id="mirabilis-leaf-top"/>
+				</div>
+			</section>
 
+			<section class="perfume green-bg" id="mirabilis">
+				<div class="animation-container">
+					<img alt="green background leaf" src="assets/mirabilis-leaf-b.png" id="mirabilis-leaf-b"/>
+					<img alt="green foreground leaf" src="assets/mirabilis-leaf-c.png" id="mirabilis-leaf-c"/>
+				</div>
+				
+				<div class="parent-container container" id="mirabilis-container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="fadeIn">Mirabilis</h2>
+							<div class="bottle fadeIn">
+								<span>
+									<img id="mirabilis-mobile-bottle" alt="mirabilis bottle" src="assets/bottles/mirabilis-bottle.png" class="bottle-image mobile"/>
+									<img id="mirabilis-desktop-bottle" alt="mirabilis bottle" src="assets/bottles/mirabilis-bottle-large.png" class="bottle-image desktop"/>
+									<!-- <img alt="leaf" src="assets/mirabilis-bottle-bg.png" id="mirabilis-bottle-bg" class="bg"/> -->
+									<a class="order unavailable" href="#">Sample Not Available</a>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-8 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
+							<h3 class="fadeIn">Mirabilis appears rational, yet becomes mystical on the skin.</h3>
+							<p class="fadeIn">Between heaven and earth, the frankincense tree perfumes the air.<a data-toggle="collapse" href="#mirabilis-collapse" class="view more">View Fragrance Notes</a></p>
+						</div>
+					</div>
+					<div class="container-fluid p-0 outer-container fadeIn">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
+									<div class="fragrance-container collapse" id="mirabilis-collapse">
+										<p>It unites with vanilla, making the night a temple to the glory of these addictive scents.</p>
+										<div class="flex-container">
+											<div class="fragrance-text">
+												<h4>Fragrance notes</h4>
+												<ul>
+													<li><img alt="" src="assets/ambrox.png"/><p class="english">Ambrox</p></li>
+													<li><img alt="" src="assets/vapeur-d-encens.png"/><p class="english">Incense</p></li>
+													<li><img alt="" src="assets/vanilla.png"/><p class="english">Vanilla</p></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="details">
+										<ul>
+											<li>75ml</li>
+											<li>&euro;145</li>
+										</ul>
+									</div>
+									<div>
+										<button class="button white bag">Add to Bag</button>
+										<a data-toggle="collapse" href="#mirabilis-collapse" class="view less">View less</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<div class="elements">
+					<span class="mirabilis-open-bud-container">
+						<img alt="open bud" src="assets/mirabilis-open-bud.png" id="mirabilis-open-bud"/>
+						<img alt="petal top left" src="assets/mirabilis-open-bud-petal-1.png" id="mirabilis-open-bud-petal-1"/>
+						<img alt="petal bottom left" src="assets/mirabilis-open-bud-petal-2.png" id="mirabilis-open-bud-petal-2"/>
+						<img alt="petal top right" src="assets/mirabilis-open-bud-petal-3.png" id="mirabilis-open-bud-petal-3"/>
+						<img alt="petal bottom right" src="assets/mirabilis-open-bud-petal-4.png" id="mirabilis-open-bud-petal-4"/>
+						<img alt="petal bottom right" src="assets/mirabilis-pop-a.png" id="mirabilis-pop-a"/>
+						<img alt="leaf" src="assets/mirabilis-leaf-ab.png" id="mirabilis-leaf-ab"/>
+					</span>
+					<div class="mirabilis-closed-buds" id="mirabilis-closed-buds">
+						<img alt="closed bud left" src="assets/mirabilis-bottom-left.jpg" id="mirabilis-bottom-left"/>
+						<img alt="closed bud right" src="assets/mirabilis-bottom-right-2.png" id="mirabilis-bottom-right-two"/>
+						<img alt="leaf" src="assets/mirabilis-leaf-a.png" id="mirabilis-leaf-a"/>
+					</div>
+				</div>
+			</section>
+
+			<section class="tenebrae-top">
+				<img alt="seabed" src="assets/tenebrae-top-new.png" id="tenebrae-top"/>
+			</section>
+
+			<section class="perfume blue-bg" id="tenebrae">
+				<div class="elements">
+					<div class="tenebrae-left">
+					 	<img alt="pattern left one" id="tenebrae-left-1" src="assets/tenebrae-left-1.png"/>
+					 	<img alt="pattern left two" id="tenebrae-left-2" src="assets/tenebrae-left-2.png"/>
+					 	<img alt="pattern left three" id="tenebrae-left-3" src="assets/tenebrae-left-3.png"/>
+					 	<img alt="pattern left four" id="tenebrae-left-4" src="assets/tenebrae-left-4.png"/>
+					 	<img alt="pattern left five" id="tenebrae-left-5" src="assets/tenebrae-left-5.png"/>
+					 	<img alt="pattern left six" id="tenebrae-left-6" src="assets/tenebrae-left-6.png"/>
+					 	<img alt="pattern left seven" id="tenebrae-left-7" src="assets/tenebrae-left-7.png"/>
+					 	<img alt="pattern left eight" id="tenebrae-left-8" src="assets/tenebrae-left-8.png"/>
+					 	<img alt="pattern left nine" id="tenebrae-left-9" src="assets/tenebrae-left-9.png"/>
+					 </div>
+					<div class="tenebrae-right">
+					 	<img alt="pattern right one" id="tenebrae-right-1" src="assets/tenebrae-right-1.png"/>
+					 	<img alt="pattern right two" id="tenebrae-right-2" src="assets/tenebrae-right-2.png"/>
+					 	<img alt="pattern right three" id="tenebrae-right-3" src="assets/tenebrae-right-3.png"/>
+					 	<img alt="pattern right four" id="tenebrae-right-4" src="assets/tenebrae-right-4.png"/>
+					 	<img alt="pattern right five" id="tenebrae-right-5" src="assets/tenebrae-right-5.png"/>
+					 	<img alt="pattern right six" id="tenebrae-right-6" src="assets/tenebrae-right-6.png"/>
+					 	<img alt="pattern right seven" id="tenebrae-right-7" src="assets/tenebrae-right-7.png"/>
+					 	<img alt="pattern right eight" id="tenebrae-right-8" src="assets/tenebrae-right-8.png"/>
+					 	<img alt="pattern right nine" id="tenebrae-right-9" src="assets/tenebrae-right-9.png"/>
+					 </div>
+				</div>
+				<div class="parent-container container" id="tenebrae-container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="fadeIn">Tenebrae</h2>
+							<div class="bottle fadeIn">
+								<span>
+									<img alt="tenebrae bottle" src="assets/bottles/tenebrae-bottle.png" class="bottle-image mobile"/>
+									<img alt="tenebrae bottle" src="assets/bottles/tenebrae-bottle-large.png" class="bottle-image desktop"/>
+									<a class="order" href="#">Order Sample</a>
+								</span>
+								<span class="bottle-bg">
+									<img alt="centre pattern one" src="assets/tenebrae-center-1.png" id="tenebrae-center-1"/>
+									<img alt="centre pattern two" src="assets/tenebrae-center-2.png" id="tenebrae-center-2"/>
+									<img alt="centre pattern three" src="assets/tenebrae-center-3.png" id="tenebrae-center-3"/>
+									<img alt="centre pattern four" src="assets/tenebrae-center-4.png" id="tenebrae-center-4"/>
+									<img alt="centre pattern five" src="assets/tenebrae-center-5.png" id="tenebrae-center-5"/>
+									<img alt="centre pattern six" src="assets/tenebrae-center-6.png" id="tenebrae-center-6"/>
+									<img alt="centre pattern seven" src="assets/tenebrae-center-7.png" id="tenebrae-center-7"/>
+									<img alt="centre pattern eight" src="assets/tenebrae-center-8.png" id="tenebrae-center-8"/>
+									<img alt="centre pattern nine" src="assets/tenebrae-center-9.png" id="tenebrae-center-9"/>
+									<img alt="centre pattern ten" src="assets/tenebrae-center-10.png" id="tenebrae-center-10"/>
+									<img alt="centre pattern eleven" src="assets/tenebrae-center-11.png" id="tenebrae-center-11"/>
+									<img alt="centre pattern twelve" src="assets/tenebrae-center-12.png" id="tenebrae-center-12"/>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-8 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
+							<h3 class="fadeIn">A Shamanic forest where incense fumes infuse the purest sap.</h3>
+							<p class="fadeIn">Darkness makes the cedars with their thousand-year-old roots loom even larger.<a data-toggle="collapse" href="#tenebrae-collapse" class="view more">View Fragrance Notes</a></p>
+						</div>
+					</div>
+					<div class="container-fluid p-0 outer-container fadeIn">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-lg-8 col-xl-5 offset-lg-2 offset-xl-3">
+									<div class="fragrance-container collapse" id="tenebrae-collapse">
+										<p>Wrapped in nocturnal coolness, the cedars are sentries of time, exuding their dry, resinous scent.</p>
+										<div class="flex-container">
+											<div class="fragrance-text">
+												<h4>Fragrance notes</h4>
+												<ul>
+													<li><img alt="" src="assets/bois.png"/><p class="english">Cedarwood</p></li>
+													<li><img alt="" src="assets/vapeur-d-encens.png"/><p class="english">Incense</p></li>
+													<li><img alt="" src="assets/s-ve.png"/><p class="english">Resin</p></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="details">
+										<ul>
+											<li>75ml</li>
+											<li>&euro;145</li>
+										</ul>
+									</div>
+									<div>
+										<button class="button white bag">Add to Bag</button>
+										<a data-toggle="collapse" href="#tenebrae-collapse" class="view less">View less</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tenebrae-bottom">
+					<img alt="pattern bottom left" id="tenebrae-bottom-left" src="assets/tenebrae-bottom-left.png"/>
+					<img alt="pattern bottom right" id="tenebrae-bottom-right" src="assets/tenebrae-bottom-right.png"/>
+					<img alt="pattern bottom center" id="tenebrae-bottom-center" src="assets/tenebrae-bottom-center.png"/>
+				</div>
+			</section>
+
+			<section class="quote third">
+				<div class="container">
+					<div class="row">
+						<div class="col-10 col-md-12 fadeIn">
+							<p><img alt="opening quote mark" src="assets/quote-marks.png"/>For Daphne Bugey, <span class="block">L'Artisan Parfumeur</span>, is above all a House that offers a great freedom of expression and <span class="block">creativity.<img alt="closing quote" src="assets/closing-quote-marks.png"/></span></p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -955,8 +952,6 @@
 	<script src="scripts.js"></script>
 	<script src="music.js"></script>
 	<script src="cookie.js"></script>
-
-
 
 </body>
 </html>
