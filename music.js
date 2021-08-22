@@ -18,6 +18,12 @@ function checkCookieOnLoad() {
         openingContainer.classList.add('hide');
         innerHomeContainer.classList.add('show');
         openingAnimations();
+
+        const loader = gsap.timeline({
+          onComplete: () => {
+              scrollTriggered();
+          }
+        });
    } else {
 
    }
