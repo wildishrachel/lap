@@ -16,6 +16,7 @@ function checkCookieOnLoad() {
    if(getCookie("clicklink") === "yes") {
         openingVideoContainer.classList.add('hide');
         openingContainer.classList.add('hide');
+        innerHomeContainer.classList.add('show');
         openingAnimations();
    } else {
 
