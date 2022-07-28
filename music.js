@@ -14,20 +14,18 @@ function getCookie(cname) {
 
 function checkCookieOnLoad() {
    if(getCookie("clicklink") === "yes") {
-        // alert('cookie set');
-        // playState = 'play';
-        // playIconContainer.classList.add('playing');
-          
-        // audio.play();
         openingVideoContainer.classList.add('hide');
         openingContainer.classList.add('hide');
+        innerHomeContainer.classList.add('show');
         openingAnimations();
+
+        const loader = gsap.timeline({
+          onComplete: () => {
+              scrollTriggered();
+          }
+        });
    } else {
-        // alert('cookie not set');
-        // playState = 'pause';
-        // playIconContainer.classList.remove('playing');
-          
-        // audio.pause();
+
    }
    hideOverlay.classList.add('hide');
 }
@@ -42,8 +40,6 @@ playIconContainer.addEventListener('click', () => {
     playMusic();
 });
 
-// document.getElementById('yourAudio').addEventListener("touchstart", tapOrClick, false); 
-
 
 function playMusic() {
 
@@ -55,16 +51,6 @@ function playMusic() {
         playState = 'pause';
         playIconContainer.classList.remove('playing');
         audio.pause();
-      
-        // let fadeOutInterval = setInterval(function() {
-        //     actualVolumeFadeOut = (parseFloat(actualVolumeFadeOut) - 0.1).toFixed(1);
-        //     if (actualVolumeFadeOut >= 0) {
-        //         audio.volume = actualVolumeFadeOut;
-        //     } else {
-        //         audio.pause();
-        //         clearInterval(fadeOutInterval);
-        //     }
-        // }, 100);
         
         return false;
 
@@ -75,15 +61,6 @@ function playMusic() {
         playIconContainer.classList.add('playing');
         audio.play();
         audio.volume = 1;
-          
-        // let fadeInInterval = setInterval(function() {
-        //     actualVolumeFadeIn = (parseFloat(actualVolumeFadeIn) + 0.1).toFixed(1);
-        //     if (actualVolumeFadeIn <= 1) {
-        //         audio.volume = actualVolumeFadeIn;
-        //     } else {
-        //         audio.play();
-        //     }
-        // }, 50);
           
         return false;
         
@@ -104,12 +81,4 @@ player.on('play', function() {
     audio.pause();
     audio.volume = 0;
 });
-
-
-
-
-
-
-
-
 

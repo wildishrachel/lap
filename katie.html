@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>l'artisan parfumeur</title>
@@ -12,9 +13,10 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </head>
 
-<body class="inner">
+<body class="lap-container">
 
-	<div class="main-container">
+	<div class="main-container lap-container">
+		<div class="lap-inner">
 
 		<header>
 			<div class="header-bottom">
@@ -25,16 +27,16 @@
 		</header>
 
 		<div class="slideoutbuttons">
-			<div class="slideOutTab" id="discoverTab">
+			<button class="slideOutTab" id="discoverTab">
 			    <div>
 			      <p>Discover</p>
 			    </div>
-			</div>
-			<div class="slideOutTab" id="samplesTab">
+			</button>
+			<button class="slideOutTab" id="samplesTab">
 			    <div>
 			      <p>Samples</p>
 			    </div>
-			</div>
+			</button>
 		</div>
 
 		<section id="discover">
@@ -146,7 +148,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-8 ol-lg-8 col-xl-5 offset-1 offset-lg-2 offset-xl-3">
+					<div class="col-8 ol-lg-8 col-xl-5 offset-1 offset-lg-2 offset-xl-3 fadeIn">
 						<h1>About Katie Scott</h1>
 						<h2>Illustrator</h2>
 					</div>
@@ -171,22 +173,22 @@
 		<section class="content didot">
 			<div class="container">
 				<div class="row">
-					<div class="col-10 col-lg-8 col-xl-5 offset-1 offset-lg-2 offset-xl-3">
-						<p class="text-center">Katie Scott is an English illustrator based in London.</p>
-						<p class="text-center">As a renowned artist, she collaborated on a multitude of projects of international reach.</p>
+					<div class="col-10 col-lg-8 col-xl-5 offset-1 offset-lg-2 offset-xl-3 fadeIn">
+						<h3 class="text-center">An artist's portrait: Katie Scott</h3>
+						<p class="text-center"> Katie Scott is an independent illustrator based in London. For her hand-drawn fine line work and digital watercolouring, she takes her inspiration from nature and is influenced by plants and anatomy. Her illustrations depict the abstract and fantasised interpretation of nature of La Botanique.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="image">
+		<section class="image ">
 			<div class="top-elements">
-				<img alt="tentacle" src="assets/lr-tentacle.png" id="lr-tentacle"/>
-				<img alt="lily" src="assets/venenum-lily-person.png" id="venenum-lily-person"/>
+				<img alt="lily" src="assets/venenum-lily-person.png" id="venenum-lily-person" class="fadeIn"/>
+				<img alt="green foreground leaf" src="assets/mirabilis-leaf-c.png" id="mirabilis-leaf-c" class="fadeIn"/>
 			</div>
-			<div class="container-fluid p-0">
+			<div class="container-fluid p-0 fadeIn">
 				<div class="row">
-					<div class="col-12 d-flex justify-content-end">
+					<div class="col-12 d-flex person-justify-content-end">
 						<div class="person-image"></div>
 					</div>
 				</div>
@@ -194,7 +196,7 @@
 		</section>
 
 		<section class="video">
-			<div class="container-fluid p-0">
+			<div class="container-fluid p-0 fadeIn">
 				<div class="row">
 					<div class="col-12">
 						<div class="quote-video">
@@ -206,40 +208,140 @@
 		</section>
 
 		<section class="quote person">
+			<img alt="branch" src="assets/arcana-desktop.png" id="arcana-desktop"/>
 			<div class="elements">
-				<img alt="tree" src="assets/quote-tree-left.png" id="quote-tree-left"/>
 				<img alt="blackberry" src="assets/quote-blackberry.png" id="quote-blackberry"/>
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-10 col-md-12 col-xl-10 offset-xl-1 fadeIn">
-						<img alt="quote marks" src="assets/quote-marks.png"/>
-						<p>My style is like a botanical textbook that you shouldn’t take too seriously!</p>
-						<p class="quote-name">Katie Scott</p>
+						
+						<p><img alt="quote marks" src="assets/quote-marks.png"/>My style is like a botanical textbook that you shouldn't take too seriously!<img alt="quote" src="assets/closing-quote-marks.png"/></p>
 					</div>
 				</div>
 			</div>
 			<img alt="red flower" src="assets/red-flower-small.png" id="red-flower-small"/>
 			<img alt="red flower" src="assets/red-flower-small-main.png" id="red-flower-small-main"/>
-			<img alt="leafinput" src="assets/mirabilis-leaf.png" id="mirabilis-leaf-person"/>
+			<img alt="leaf" src="assets/mirabilis-leaf.png" id="mirabilis-leaf-person"/>
+			
 		</section>
 
-		<section class="content brown-bg">
+		<section class="content">
+
 			<div class="container">
 				<div class="row">
-					<div class="col-10 col-lg-8 col-xl-5 offset-1 offset-lg-2 offset-xl-3">
-						<p class="text-center">She takes her inspiration from Nature and is fascinated by plants and their anatomy. Her style is influenced by botanical drawings from the 17th Century.</p>
-						<p class="text-center">Her work is centred around bringing to light Nature’s hidden and peculiar details the same way medieval illustrators did, while integrating contemporary techniques and her personal original vision.</p>
+					<div class="col-10 col-lg-8 col-xl-5 offset-1 offset-lg-2 offset-xl-3 text-center fadeIn">
+						<h2>Katie Scott</h2>
+						<h3>An artist is born</h3>
+						<p class="text-center">Self-taught, Katie never actually studied botany, instead her first botanical drawings were all fantasy; plants born out of her imagination that she translated on paper. This allowed her to establish her style, which then led to working alongside botanists on more accurate illustrations.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
+		<section class="quote">
+			<span>
+				<img alt="lily" id="venenum-lily" src="assets/venenum-lily.png"/>
+				<img alt="lily stem one" id="venenum-lily-stem-1" src="assets/venenum-lily-stem-1.png"/>
+				<img alt="lily stem two" id="venenum-lily-stem-2" src="assets/venenum-lily-stem-2.png"/>
+			</span>
+			<div class="container">
+				<div class="row">
+					<div class="col-10 col-md-12 col-xl-10 offset-xl-1 fadeIn">
+						
+						<p><img alt="quote marks" src="assets/quote-marks.png"/>There is still some element of the imaginary about the way I draw plants and animals.<img alt="quote" src="assets/closing-quote-marks.png"/></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="content relative katie-snake">
+			<img alt="snake" id="home-snake" src="assets/home-snake.png"/>
+			<img alt="red snake" id="home-snake-desktop" src="assets/home-snake-desktop.png"/>
+			<div class="container">
+				<div class="row">
+					<div class="col-10 col-lg-8 col-xl-5 offset-1 offset-lg-2 offset-xl-3 text-center fadeIn">
+						<h2>Botanical inspiration </h2>
+						<h3>Katie's passion for nature</h3>
+						<p class="text-center">Growing up in the countryside, Katie was able to wonder off in neighbouring woodlands and farms to explore nature at its purest. Today, she lives in the City but still longs for an escape to nature whenever she is in search of inspiration. Indeed, botanical gardens are some of her favourite spaces, as they allow her to "discover the flora of multiple countries in the space of one garden".</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="content relative creative-process">
+			<img alt="closed bud right" src="assets/mirabilis-bottom-right-2.png" id="mirabilis-bottom-right-two"/>
+			<div class="container">
+				<div class="row">
+					<div class="col-10 col-lg-8 col-xl-5 offset-1 offset-lg-2 offset-xl-3 text-center fadeIn">
+						<h2>The creative process</h2>
+						<h3>Freedom to explore</h3>
+						<p class="text-center">As a true artist, Katie's creative process begins with research that helps her to start sketching ideas, which then become the finished drawing. Katie especially enjoys blending heritage and modernity in her illustrations.</p>
+					</div>
+				</div>
+			</div>
+			<img alt="leaf" src="assets/mirabilis-leaf-ab.png" id="mirabilis-leaf-ab"/>
+			<img alt="leaf" src="assets/mirabilis-bottle-bg.png" id="mirabilis-bottle-bg"/>
+		</section>
+
+		<section class="quote katie-quote-three">
+			<div class="container">
+				<div class="row">
+					<div class="col-10 col-md-12 col-xl-10 offset-xl-1 fadeIn">
+						
+						<p><img alt="quote marks" src="assets/quote-marks.png"/>I work with both traditional and digital techniques, which makes it hard to work out exactly how the image was created or how old it is.<img alt="quote" src="assets/closing-quote-marks.png"/></p>
+					</div>
+				</div>
+			</div>
+			<img alt="blue flower" src="assets/venenum-blue-flower-main.png" id="venenum-blue-flower"/>
+		</section>
+
+		<section class="content seabed">
+			<span id="arcana-butterfly">
+				<img alt="butterfly" src="assets/arcana-butterfly-bg.png" id="butterfly" class="butterfly-animation"/>
+				<img alt="butterfly wing" src="assets/arcana-butterfly-wing.png" id="butterfly-wing" class="butterfly-animation"/>
+			</span>
+			<div class="container">
+				<div class="row">
+					<div class="col-10 col-lg-8 col-xl-5 offset-1 offset-lg-2 offset-xl-3 text-center fadeIn">
+						<h2>Illustrating <span class="block">L'Artisan Parfumeur</span></h2>
+						<h3>A brand with a naturalist and creative flair</h3>
+						<p class="text-center">Katie Scott particularly enjoyed the freedom given by <span class="block">L'Artisan Parfumeur</span>. La Botanique depicts the incredible wonders of nature coming alive at night: "Smells and sounds are stronger because that's all you have to go on, the experience of a place is completely different after dark."</p>
+						<p><a href="#" class="button">Call to Action</a></p>
+					</div>
+				</div>
+			</div>
+			<img alt="seabed front" src="assets/crep-front.png" id="crep-front"/>
+		</section>
+</div>
 	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
 	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
 	<script src="global.js"></script>
+	<script src="scripts.js"></script>
+
+	<script>
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+//FADE IN ON SCROLL
+
+var sections = gsap.utils.toArray('.fadeIn');
+sections.forEach(function(section) {
+  gsap.to(section, { autoAlpha: 1, y:0, duration: 2,
+    scrollTrigger: {
+        trigger: section,
+        start: 'top bottom-=100',
+        scrub: false,
+        end: '+=500',
+        // onRefresh: self => self.progress === 1 && self.animation.progress(1),
+    }
+  });
+});
+
+	</script>
 
 </body>
 </html>
