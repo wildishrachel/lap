@@ -12,11 +12,14 @@ const openingContainer = document.getElementById('opening');
 const hideOverlay = document.getElementById('overlay');
 const innerHomeContainer = document.getElementById('inner-home-container');
 
+<<<<<<< HEAD
 const mirabilisBottleContainer = document.getElementById('mirabilis-bottle-container');
 
 
 
 
+=======
+>>>>>>> b33b775704936c2c89e9a9ce4501b0738d2298b6
 gsap.registerPlugin(ScrollTrigger);
 //PLAY DESKTOP OR MOBILE VIDEO 
 
@@ -83,7 +86,11 @@ function videoFinished() {
   }
 
   const loader = gsap.timeline({
+<<<<<<< HEAD
       onComplete: function() {
+=======
+      onComplete: () => {
+>>>>>>> b33b775704936c2c89e9a9ce4501b0738d2298b6
           scrollTriggered();
       }
   });
@@ -150,15 +157,22 @@ function scrollTriggered() {
   // })
   gsap.to('#snake2-desktop', {rotation:-180,duration:40, ease:'none', repeat:-1, yoyo:true});
 
+<<<<<<< HEAD
   var mirabilisLeafB = gsap.timeline({
     onComplete: function() {
       mirabilisBottleContainer.classList.add('front');
     },
+=======
+
+
+  var mirabilisLeafB = gsap.timeline({
+>>>>>>> b33b775704936c2c89e9a9ce4501b0738d2298b6
     scrollTrigger:{
       trigger: "#mirabilis",
       pin: false,
       scrub:0.2,
       start: 'top 300px bottom',
+<<<<<<< HEAD
       end:'+=400',
     },
     
@@ -166,13 +180,24 @@ function scrollTriggered() {
   .to('#mirabilis-leaf-b', {rotation:-15, x:-300, ease:'linear'});
 
 
+=======
+      end:'+=900',
+    }
+  })
+  .to('#mirabilis-leaf-b', {rotation:-15, x:-300, ease:'linear'});
+
+>>>>>>> b33b775704936c2c89e9a9ce4501b0738d2298b6
   var mirabilisLeafC = gsap.timeline({
     scrollTrigger:{
       trigger: "#mirabilis",
       pin: false,
       scrub:0.2,
       start: 'top 500px bottom',
+<<<<<<< HEAD
       end:'+=600',
+=======
+      end:'+=1100',
+>>>>>>> b33b775704936c2c89e9a9ce4501b0738d2298b6
     }
   })
   .to('#mirabilis-leaf-c', {rotation:2,x:250, y:-50, ease:'linear'});

@@ -1847,8 +1847,12 @@ body.lap-container {
 /*CREPUSCULUM MIRABILE*/
 
 .lap-container #crepusculum-mirabile .outer-container::after {
+<<<<<<< HEAD
 	background: linear-gradient(0deg, rgba(37, 50, 50,0.8) 0%, rgba(18, 37, 37, 1) 70%, rgba(0,0,0,0) 100%);
 	box-shadow: 0px 20px 15px 0px rgb(37 50 50 / 80%);
+=======
+	background: linear-gradient(0deg, rgba(37 50 50,0.8) 0%, rgba(18 37 37, 1) 70%, rgba(0,0,0,0) 100%);
+>>>>>>> b33b775704936c2c89e9a9ce4501b0738d2298b6
 }
 
 /*ARCANA*/
@@ -1915,9 +1919,12 @@ body.lap-container {
 .lap-container #mirabilis .bottle {
 	margin-top: 60px;
 }
+<<<<<<< HEAD
 .lap-container #mirabilis .bottle.front {
 	z-index: 100;
 }
+=======
+>>>>>>> b33b775704936c2c89e9a9ce4501b0738d2298b6
 .lap-container #mirabilis .top-elements {
 	position: relative;
 	padding-bottom: 100px;
@@ -2186,7 +2193,11 @@ body.lap-container {
 		padding-top: 300px;
 	}
 	.lap-container #tenebrae.perfume .bottle {
+<<<<<<< HEAD
 		margin-bottom: 80px;
+=======
+		margin-bottom: 110px;
+>>>>>>> b33b775704936c2c89e9a9ce4501b0738d2298b6
 	}
 }
 @media (min-width: 1199px) {
@@ -3011,15 +3022,21 @@ body.lap-container {
 	}
 	.lap-container .slick-slide .fragrance-container {
 		position: absolute;
+<<<<<<< HEAD
 		visibility: hidden;
+=======
+>>>>>>> b33b775704936c2c89e9a9ce4501b0738d2298b6
 		bottom: 0;
 		width: 300px;
 		left: 0;
 		right: 0;
 	}
+<<<<<<< HEAD
 	.lap-container .slick-slide .fragrance-container.positioning {
 		visibility: visible;
 	}
+=======
+>>>>>>> b33b775704936c2c89e9a9ce4501b0738d2298b6
 	.lap-container .slick-slide .fragrance-container .fragrance-text h4 {
 		font-size: 1.25rem;
 	}
@@ -3117,6 +3134,65 @@ body.lap-container {
 }
 
 /*FRENCH*/
+<<<<<<< HEAD
+=======
+
+body.fr.lap-container .lap-container .slideOutTab p {
+	font-size: 0.8rem;
+}
+body.fr.lap-container .lap-container #samplesTab {
+	height: 130px;
+}
+body.fr.lap-container .perfume .bottle a.order {
+	font-size: 0.7rem;
+	right: -200px;
+	max-width: 125px;
+}
+
+@media (min-width: 530px) {
+	body.fr.lap-container .perfume .bottle a.order {
+		font-size: 1rem;
+		right: -240px;
+		max-width: 160px;
+	}
+}
+
+@media (min-width: 767px) {
+	.lap-container .slideOutTab {
+		height: 135px;
+	}
+	body.fr.lap-container .lap-container #samplesTab {
+		height: 155px;
+	}
+	.lap-container .slideOutTab#samplesTab div {
+		width: 150px;
+		right: 55px;
+	}
+	body.fr.lap-container .lap-container .slideOutTab p {
+		font-size: 1rem;
+	}
+	body.fr.lap-container .perfume .bottle a.order {
+		font-size: 1.2rem;
+		right: -295px;
+		max-width: 185px;
+	}
+}
+
+@media (min-width: 991px) {
+	.lap-container .slideOutTab#samplesTab div {
+		right: 50px;
+	}
+	body.fr.lap-container .perfume .bottle a.order {
+		font-size: 1.5rem;
+		right: -460px;
+		max-width: 250px;
+	}
+	body.fr.lap-container .perfume .bottle a.order:hover {
+		right: -470px;
+	}
+}
+
+>>>>>>> b33b775704936c2c89e9a9ce4501b0738d2298b6
 
 body.fr.lap-container .lap-container .slideOutTab p {
 	font-size: 0.8rem;

@@ -143,8 +143,11 @@ function fragranceNotesHeight() {
         
         $(".slider-single .slick-slide").height(maxHeight + notesHeight);
 
+<<<<<<< HEAD
         $('.slick-slide .fragrance-container').addClass('positioning');
 
+=======
+>>>>>>> b33b775704936c2c89e9a9ce4501b0738d2298b6
       });
       
     }, 500);
